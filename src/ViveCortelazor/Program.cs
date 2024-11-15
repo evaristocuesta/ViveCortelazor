@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using ViveCortelazor.Pipelines;
+using AspNetStatic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +39,23 @@ builder.Services.AddMvc(opts =>
 })
     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
+var outputPath = args.Length >= 2 ? $"{args[1]}" : string.Empty;
+var basePath = args.Length == 3 ? $"/{args[2]}" : string.Empty;
+
+builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
+  new StaticResourcesInfoProvider(
+    [
+      new PageResource($"{basePath}/"),
+      new PageResource($"{basePath}/es"),
+      new PageResource($"{basePath}/en"),
+      new PageResource($"{basePath}/es/privacidad"),
+      new PageResource($"{basePath}/en/privacy"),
+      new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
+      new CssResource($"{basePath}/ViveCortelazor.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
+      new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
+      new BinResource($"{basePath}/fox.svg")]
+    ));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -49,8 +67,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(basePath);
 
+app.UsePathBase(basePath);
 app.UseRouting();
 
 app.UseAuthorization();
@@ -68,8 +87,36 @@ app.MapControllerRoute(
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{lang=en}/{controller=Home}/{action=Index}/{id?}",
+    name: "Privacy-en",
+    pattern: "{lang=en}/privacy",
+    defaults: new { lang = "en", controller = "Home", action = "Privacy" },
     constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Privacy-es",
+    pattern: "{lang=es}/privacidad",
+    defaults: new { lang = "es", controller = "Home", action = "Privacy" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{lang=es}/{controller=Home}/{action=Index}/{id?}",
+    constraints: new { lang = @"(\w{2})" });
+
+if (args.HasExitWhenDoneArg())
+{
+    if (!Path.Exists(outputPath))
+    {
+        Console.WriteLine($"Creating directory {outputPath}");
+        Directory.CreateDirectory(outputPath);
+    }
+
+    Console.WriteLine($"Generating static content in {outputPath}");
+
+    app.GenerateStaticContent(outputPath,
+        alwaysDefaultFile: true,
+        exitWhenDone: true,
+        dontUpdateLinks: true);
+}
 
 await app.RunAsync();
