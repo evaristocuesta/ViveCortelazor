@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AspNetStatic" Version="0.24.0" />
+  </ItemGroup>
+
 </Project>
