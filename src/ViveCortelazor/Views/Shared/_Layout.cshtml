@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
-                    <img class="logo-navbar" src="~/fox.svg" alt="@Localizer["Rural house in Cortelazor"]" />
+                    <img class="logo-navbar" src="~/fox.svg" alt="Cortelazor - Sierra de Aracena" />
                     Vive Cortelazor
                 </a>
 
@@ -48,8 +48,8 @@
         </nav>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <a class="navbar-brand" href="/">
-                    <img class="logo-navbar" src="~/fox.svg" alt="@Localizer["Rural house in Cortelazor"]" />
+                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
+                    <img class="logo-navbar" src="~/fox.svg" alt="Cortelazor - Sierra de Aracena" />
                     Vive Cortelazor
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
