@@ -1,9 +1,10 @@
 name: Azure Static Web Apps CI/CD
 
 on:
-  push:
-    branches: [ "master" ]
-    paths: ["dist/**"]
+  workflow_run:
+    workflows: ["Build"]
+    types:
+      - completed
 
 jobs:
   deploy_job:
