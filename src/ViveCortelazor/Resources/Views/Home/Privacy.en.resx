@@ -120,4 +120,7 @@
   <data name="Privacy" xml:space="preserve">
     <value>Privacy policy</value>
   </data>
+  <data name="Privacy Text" xml:space="preserve">
+    <value>Privacy policy details.</value>
+  </data>
 </root>
