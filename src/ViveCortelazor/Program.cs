@@ -13,13 +13,13 @@ builder.Services.AddControllersWithViews();
 
 var supportedCultures = new[]
 {
-    new CultureInfo("en"),
     new CultureInfo("es"),
+    new CultureInfo("en"),
 };
 
 var options = new RequestLocalizationOptions()
 {
-    DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "en"),
+    DefaultRequestCulture = new RequestCulture(culture: "es", uiCulture: "es"),
     SupportedCultures = supportedCultures,
     SupportedUICultures = supportedCultures
 };
