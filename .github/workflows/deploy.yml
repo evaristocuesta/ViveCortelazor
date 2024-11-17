@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 
 on:
   push:
@@ -40,14 +40,16 @@ jobs:
       run: dotnet run --no-restore --configuration Release ssg ../../dist
       working-directory: ./src/ViveCortelazor
 
-    - name: Commit and push changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACTIONS_TRIGGER_TOKEN }}
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add dist
-        git commit -m "Update dist directory" || echo "No changes to commit"
-        git push https://x-access-token:${{ secrets.ACTIONS_TRIGGER_TOKEN }}@github.com/evaristocuesta/vivecortelazor.git HEAD:master
-      working-directory: .
-
+    - name: Deploy
+      id: deploy
+      uses: Azure/static-web-apps-deploy@v1
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_GLACIER_055F32D03 }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+        action: "upload"
+        ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+        # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+        app_location: "./dist" # App source code path
+        api_location: "" # Api source code path - optional
+        output_location: "." # Built app content directory - optional
+        ###### End of Repository/Build Configurations ######
