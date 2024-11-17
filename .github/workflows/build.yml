@@ -48,6 +48,6 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add dist
         git commit -m "Update dist directory" || echo "No changes to commit"
-        git push
+        git push https://x-access-token:${{ secrets.ACTIONS_TRIGGER_TOKEN }}@github.com/evaristocuesta/vivecortelazor.git HEAD:master
       working-directory: .
 
