@@ -67,7 +67,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(basePath);
+app.MapStaticAssets();
 
 app.UsePathBase(basePath);
 app.UseRouting();
