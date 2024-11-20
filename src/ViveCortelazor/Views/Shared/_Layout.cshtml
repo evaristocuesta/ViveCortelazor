@@ -41,16 +41,8 @@
                 </div>
 
                 <div>
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item dropdown d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                @Localizer[ViewContext.GetLang()]
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">Español</a></li>
-                                <li><a class="dropdown-item" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">English</a></li>
-                            </ul>
-                        </li>
+                    <ul class="navbar-nav flex-grow-1 d-none d-lg-block">
+                        @await Html.PartialAsync("_LanguagesCombo")
                     </ul>
                 </div>
 
@@ -77,15 +69,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="@Url.RouteUrlLang("Privacy", ViewContext.GetLang())">@Localizer["Privacy"]</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            @Localizer[ViewContext.GetLang()]
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">Español</a></li>
-                            <li><a class="dropdown-item" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">English</a></li>
-                        </ul>
-                    </li>
+                    @await Html.PartialAsync("_LanguagesCombo")
                 </ul>
             </div>
         </div>
