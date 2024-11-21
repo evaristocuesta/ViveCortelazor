@@ -17,15 +17,10 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
     margin-bottom: 92px;
     background-color: var(--background-color);
-    font-family: Quicksand;
+    font-family: Quicksand, sans-serif;
 }
 
 h1 {
@@ -60,4 +55,8 @@ a:hover {
 
 .logo-navbar {
     width: 45px;
+}
+
+.dropdown-item.active {
+    background-color: var(--color-palette-dark-1);
 }
