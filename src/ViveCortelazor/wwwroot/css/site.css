@@ -23,6 +23,13 @@ body {
     font-family: Quicksand, sans-serif;
 }
 
+@media (max-width: 767px) {
+
+    body {
+        margin-bottom: 205px;
+    }
+}
+
 h1 {
     color: var(--color-palette-dark-1);
 }
