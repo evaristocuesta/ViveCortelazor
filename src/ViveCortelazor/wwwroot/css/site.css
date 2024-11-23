@@ -104,6 +104,11 @@ a.social-icon:hover {
 }
 
 /*** Carousel Hero Header Start ***/
+
+.carousel-caption div {
+    max-width: 900px;
+}
+
 .carousel-header .carousel-control-prev .carousel-control-prev-icon,
 .carousel-header .carousel-control-next .carousel-control-next-icon {
     width: 4rem;
@@ -167,13 +172,11 @@ a.social-icon:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon,
     .carousel-header .carousel-control-next .carousel-control-next-icon {
         margin-top: 500px;
-        width: 3rem;
-        height: 3rem;
     }
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon {
@@ -188,4 +191,12 @@ a.social-icon:hover {
         padding: 0;
     }
 }
-/*** Carousel Hero Header End ***/
+
+@media (max-width: 575px) {
+    .carousel-header .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-header .carousel-control-next .carousel-control-next-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+    /*** Carousel Hero Header End ***/
