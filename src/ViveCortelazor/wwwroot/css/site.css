@@ -168,9 +168,12 @@ a.social-icon:hover {
 
 
 @media (max-width: 768px) {
+
     .carousel-header .carousel-control-prev .carousel-control-prev-icon,
     .carousel-header .carousel-control-next .carousel-control-next-icon {
         margin-top: 500px;
+        width: 3rem;
+        height: 3rem;
     }
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon {
