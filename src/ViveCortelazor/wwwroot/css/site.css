@@ -124,30 +124,9 @@ a.social-icon:hover {
     margin-right: -60px;
 }
 
-.carousel-header .carousel .carousel-indicators {
-    padding-bottom: 0;
-    transition: 0.5s;
-}
-
-
-.carousel-header .carousel .carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    border: 8px solid var(--bs-primary);
-    border-radius: 50%;
-    margin-right: 30px;
-    transition: 0.5s;
-}
-
-.carousel-header .carousel .carousel-indicators li.active {
-    width: 8px;
-    height: 8px;
-    border: 8px solid var(--bs-secondary);
-}
-
 .carousel-header .carousel-inner .carousel-item {
     position: relative;
-    min-height: 100vh
+    min-height: 90vh
 }
 
 .carousel-header .carousel-inner .carousel-item img {
@@ -185,10 +164,6 @@ a.social-icon:hover {
 
     .carousel-header .carousel-control-next .carousel-control-next-icon {
         margin-right: 0px;
-    }
-
-    .carousel-header .carousel .carousel-indicators {
-        padding: 0;
     }
 }
 
