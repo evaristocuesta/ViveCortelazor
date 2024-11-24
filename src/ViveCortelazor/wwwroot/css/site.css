@@ -72,6 +72,12 @@ a:hover {
     width: 65px;
 }
 
+.hamburguer {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
 .dropdown-item.active {
     background-color: var(--color-palette-dark-1);
 }
@@ -126,7 +132,7 @@ a.social-icon:hover {
 
 .carousel-header .carousel-inner .carousel-item {
     position: relative;
-    min-height: 90vh
+    min-height: 100vh
 }
 
 .carousel-header .carousel-inner .carousel-item img {
