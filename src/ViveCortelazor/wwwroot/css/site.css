@@ -14,7 +14,7 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 body {
@@ -71,6 +71,24 @@ a:hover {
 .logo-footer {
     width: 65px;
 }
+
+.main-logo {
+    top: 100px;
+}
+
+.main-logo img {
+    width: 150px;
+}
+
+.custom-toggler {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
 
 .dropdown-item.active {
     background-color: var(--color-palette-dark-1);
@@ -129,26 +147,26 @@ a.social-icon:hover {
     min-height: 90vh
 }
 
-.carousel-header .carousel-inner .carousel-item img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .carousel-header .carousel-inner .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.carousel-header .carousel-inner .carousel-item .carousel-caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));
-    background-size: cover;
-}
+    .carousel-header .carousel-inner .carousel-item .carousel-caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));
+        background-size: cover;
+    }
 
 
 @media (max-width: 767px) {
@@ -174,4 +192,4 @@ a.social-icon:hover {
         height: 3rem;
     }
 }
-    /*** Carousel Hero Header End ***/
+/*** Carousel Hero Header End ***/
