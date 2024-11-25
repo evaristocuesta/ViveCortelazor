@@ -73,11 +73,10 @@ a:hover {
 }
 
 .main-logo {
-    top: 100px;
-}
-
-.main-logo img {
-    width: 150px;
+    position: absolute !important;
+    width: 150px !important;
+    height: 150px !important;
+    top: 100px !important;
 }
 
 .custom-toggler {

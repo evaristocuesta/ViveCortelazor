@@ -1,0 +1,15 @@
+﻿.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    background-color: var(--background-color);
+}
+
+.footer .container {
+    margin: 10px auto;
+}
+
+.footer p {
+    margin: 0;
+}
