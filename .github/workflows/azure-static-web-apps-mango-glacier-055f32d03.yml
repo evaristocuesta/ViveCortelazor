@@ -53,3 +53,16 @@ jobs:
         api_location: "" # Api source code path - optional
         output_location: "." # Built app content directory - optional
         ###### End of Repository/Build Configurations ######
+
+    - name: Restore tests dependencies
+      run: dotnet restore
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Build Tests
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Ensure browsers are installed
+      run: pwsh bin/Release/net9.0/playwright.ps1 install --with-deps
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Tests
+      run: dotnet test --verbosity normal --configuration Release --settings production.runsettings
+      working-directory: ./tests/ViveCortelazor.Tests

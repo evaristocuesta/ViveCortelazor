@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches-ignore: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+    
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./src/ViveCortelazor
+    - name: Build
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./src/ViveCortelazor
+    - name: Generate pages
+      run: dotnet run --no-restore --configuration Release ssg ../../web
+      working-directory: ./src/ViveCortelazor
+
+    - name: HTTP Server Action
+      uses: Eun/http-server-action@v1.0.12
+      with:
+        directory: "web"
+        port: 8080
+        no-cache: false
+        index-files: |
+          ["index.html"]
+        log: "log.txt"
+        logTime: "false"
+        custom404Page: "/404.html"
+
+
+    - name: Restore tests dependencies
+      run: dotnet restore
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Build Tests
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Ensure browsers are installed
+      run: pwsh bin/Release/net9.0/playwright.ps1 install --with-deps
+      working-directory: ./tests/ViveCortelazor.Tests
+    - name: Tests
+      run: dotnet test --verbosity normal --configuration Release --settings ci.runsettings
+      working-directory: ./tests/ViveCortelazor.Tests

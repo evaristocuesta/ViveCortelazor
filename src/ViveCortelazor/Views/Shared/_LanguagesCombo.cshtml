@@ -3,17 +3,17 @@
 @inject IViewLocalizer Localizer
 
 <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a id="languages" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         @Localizer[ViewContext.GetLang()]
     </a>
     <ul class="dropdown-menu">
         <li>
-            <a class="dropdown-item @IsActive("es")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
+            <a id="lang-es" class="dropdown-item @IsActive("es")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
                 Español
             </a>
         </li>
         <li>
-            <a class="dropdown-item @IsActive("en")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
+            <a id="lang-en" class="dropdown-item @IsActive("en")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
                 English
             </a>
         </li>

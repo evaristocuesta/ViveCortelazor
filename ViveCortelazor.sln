@@ -5,6 +5,12 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveCortelazor", "src\ViveCortelazor\ViveCortelazor.csproj", "{5968C1AF-AF12-4059-9869-C492BDCB1057}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26407BBA-54CB-4FF8-B97C-ADBD86315A2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{750223FD-14FF-42EF-946F-7DF06A473526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveCortelazor.Tests", "tests\ViveCortelazor.Tests\ViveCortelazor.Tests.csproj", "{A6F5359F-0DCB-4475-A47C-864744F93854}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{5968C1AF-AF12-4059-9869-C492BDCB1057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5968C1AF-AF12-4059-9869-C492BDCB1057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5968C1AF-AF12-4059-9869-C492BDCB1057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F5359F-0DCB-4475-A47C-864744F93854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F5359F-0DCB-4475-A47C-864744F93854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F5359F-0DCB-4475-A47C-864744F93854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F5359F-0DCB-4475-A47C-864744F93854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5968C1AF-AF12-4059-9869-C492BDCB1057} = {26407BBA-54CB-4FF8-B97C-ADBD86315A2B}
+		{A6F5359F-0DCB-4475-A47C-864744F93854} = {750223FD-14FF-42EF-946F-7DF06A473526}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B305B701-D66D-47D8-A2C3-AFBFC20DB43D}
