@@ -1,32 +1,37 @@
-﻿<!-- Cookie Consent Banner -->
+﻿@using ViveCortelazor.Extensions
+
+@inject IViewLocalizer Localizer
+
+
+<!-- Cookie Consent Banner -->
 <div id="cookieConsentBanner">
-    <p>Our website uses cookies to enhance your experience. By continuing to use our website, you are agreeing to our use of cookies. Necessary cookies are always enabled.</p>
+    <p>@Localizer["Our website uses cookies to enhance your experience. By continuing to use our website, you are agreeing to our use of cookies. Necessary cookies are always enabled."]</p>
 
     <!-- Aditional container to align checkboxs -->
     <div class="cookie-group">
         <div class="cookie-options">
             <input type="checkbox" id="preferencesCookie" name="preferences" />
             <label for="preferencesCookie"></label>
-            <span>Preferences</span>
+            <span>@Localizer["Preferences"]</span>
         </div>
         <div class="cookie-options">
             <input type="checkbox" id="statisticalCookie" name="statistical" />
             <label for="statisticalCookie"></label>
-            <span>Statistical</span>
+            <span>@Localizer["Statistical"]</span>
         </div>
         <div class="cookie-options">
             <input type="checkbox" id="marketingCookie" name="marketing" />
             <label for="marketingCookie"></label>
-            <span>Marketing</span>
+            <span>@Localizer["Marketing"]</span>
         </div>
     </div>
 
-    <button onclick="setCookieConsent()" class="cookie-button">Save Preferences</button>
-    <button onclick="allowAllCookies()" class="cookie-button">Allow All Cookies</button>
+    <button onclick="setCookieConsent()" class="cookie-button">@Localizer["Save Preferences"]</button>
+    <button onclick="allowAllCookies()" class="cookie-button">@Localizer["Allow All Cookies"]</button>
 </div>
 
 
 <!-- Minimized Banner Button -->
 <div id="minimizedConsentBanner" onclick="openConsentBanner()">
-    <img alt="Cookies settings" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgZmlsbD0iIzAwMDAwMCIgaGVpZ2h0PSIyMHB4IiB3aWR0aD0iMjBweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgDQoJIHZpZXdCb3g9IjAgMCAyOTkuMDQ5IDI5OS4wNDkiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTI4OS4xODEsMjA2LjkyOWMtMTMuNS0xMi4xODYtMTguNTExLTMxLjM2Ni0xMi40NTMtNDguNjk5YzEuNDUzLTQuMTU5LTAuOTQtOC42ODYtNS4yMDMtOS44Mg0KCQkJCWMtMjcuNzctNy4zODctNDEuNzU3LTM4LjU2OC0yOC44OTMtNjQuMjAxYzIuMjU0LTQuNDkyLTAuNDE5LTkuODk4LTUuMzQ4LTEwLjgzN2MtMjYuNTIxLTUuMDY5LTQyLjkxNC0zMi4yODgtMzQuNzM0LTU4LjI1MQ0KCQkJCWMxLjI4NC00LjA3NC0xLjA1OS04LjQxNC01LjE3OC05LjU3QzE4NC4yNDMsMS44NjcsMTcwLjYyNiwwLDE1Ni44OTMsMEM3NC40NDUsMCw3LjM2OCw2Ny4wNzYsNy4zNjgsMTQ5LjUyNA0KCQkJCXM2Ny4wNzYsMTQ5LjUyNCwxNDkuNTI0LDE0OS41MjRjNTcuODM1LDAsMTA5LjE0Mi0zMy4wNTYsMTMzLjk5OC04My4xMjlDMjkyLjQsMjEyLjg3OSwyOTEuNzAxLDIwOS4yMDQsMjg5LjE4MSwyMDYuOTI5eg0KCQkJCSBNMTU2Ljg5MywyODMuODk5Yy03NC4wOTUsMC0xMzQuMzc0LTYwLjI4MS0xMzQuMzc0LTEzNC4zNzRTODIuNzk5LDE1LjE1LDE1Ni44OTMsMTUuMTVjOS44OTcsMCwxOS43MjYsMS4wNzgsMjkuMzExLDMuMjENCgkJCQljLTUuMTIzLDI5LjQzMywxMS45NDgsNTcuNzgxLDM5LjQxLDY3LjUwMmMtOS43MjcsMjkuODY3LDUuMjUxLDYyLjczNSwzNC43NDUsNzQuNzUyYy00LjEwNCwxOS4yNywxLjQ5LDM5LjEwNCwxNC40Niw1My4zNjUNCgkJCQlDMjUxLjc1OCwyNTYuMDk4LDIwNy4yMjksMjgzLjg5OSwxNTYuODkzLDI4My44OTl6Ii8+DQoJCQk8cGF0aCBkPSJNNzYuMzg4LDE1NC45OTdjLTEzLjA2OCwwLTIzLjcsMTAuNjMxLTIzLjcsMjMuNzAxYzAsMTMuMDY3LDEwLjYzMSwyMy43LDIzLjcsMjMuN2MxMy4wNjcsMCwyMy43LTEwLjYzMSwyMy43LTIzLjcNCgkJCQlDMTAwLjA4NywxNjUuNjI4LDg5LjQ1NiwxNTQuOTk3LDc2LjM4OCwxNTQuOTk3eiBNNzYuMzg4LDE4Ny4yNDdjLTQuNzE1LDAtOC41NS0zLjgzNS04LjU1LTguNTVzMy44MzUtOC41NTEsOC41NS04LjU1MQ0KCQkJCWM0LjcxNCwwLDguNTUsMy44MzYsOC41NSw4LjU1MVM4MS4xMDIsMTg3LjI0Nyw3Ni4zODgsMTg3LjI0N3oiLz4NCgkJCTxwYXRoIGQ9Ik0xNzMuMjI0LDkwLjY1NWMwLTE0LjktMTIuMTIxLTI3LjAyMS0yNy4wMi0yNy4wMjFzLTI3LjAyMSwxMi4xMjEtMjcuMDIxLDI3LjAyMWMwLDE0Ljg5OCwxMi4xMjEsMjcuMDIsMjcuMDIxLDI3LjAyDQoJCQkJQzE2MS4xMDQsMTE3LjY3NCwxNzMuMjI0LDEwNS41NTMsMTczLjIyNCw5MC42NTV6IE0xMzQuMzM0LDkwLjY1NWMwLTYuNTQ1LDUuMzI1LTExLjg3MSwxMS44NzEtMTEuODcxDQoJCQkJYzYuNTQ2LDAsMTEuODcsNS4zMjUsMTEuODcsMTEuODcxcy01LjMyNSwxMS44Ny0xMS44NywxMS44N1MxMzQuMzM0LDk3LjE5OSwxMzQuMzM0LDkwLjY1NXoiLz4NCgkJCTxwYXRoIGQ9Ik0xNjkuNjM4LDE4Ny4yNDdjLTE5LjYzNCwwLTM1LjYwOSwxNS45NzQtMzUuNjA5LDM1LjYxYzAsMTkuNjM1LDE1Ljk3NCwzNS42MSwzNS42MDksMzUuNjENCgkJCQljMTkuNjM1LDAsMzUuNjEtMTUuOTc0LDM1LjYxLTM1LjYxQzIwNS4yNDcsMjAzLjIyMSwxODkuMjczLDE4Ny4yNDcsMTY5LjYzOCwxODcuMjQ3eiBNMTY5LjYzOCwyNDMuMzE1DQoJCQkJYy0xMS4yODEsMC0yMC40NTgtOS4xNzgtMjAuNDU4LTIwLjQ2czkuMTc4LTIwLjQ2LDIwLjQ1OC0yMC40NmMxMS4yODEsMCwyMC40Niw5LjE3OCwyMC40NiwyMC40Ng0KCQkJCVMxODAuOTIsMjQzLjMxNSwxNjkuNjM4LDI0My4zMTV6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4=" />
+    <img alt="@Localizer["Cookies settings"]" src="~/cookie-color.svg" />
 </div>
