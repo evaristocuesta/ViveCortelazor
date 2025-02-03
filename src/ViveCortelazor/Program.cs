@@ -54,6 +54,7 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new CssResource($"{basePath}/ViveCortelazor.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
       new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
       new BinResource($"{basePath}/fox.svg"),
+      new BinResource($"{basePath}/cookie-color.svg"),
       new BinResource($"{basePath}/images/carousel/image1.jpg"),
       new BinResource($"{basePath}/images/carousel/image2.jpg")]
     ));
