@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Introduction1" xml:space="preserve">
+    <value>Bienvenido a Vive Cortelazor, el lugar donde encontrarás toda la información sobre Cortelazor la Real, un pintoresco pueblo de la Sierra de Aracena y Picos de Aroche, en pleno Parque Natural. Rodeado de frondosos bosques de encinas y alcornoques, este destino es ideal para quienes buscan tranquilidad, naturaleza y tradición.
+
+</value>
+  </data>
+  <data name="Introduction2" xml:space="preserve">
+    <value>Paseando por sus calles empedradas, descubrirás la esencia de la arquitectura serrana, con casas blancas que contrastan con el verde de los campos que la rodean. La riqueza patrimonial de Cortelazor se refleja en su iglesia del siglo XVIII, en sus antiguas fuentes y lavaderos, y en las numerosas rutas de senderismo que conectan el pueblo con otros rincones de la sierra.
+
+</value>
+  </data>
+  <data name="Introduction3" xml:space="preserve">
+    <value>Además de su belleza natural, Cortelazor es un lugar donde la gastronomía tradicional juega un papel fundamental. Los productos derivados del cerdo ibérico, la miel, los quesos artesanales y los guisos serranos son solo algunas de las delicias que podrás disfrutar en sus restaurantes y ventas.
+
+Si buscas una experiencia auténtica en contacto con la naturaleza, la historia y la cultura de la Sierra de Aracena, Vive Cortelazor es tu guía perfecta para descubrir todo lo que este maravilloso pueblo tiene para ofrecer.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Descubre Cortelazor la Real, un rincón con encanto en la Sierra de Aracena</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>
   </data>

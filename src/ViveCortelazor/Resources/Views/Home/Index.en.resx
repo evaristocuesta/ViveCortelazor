@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Introduction1" xml:space="preserve">
+    <value>Welcome to Vive Cortelazor, your ultimate guide to Cortelazor la Real, a picturesque village in the Sierra de Aracena y Picos de Aroche Natural Park. Surrounded by lush forests of holm oaks and cork oaks, this destination is perfect for those seeking peace, nature, and tradition.</value>
+  </data>
+  <data name="Introduction2" xml:space="preserve">
+    <value>
+
+As you walk through its cobbled streets, you will experience the essence of the local architecture, with whitewashed houses contrasting against the green fields. The rich heritage of Cortelazor is reflected in its 18th-century church, its old fountains and washing places, and the numerous hiking trails connecting the village to other beautiful spots in the Sierra.
+</value>
+  </data>
+  <data name="Introduction3" xml:space="preserve">
+    <value>Beyond its natural beauty, Cortelazor is also known for its traditional gastronomy. Local delicacies include Iberian pork products, honey, artisanal cheeses, and hearty mountain stews, all of which can be enjoyed in its charming restaurants and countryside inns. 
+
+If you are looking for an authentic experience, where nature, history, and culture come together, Vive Cortelazor is your perfect guide to discovering everything this wonderful village has to offer.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Discover Cortelazor la Real, a charming gem in the Sierra de Aracena</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
   </data>
