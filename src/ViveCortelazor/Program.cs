@@ -53,10 +53,12 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
       new CssResource($"{basePath}/ViveCortelazor.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
       new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
-      new BinResource($"{basePath}/fox.svg"),
-      new BinResource($"{basePath}/cookie-color.svg"),
+      new BinResource($"{basePath}/images/fox.svg"),
+      new BinResource($"{basePath}/images/cookie-color.svg"),
       new BinResource($"{basePath}/images/carousel/image1.jpg"),
-      new BinResource($"{basePath}/images/carousel/image2.jpg")]
+      new BinResource($"{basePath}/images/carousel/image2.jpg"), 
+      new PageResource($"{basePath}/sitemap.xml"),
+      new PageResource($"{basePath}/robots.txt")]
     ));
 
 var app = builder.Build();

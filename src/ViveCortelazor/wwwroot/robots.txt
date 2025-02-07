@@ -1,0 +1,8 @@
+﻿User-agent: *
+Disallow: /
+Allow: /es/
+Allow: /en/
+Allow: /sitemap.xml
+
+# Sitemap
+Sitemap: https://www.vivecortelazor.es/sitemap.xml
