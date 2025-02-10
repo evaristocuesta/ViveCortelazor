@@ -5,14 +5,14 @@ namespace ViveCortelazor.Extensions;
 
 public static class UrlExtensions
 {
-    public static string? RouteUrlLang(this IUrlHelper urlHelper, string? routeName, string? languaje)
+    public static string? RouteUrlLang(this IUrlHelper urlHelper, string? routeName, string? language)
     {
         if (string.IsNullOrEmpty(routeName))
         {
             return urlHelper.RouteUrl("default");
         }
 
-        string? url = urlHelper.RouteUrl($"{routeName}-{languaje}", new { lang = languaje });
+        string? url = urlHelper.RouteUrl($"{routeName}-{language}", new { lang = language });
         return url;
     }
 
@@ -26,6 +26,12 @@ public static class UrlExtensions
             return string.Empty;
         }
 
+        return url;
+    }
+
+    public static string Canonical(this IUrlHelper urlHelper, string? routeName, string? language)
+    {
+        var url = $"https://www.vivecortelazor.es{RouteUrlLang(urlHelper, routeName, language)}";
         return url;
     }
 }
