@@ -32,6 +32,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
     <link rel="icon" type="image/svg+xml" href="~/images/fox.svg">
+    <!-- Canonical-->
+    <link href="@Url.Canonical(ViewContext.RouteData.Values["action"]?.ToString(), @CultureInfo.CurrentCulture.Name)" rel="canonical" />
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
