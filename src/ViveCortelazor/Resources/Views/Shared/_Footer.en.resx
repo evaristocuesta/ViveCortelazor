@@ -117,8 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
+  <data name="Cortelazor and Sierra de Aracena" xml:space="preserve">
+    <value>Cortelazor and Sierra de Aracena</value>
+  </data>
+  <data name="Developed by" xml:space="preserve">
+    <value>Developed by</value>
   </data>
   <data name="Privacy" xml:space="preserve">
     <value>Privacy</value>
