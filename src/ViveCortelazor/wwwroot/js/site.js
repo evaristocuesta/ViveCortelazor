@@ -14,10 +14,12 @@ function setCookie(name, value, days) {
 function readCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
+
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i].trim(); // Ensure trimming any leading spaces
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length);
     }
+
     return null;
 }
 
@@ -37,9 +39,11 @@ function setCookieConsent() {
 
     var consentValue = consentValues.join(',');
     var existingConsent = readCookie('cookieConsent');
+
     // Update the cookie and the dataLayer only if the consent has changed.
     if (consentValue !== existingConsent) {
         setCookie('cookieConsent', consentValue, 30);
+
         window.dataLayer.push({
             'event': 'cookie_consent_update',
             'cookieConsent': consentValue
@@ -51,8 +55,9 @@ function setCookieConsent() {
 }
 
 // Show or hide banners based on cookie consent
-window.addEventListener('load', function () {
+window.onload =  function () {
     var cookieValue = readCookie('cookieConsent');
+
     if (cookieValue) {
         // Initialize checkbox states based on cookie value.
         document.getElementById('preferencesCookie').checked = cookieValue.includes('Preferences');
@@ -62,7 +67,7 @@ window.addEventListener('load', function () {
     } else {
         document.getElementById('cookieConsentBanner').style.display = 'block';
     }
-});
+};
 
 function hideConsentBanner() {
     document.getElementById('cookieConsentBanner').style.display = 'none';
@@ -72,10 +77,17 @@ function showMinimizedBanner() {
     document.getElementById('minimizedConsentBanner').style.display = 'block';
 }
 
-function allowAllCookies() {
+function acceptAll() {
     document.getElementById('preferencesCookie').checked = true;
     document.getElementById('statisticalCookie').checked = true;
     document.getElementById('marketingCookie').checked = true;
+    setCookieConsent();
+}
+
+function rejectAll() {
+    document.getElementById('preferencesCookie').checked = false;
+    document.getElementById('statisticalCookie').checked = false;
+    document.getElementById('marketingCookie').checked = false;
     setCookieConsent();
 }
 
