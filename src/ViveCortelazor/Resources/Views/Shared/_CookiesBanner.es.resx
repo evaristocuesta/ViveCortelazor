@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Allow All Cookies" xml:space="preserve">
-    <value>Permitir Todas las Cookies</value>
+  <data name="Accept All" xml:space="preserve">
+    <value>Aceptar Todo</value>
   </data>
   <data name="Cookies settings" xml:space="preserve">
     <value>Configuración de Cookies</value>
@@ -131,6 +131,9 @@
   </data>
   <data name="Preferences" xml:space="preserve">
     <value>Preferencias</value>
+  </data>
+  <data name="Reject All" xml:space="preserve">
+    <value>Rechazar Todo</value>
   </data>
   <data name="Save Preferences" xml:space="preserve">
     <value>Guardar Preferencias</value>
