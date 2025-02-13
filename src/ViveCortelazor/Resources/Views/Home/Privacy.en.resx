@@ -121,6 +121,54 @@
     <value>Privacy policy</value>
   </data>
   <data name="Privacy Text" xml:space="preserve">
-    <value>Privacy policy details.</value>
+    <value># Privacy Policy
+
+Last updated: February 13, 2025
+
+## 1. Introduction
+At [**vivecortelazor.es**](https://www.vivecortelazor.es), we take our users' privacy very seriously. This Privacy Policy explains how we collect, use, and protect your personal data when you visit our website.
+
+## 2. Data Controller
+- **Controller's Name:** Evaristo Cuesta Guzmán
+- **Contact Email:** [info@vivecortelazor.es](mailto:info@vivecortelazor.es)
+
+## 3. Data We Collect
+Our website may collect the following personal data:
+- Data voluntarily provided through the contact email.
+- Browsing data collected via analytics cookies (see our [Cookies Policy](https://www.vivecortelazor.es/en/cookies)).
+
+## 4. Purpose of Data Processing
+The collected data is used to:
+- Respond to inquiries sent to our contact email.
+- Analyze website traffic and improve the user experience.
+- Comply with legal obligations.
+
+## 5. Legal Basis for Processing
+We process your personal data based on:
+- Your explicit consent when sending us an email.
+- Our legitimate interest in improving the website and analyzing its traffic.
+- Legal obligations arising from applicable regulations.
+
+## 6. Data Recipients
+We do not share your personal data with third parties, except in the following cases:
+- Technology service providers (such as Google Analytics for traffic analysis).
+- Competent authorities when there is a legal obligation.
+
+## 7. User Rights
+You have the right to:
+- Access, rectify, or delete your personal data.
+- Restrict or object to the processing of your data.
+- Withdraw your consent at any time.
+- File a complaint with the Spanish Data Protection Agency (AEPD).
+
+To exercise your rights, you can contact us at [info@vivecortelazor.es](mailto:info@vivecortelazor.es).
+
+## 8. Data Security
+We implement appropriate security measures to protect your data from unauthorized access, loss, or alterations.
+
+## 9. Changes to This Policy
+We reserve the right to modify this Privacy Policy to reflect regulatory changes or service improvements. The updated version will always be available on this page.
+
+If you have any questions, you can contact us at [info@vivecortelazor.es](mailto:info@vivecortelazor.es).</value>
   </data>
 </root>

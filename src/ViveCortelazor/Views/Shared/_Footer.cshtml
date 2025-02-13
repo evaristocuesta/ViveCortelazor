@@ -15,7 +15,10 @@
 
             <div class="col-sm-12 col-md-4 order-md-1">
                 <p><a href="@Url.RouteUrlLang("Index", ViewContext.GetLang())" title="@Localizer["Cortelazor and Sierra de Aracena"]">@Localizer["Cortelazor and Sierra de Aracena"]</a></p>
-                <p><a class="slim" href="@Url.RouteUrlLang("Privacy", ViewContext.GetLang())">@Localizer["Privacy"]</a></p>
+                <p>
+                    <a class="slim" href="@Url.RouteUrlLang("Privacy", ViewContext.GetLang())">@Localizer["Privacy"]</a> - 
+                    <a class="slim" href="@Url.RouteUrlLang("Cookies", ViewContext.GetLang())">@Localizer["Cookies"]</a>
+                </p>
             </div>
 
             <div class="col-sm-12 col-md-4 order-md-3">

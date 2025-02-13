@@ -117,58 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Privacy" xml:space="preserve">
-    <value>Política de privacidad</value>
+  <data name="Cookies" xml:space="preserve">
+    <value>Cookies policy</value>
   </data>
-  <data name="Privacy Text" xml:space="preserve">
-    <value># Política de Privacidad 
+  <data name="Cookies Text" xml:space="preserve">
+    <value>**Cookies Policy**  
+Last updated: February 13, 2025
 
-Última actualización: 13 de febrero de 2025
+## 1. What are cookies?
+Cookies are small text files that are stored on your device when you visit a website. They are used to improve the user experience, analyze site traffic, and remember preferences.
 
-## 1. Introducción
-En [**vivecortelazor.es**](https://www.vivecortelazor.es), nos tomamos muy en serio la privacidad de nuestros usuarios. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos sus datos personales cuando visita nuestro sitio web.
+## 2. What types of cookies do we use?
+At [**vivecortelazor.es**](https://www.vivecortelazor.es), we only use **analytics cookies**, specifically those from **Google Analytics**. These cookies help us understand how visitors interact with our website, collecting information anonymously.
 
-## 2. Responsable del Tratamiento
-- **Nombre del responsable:** Evaristo Cuesta Guzmán
-- **Correo electrónico de contacto:** [info@vivecortelazor.es](mailto:info@vivecortelazor.es)
+### **Google Analytics Cookies**
+These cookies allow us to collect data such as the number of visitors, most viewed pages, and time spent on the site. The information collected is completely anonymous and does not allow us to personally identify users.
 
-## 3. Datos que Recopilamos
-Nuestro sitio web puede recopilar los siguientes datos personales:
-- Datos proporcionados voluntariamente a través del correo electrónico de contacto.
-- Datos de navegación recopilados mediante cookies de análisis (consulte nuestra [Política de Cookies](https://www.vivecortelazor.es/es/cookies)).
+Name | Provider | Purpose | Duration  
+------ | --------- | --------- | ---------  
+_ga | Google Analytics | Distinguish unique users | 1 year
+_gid | Google Analytics | Differentiate sessions | 24 hours  
+_gat | Google Analytics | Limit request rate | 1 minute  
 
-## 4. Finalidad del Tratamiento
-Los datos recopilados se utilizan para:
-- Responder a consultas enviadas a nuestro correo electrónico de contacto.
-- Analizar el tráfico y mejorar la experiencia del usuario en el sitio web.
-- Cumplir con obligaciones legales.
+## 3. How to manage cookies?
+You can accept or reject analytics cookies in the cookie banner when you access our website. You can also configure your browser to block or delete cookies at any time. Below, we provide links to cookie management in the main browsers:
 
-## 5. Base Legal para el Tratamiento
-Tratamos sus datos personales en base a:
-- Su consentimiento expreso al enviarnos un correo electrónico.
-- Nuestro interés legítimo en mejorar el sitio web y analizar su tráfico.
-- Obligaciones legales que puedan derivarse de la normativa aplicable.
+- [Google Chrome](https://support.google.com/chrome/answer/95647?hl=es)
+- [Mozilla Firefox](https://support.mozilla.org/es/kb/Borrar%20cookies)
+- [Microsoft Edge](https://support.microsoft.com/es-es/help/4027947/microsoft-edge-delete-cookies)
+- [Safari](https://support.apple.com/es-es/HT201265)
 
-## 6. Destinatarios de los Datos
-No compartimos sus datos personales con terceros, salvo en los siguientes casos:
-- Proveedores de servicios tecnológicos (como Google Analytics para análisis de tráfico).
-- Autoridades competentes cuando exista una obligación legal.
+## 4. Changes to the Cookies Policy
+We may update this policy at any time to reflect changes in legislation or in our use of cookies. We recommend that you review it periodically.
 
-## 7. Derechos del Usuario
-Usted tiene derecho a:
-- Acceder, rectificar o eliminar sus datos personales.
-- Limitar u oponerse al tratamiento de sus datos.
-- Retirar su consentimiento en cualquier momento.
-- Presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).
-
-Para ejercer sus derechos, puede escribirnos a [info@vivecortelazor.es](mailto:info@vivecortelazor.es).
-
-## 8. Seguridad de los Datos
-Implementamos medidas de seguridad adecuadas para proteger sus datos contra accesos no autorizados, pérdidas o alteraciones.
-
-## 9. Cambios en esta Política
-Nos reservamos el derecho a modificar esta Política de Privacidad para adaptarnos a cambios normativos o mejoras en nuestro servicio. La versión actualizada estará siempre disponible en esta página.
-
-Si tiene alguna duda, puede contactarnos en [info@vivecortelazor.es](mailto:info@vivecortelazor.es).</value>
+If you have questions about our Cookies Policy, you can contact us through [**info@vivecortelazor.es**](mailto:info@vivecortelazor.es).</value>
   </data>
 </root>

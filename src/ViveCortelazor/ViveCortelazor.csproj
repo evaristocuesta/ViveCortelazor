@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetStatic" Version="0.24.0" />
+    <PackageReference Include="Markdig" Version="0.40.0" />
   </ItemGroup>
 
 </Project>
