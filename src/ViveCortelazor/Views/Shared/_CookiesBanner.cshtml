@@ -1,9 +1,10 @@
 ﻿@inject IViewLocalizer Localizer
 
-
 <!-- Cookie Consent Banner -->
 <div id="cookieConsentBanner">
-    <p>@Localizer["Our website uses cookies to enhance your experience. By continuing to use our website, you are agreeing to our use of cookies. Necessary cookies are always enabled."]</p>
+    <p>
+        <markdown content="@Html.Raw(Localizer["Cookies Text"].Value)"></markdown>
+    </p>
 
     <!-- Aditional container to align checkboxs -->
     <div class="cookie-group">

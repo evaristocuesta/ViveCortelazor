@@ -123,11 +123,11 @@
   <data name="Cookies settings" xml:space="preserve">
     <value>Configuración de Cookies</value>
   </data>
+  <data name="Cookies Text" xml:space="preserve">
+    <value>En [**vivecortelazor.es**](https://www.vivecortelazor.es), utilizamos cookies para analizar el tráfico y mejorar tu experiencia en nuestro sitio web. Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias. Para más información, consulta nuestra [**Política de Cookies**](https://www.vivecortelazor.es/es/cookies) y nuestra [**Política de Privacidad**](https://www.vivecortelazor.es/es/privacidad).</value>
+  </data>
   <data name="Marketing" xml:space="preserve">
     <value>Marketing</value>
-  </data>
-  <data name="Our website uses cookies to enhance your experience. By continuing to use our website, you are agreeing to our use of cookies. Necessary cookies are always enabled." xml:space="preserve">
-    <value>Nuestro sitio web utiliza cookies para mejorar su experiencia. Si continúa utilizando nuestro sitio web, estará aceptando el uso de cookies. Las cookies necesarias siempre están habilitadas.</value>
   </data>
   <data name="Preferences" xml:space="preserve">
     <value>Preferencias</value>
