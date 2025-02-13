@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using ViveCortelazor.Pipelines;
 using AspNetStatic;
+using ViveCortelazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +51,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/en"),
       new PageResource($"{basePath}/es/privacidad"),
       new PageResource($"{basePath}/en/privacy"),
+      new PageResource($"{basePath}/es/cookies"),
+      new PageResource($"{basePath}/en/cookies"),
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
       new CssResource($"{basePath}/ViveCortelazor.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
       new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
@@ -60,6 +63,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/sitemap.xml"),
       new PageResource($"{basePath}/robots.txt")]
     ));
+
+builder.Services.AddSingleton<IMarkdownService, MarkdownService>();
 
 var app = builder.Build();
 
@@ -101,6 +106,18 @@ app.MapControllerRoute(
     name: "Privacy-es",
     pattern: "{lang=es}/privacidad",
     defaults: new { lang = "es", controller = "Home", action = "Privacy" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Cookies-en",
+    pattern: "{lang=en}/cookies",
+    defaults: new { lang = "en", controller = "Home", action = "Cookies" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Cookies-es",
+    pattern: "{lang=es}/cookies",
+    defaults: new { lang = "es", controller = "Home", action = "Cookies" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(

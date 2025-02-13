@@ -1,0 +1,10 @@
+﻿@using Markdig
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Cookies"];
+}
+<div class="container">
+    <markdown content="@Html.Raw(Localizer["Cookies Text"].Value)"></markdown>
+</div>

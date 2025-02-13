@@ -42,7 +42,7 @@ function setCookieConsent() {
 
     // Update the cookie and the dataLayer only if the consent has changed.
     if (consentValue !== existingConsent) {
-        setCookie('cookieConsent', consentValue, 30);
+        setCookie('cookieConsent', consentValue, 365);
 
         window.dataLayer.push({
             'event': 'cookie_consent_update',

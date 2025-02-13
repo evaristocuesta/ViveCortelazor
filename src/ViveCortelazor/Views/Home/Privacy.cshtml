@@ -1,8 +1,10 @@
-﻿@inject IViewLocalizer Localizer
+﻿@using Markdig
+
+@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = Localizer["Privacy"];
 }
-<h1>@ViewData["Title"]</h1>
-
-<p>@Localizer["Privacy Text"]</p>
+<div class="container">
+    <markdown content="@Html.Raw(Localizer["Privacy Text"].Value)"></markdown>
+</div>
