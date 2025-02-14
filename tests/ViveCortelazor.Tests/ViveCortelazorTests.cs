@@ -10,6 +10,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("", "Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es", "Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en", "Vive Cortelazor - Sierra de Aracena")]
+    [TestCase("es/historia", "Historia - Vive Cortelazor - Sierra de Aracena")]
+    [TestCase("en/history", "History - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/privacidad", "Política de privacidad - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/privacy", "Privacy policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/cookies", "Política de Cookies - Vive Cortelazor - Sierra de Aracena")]
@@ -25,6 +27,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("", "en", "lang-en")]
     [TestCase("es", "en", "lang-en")]
     [TestCase("en", "es", "lang-es")]
+    [TestCase("es/historia", "en/history", "lang-en")]
+    [TestCase("en/history", "es/historia", "lang-es")]
     [TestCase("es/privacidad", "en/privacy", "lang-en")]
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
@@ -41,6 +45,8 @@ public class ViveCortelazorTests : PageTest
         await Expect(Page).ToHaveURLAsync(new Regex($"{_baseUrl}{target}\\/?$"));
     }
 
+    [TestCase("es/historia", "en/history", "lang-en")]
+    [TestCase("en/history", "es/historia", "lang-es")]
     [TestCase("es/privacidad", "en/privacy", "lang-en")]
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
