@@ -1,19 +1,26 @@
 ﻿@using ViveCortelazor.Extensions
-
 @inject IViewLocalizer Localizer
+@model string
+
+@{
+    // Use the provided ID or fall back to "languages" if not specified
+    var dropdownId = string.IsNullOrEmpty(Model) ? "languages" : Model;
+    var langEs = string.IsNullOrEmpty(Model) ? "lang-es" : $"{Model}-lang-es";
+    var langEn = string.IsNullOrEmpty(Model) ? "lang-en" : $"{Model}-lang-en";
+}
 
 <li class="nav-item dropdown">
-    <a id="languages" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a id="@dropdownId" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         @Localizer[ViewContext.GetLang()]
     </a>
     <ul class="dropdown-menu">
         <li>
-            <a id="lang-es" class="dropdown-item @IsActive("es")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
+            <a id="@langEs" class="dropdown-item @IsActive("es")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
                 Español
             </a>
         </li>
         <li>
-            <a id="lang-en" class="dropdown-item @IsActive("en")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
+            <a id="@langEn" class="dropdown-item @IsActive("en")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
                 English
             </a>
         </li>
