@@ -47,13 +47,19 @@
     </div>
     <div class="row">
         <div class="col-md">
-            <p>@Localizer["Introduction1"]</p>
+            <p>
+                <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
+            </p>
         </div>
         <div class="col-md">
-            <p>@Localizer["Introduction2"]</p>
+            <p>
+                <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
+            </p>
         </div>
         <div class="col-md">
-            <p>@Localizer["Introduction3"]</p>
+            <p>
+                <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
+            </p>
         </div>
     </div>
 
