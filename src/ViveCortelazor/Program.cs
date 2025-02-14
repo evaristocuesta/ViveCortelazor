@@ -60,6 +60,7 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
       new BinResource($"{basePath}/images/fox.svg"),
       new BinResource($"{basePath}/images/cookie-color.svg"),
+      new BinResource($"{basePath}/images/history_cortelazor.jpg"),
       new BinResource($"{basePath}/images/carousel/image1.jpg"),
       new BinResource($"{basePath}/images/carousel/image2.jpg"), 
       new PageResource($"{basePath}/sitemap.xml"),
