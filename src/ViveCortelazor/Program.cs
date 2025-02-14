@@ -49,6 +49,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/"),
       new PageResource($"{basePath}/es"),
       new PageResource($"{basePath}/en"),
+      new PageResource($"{basePath}/es/historia"),
+      new PageResource($"{basePath}/en/history"),
       new PageResource($"{basePath}/es/privacidad"),
       new PageResource($"{basePath}/en/privacy"),
       new PageResource($"{basePath}/es/cookies"),
@@ -94,6 +96,18 @@ app.MapControllerRoute(
     name: "Index-es",
     pattern: "es",
     defaults: new { lang = "es", controller = "Home", action = "Index" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "History-en",
+    pattern: "{lang=en}/history",
+    defaults: new { lang = "en", controller = "Home", action = "History" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "History-es",
+    pattern: "{lang=es}/historia",
+    defaults: new { lang = "es", controller = "Home", action = "History" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
