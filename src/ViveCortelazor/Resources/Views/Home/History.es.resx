@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>Descubre la historia de Cortelazor la Real, un encantador pueblo de la Sierra de Aracena con un rico legado histórico y cultural. Conoce sus orígenes, tradiciones y patrimonio.</value>
+  </data>
   <data name="History" xml:space="preserve">
     <value>Historia</value>
   </data>
   <data name="History Text" xml:space="preserve">
-    <value>![Cortelazor la Real](/images/history_cortelazor.jpg)
+    <value>![Cortelazor la Real](/images/history-cortelazor.jpg)
 
 # Historia de Cortelazor la Real
 
@@ -158,5 +161,8 @@ Otro símbolo del pueblo es su **olmo centenario**, donde antiguamente se celebr
 Hoy en día, [**Cortelazor la Real**](https://www.vivecortelazor.es/es) mantiene su esencia tradicional y su belleza natural, atrayendo a visitantes que buscan tranquilidad y contacto con la naturaleza. Su ubicación privilegiada lo convierte en un destino ideal para el senderismo y el turismo rural. Su economía sigue basándose en la ganadería y el turismo, consolidándose como un tesoro escondido en la Sierra de Huelva.
 
 Con un legado histórico fascinante y un entorno inigualable, [**Cortelazor la Real**](https://www.vivecortelazor.es/es) sigue siendo un destino imprescindible para quienes desean conocer la auténtica vida en la Sierra de Aracena.</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Cortelazor la Real, historia de Cortelazor, Sierra de Aracena, patrimonio, tradiciones, cultura, Huelva, pueblos de Andalucía</value>
   </data>
 </root>
