@@ -2,6 +2,13 @@
 
 @{
     Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+    ViewData["Title"] = "Vive Cortelazor - Sierra de Aracena";
+    ViewData["Keywords"] = Localizer["Keywords"];
+    ViewData["Description"] = Localizer["Description"];
+    ViewData["Image"] = "https://www.vivecortelazor.es/images/carousel/cortelazor1.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "1080";
+    ViewData["Robots"] = "all";
 }
 
 <div class="carousel-header">
@@ -12,7 +19,7 @@
         </div>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img loading="lazy" src="~/images/carousel/image1.jpg" class="img-fluid" alt="Image">
+                <img loading="lazy" src="~/images/carousel/cortelazor1.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="text-center p-4">
                         <img class="z-3 main-logo mb-3 mb-md-4" src="~/images/fox.svg" alt="@Localizer["Cortelazor and Sierra de Aracena"]" />
@@ -21,7 +28,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img loading="lazy" src="~/images/carousel/image2.jpg" class="img-fluid" alt="Image">
+                <img loading="lazy" src="~/images/carousel/cortelazor2.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="text-center p-4">
                         <img class="z-3 main-logo mb-3 mb-md-4" src="~/images/fox.svg" alt="@Localizer["Cortelazor and Sierra de Aracena"]" />

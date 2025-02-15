@@ -3,7 +3,8 @@
 @inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = Localizer["Privacy"];
+    ViewData["Title"] = $"{Localizer["Privacy"].Value} - Vive Cortelazor - Sierra de Aracena";
+    ViewData["Robots"] = "noindex,follow";
 }
 <div class="container">
     <markdown content="@Html.Raw(Localizer["Privacy Text"].Value)"></markdown>

@@ -1,9 +1,13 @@
-﻿@using Markdig
-
-@inject IViewLocalizer Localizer
+﻿@inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = Localizer["History"];
+    ViewData["Title"] = $"{Localizer["History"].Value} - Vive Cortelazor - Sierra de Aracena";
+    ViewData["Keywords"] = Localizer["Keywords"];
+    ViewData["Description"] = Localizer["Description"];
+    ViewData["Image"] = "https://www.vivecortelazor.es/images/history-cortelazor1.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "540";
+    ViewData["Robots"] = "all";
 }
 
 <div class="container">
