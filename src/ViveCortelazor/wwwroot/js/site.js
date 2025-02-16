@@ -67,6 +67,9 @@ window.onload =  function () {
     } else {
         document.getElementById('cookieConsentBanner').style.display = 'block';
     }
+
+    document.getElementById('minimizedConsentBanner').onclick = openConsentBanner;
+    document.getElementById('minimizedConsentBanner').onkeydown = openConsentBanner;
 };
 
 function hideConsentBanner() {

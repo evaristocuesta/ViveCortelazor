@@ -1,7 +1,7 @@
 ﻿@inject IViewLocalizer Localizer
 
 <!-- Cookie Consent Banner -->
-<div id="cookieConsentBanner">
+<div data-nosnippet id="cookieConsentBanner">
     <p>
         <markdown content="@Html.Raw(Localizer["Cookies Text"].Value)"></markdown>
     </p>
@@ -9,19 +9,25 @@
     <!-- Aditional container to align checkboxs -->
     <div class="cookie-group">
         <div class="cookie-options">
-            <input type="checkbox" id="preferencesCookie" name="preferences" />
-            <label for="preferencesCookie"></label>
-            <span>@Localizer["Preferences"]</span>
+            <label for="preferencesCookie" class="custom-switch">
+                <input type="checkbox" id="preferencesCookie" name="preferences" />
+                <span class="switch-slider"></span>
+                <span class="option-text">@Localizer["Preferences"]</span>
+            </label>
         </div>
         <div class="cookie-options">
-            <input type="checkbox" id="statisticalCookie" name="statistical" />
-            <label for="statisticalCookie"></label>
-            <span>@Localizer["Statistical"]</span>
+            <label for="statisticalCookie" class="custom-switch">
+                <input type="checkbox" id="statisticalCookie" name="statistical" />
+                <span class="switch-slider"></span>
+                <span class="option-text">@Localizer["Statistical"]</span>
+            </label>
         </div>
         <div class="cookie-options">
-            <input type="checkbox" id="marketingCookie" name="marketing" />
-            <label for="marketingCookie"></label>
-            <span>@Localizer["Marketing"]</span>
+            <label for="marketingCookie" class="custom-switch">
+                <input type="checkbox" id="marketingCookie" name="marketing" />
+                <span class="switch-slider"></span>
+                <span class="option-text">@Localizer["Marketing"]</span>
+            </label>
         </div>
     </div>
 
@@ -32,6 +38,6 @@
 
 
 <!-- Minimized Banner Button -->
-<div id="minimizedConsentBanner" onclick="openConsentBanner()">
+<div data-nosnippet id="minimizedConsentBanner">
     <img alt="@Localizer["Cookies settings"]" src="~/images/cookie-color.svg" />
 </div>
