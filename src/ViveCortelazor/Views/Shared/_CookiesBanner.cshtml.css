@@ -51,18 +51,23 @@ input[type=checkbox] {
     visibility: hidden;
 }
 
-label {
+.custom-switch {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch-slider {
     width: 50px;
     height: 26px;
     background: grey;
     display: inline-block;
     border-radius: 100px;
     position: relative;
-    margin-right: 8px;
 }
 
-label:after {
+.switch-slider:after {
     content: '';
     position: absolute;
     top: 3px;
@@ -74,19 +79,18 @@ label:after {
     transition: 0.3s;
 }
 
-input:checked + label {
+input:checked + .switch-slider {
     background: #5599ff;
 }
 
-input:checked + label:after {
-    left: calc(100% - 4px);
-    transform: translateX(-100%);
-}
+    input:checked + .switch-slider:after {
+        left: calc(100% - 4px);
+        transform: translateX(-100%);
+    }
 
-.cookie-options label + span {
+.option-text {
     font-size: 16px;
 }
-
 /* Buttons styles */
 .cookie-button {
     cursor: pointer;
@@ -118,5 +122,4 @@ input:checked + label:after {
 .cookie-button:active {
     background: #2a6bb8;
 }
-
 /*** Cookies styles ***/
