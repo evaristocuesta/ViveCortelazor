@@ -31,4 +31,7 @@
 <!-- Icon-->
 <link rel="icon" type="image/svg+xml" href="~/images/fox.svg">
 <!-- Canonical-->
-<link href="@Url.Canonical(ViewContext.RouteData.Values["action"]?.ToString(), @CultureInfo.CurrentCulture.Name)" rel="canonical" />
+<link rel="canonical" href="@Url.Canonical(ViewContext.RouteData.Values["action"]?.ToString(), @CultureInfo.CurrentCulture.Name)" />
+<!-- Languages-->
+<link rel="alternate" hreflang="es" href="@Url.Canonical(ViewContext.RouteData.Values["action"]?.ToString(), "es")" />
+<link rel="alternate" hreflang="en" href="@Url.Canonical(ViewContext.RouteData.Values["action"]?.ToString(), "en")" />

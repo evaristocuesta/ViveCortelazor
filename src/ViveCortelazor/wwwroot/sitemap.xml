@@ -1,64 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.vivecortelazor.es/en</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.vivecortelazor.es/es"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.vivecortelazor.es/en"/>
-    <lastmod>2025-02-15T19:58:52+00:00</lastmod>
+    <lastmod>2025-02-17T19:58:52+00:00</lastmod>
     <priority>1.00</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.vivecortelazor.es/es</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.vivecortelazor.es/es"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.vivecortelazor.es/en"/>
-    <lastmod>2025-02-15T19:58:52+00:00</lastmod>
+    <lastmod>2025-02-17T19:58:52+00:00</lastmod>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.vivecortelazor.es/es/historia</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.vivecortelazor.es/es/historia"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.vivecortelazor.es/en/history"/>
-    <lastmod>2025-02-15T19:58:52+00:00</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2025-02-17T19:58:52+00:00</lastmod>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.vivecortelazor.es/en/history</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.vivecortelazor.es/es/historia"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.vivecortelazor.es/en/history"/>
-    <lastmod>2025-02-15T19:58:52+00:00</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2025-02-17T19:58:52+00:00</lastmod>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
