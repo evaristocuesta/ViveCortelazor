@@ -118,6 +118,21 @@ a.social-icon:hover {
     color: var(--color-palette-dark-1);
 }
 
+.article {
+    max-width: 796px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+@media (max-width: 575px) {
+    .article {
+        padding: 10px;
+    }
+}
+
 /*** Carousel Hero Header Start ***/
 
 .carousel-caption div {
