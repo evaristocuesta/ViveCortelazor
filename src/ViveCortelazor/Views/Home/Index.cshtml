@@ -48,26 +48,27 @@
     </div>
 </div>
 
-<div class="container introduction">
-    <div class="row">
-        <h4 class="text-center">@Localizer["Title"]</h4>
+<div class="container">
+    <div class="introduction">
+        <div class="row">
+            <h4 class="text-center">@Localizer["Title"]</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <p>
+                    <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
+                </p>
+            </div>
+            <div class="col-lg">
+                <p>
+                    <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
+                </p>
+            </div>
+            <div class="col-lg">
+                <p>
+                    <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-md">
-            <p>
-                <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
-            </p>
-        </div>
-        <div class="col-md">
-            <p>
-                <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
-            </p>
-        </div>
-        <div class="col-md">
-            <p>
-                <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
-            </p>
-        </div>
-    </div>
-
 </div>
