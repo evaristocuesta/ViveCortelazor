@@ -52,22 +52,24 @@
     <div class="introduction">
         <div class="row">
             <h4 class="text-center">@Localizer["Title"]</h4>
+            <hr />
         </div>
         <div class="row">
             <div class="col-lg">
+                <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
+                <br />
                 <p>
-                    <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
+                    <img src="~/images/index/cortelazor-trees.jpg" class="img-fluid" alt="@Localizer["Cortelazor Trees"]" title="@Localizer["Cortelazor Trees"]" />
                 </p>
             </div>
             <div class="col-lg">
+                <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
                 <p>
-                    <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
+                    <img src="~/images/index/cortelazor-streets.jpg" class="img-fluid" alt="@Localizer["Cortelazor Streets"]" title="@Localizer["Cortelazor Streets"]" />
                 </p>
             </div>
             <div class="col-lg">
-                <p>
-                    <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
-                </p>
+                <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
             </div>
         </div>
     </div>

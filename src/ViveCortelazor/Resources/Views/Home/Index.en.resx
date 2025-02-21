@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Cortelazor Streets" xml:space="preserve">
+    <value>Cortelazor Streets</value>
+  </data>
+  <data name="Cortelazor Trees" xml:space="preserve">
+    <value>Cortelazor Trees</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Welcome to Vive Cortelazor, where you can find information about the charming village of Cortelazor la Real, located in the heart of the Sierra de Aracena. Enjoy its unique nature, history, and gastronomy.</value>
   </data>
