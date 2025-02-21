@@ -1,4 +1,6 @@
-﻿namespace ViveCortelazor.Tests;
+﻿using System.Net.Http;
+
+namespace ViveCortelazor.Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
@@ -60,6 +62,87 @@ public class ViveCortelazorTests : PageTest
 
         // Expect a url
         await Expect(Page).ToHaveURLAsync(new Regex($"{_baseUrl}{target}\\/?$"));
+    }
+
+    [TestCase("en")]
+    [TestCase("es")]
+    [TestCase("en/history")]
+    [TestCase("es/historia")]
+    [TestCase("es/privacidad")]
+    [TestCase("en/privacy")]
+    [TestCase("es/cookies")]
+    [TestCase("en/cookies")]
+    public async Task VerifyAllImagesExist(string pageUrl)
+    {
+        await Page.GotoAsync(pageUrl);
+
+        var images = await Page.QuerySelectorAllAsync("img");
+
+        var srcs = (await Task.WhenAll(images.Select(async link => await link.GetAttributeAsync("src"))))
+            .Where(href => !string.IsNullOrEmpty(href))
+            .Distinct() 
+            .ToList();
+
+        using var httpClient = new HttpClient();
+
+        foreach (var src in srcs)
+        {
+            if (!string.IsNullOrEmpty(src))
+            {
+                // Ensure the URL is absolute
+                var imageUrl = new Uri(new Uri(_baseUrl), src).ToString();
+
+                // Make the HTTP request and check if the link responds correctly
+                var response = await httpClient.GetAsync(imageUrl);
+                Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{imageUrl} does not exist");
+            }
+        }
+    }
+
+    [TestCase("en")]
+    [TestCase("es")]
+    [TestCase("en/history")]
+    [TestCase("es/historia")]
+    [TestCase("es/privacidad")]
+    [TestCase("en/privacy")]
+    [TestCase("es/cookies")]
+    [TestCase("en/cookies")]
+    public async Task VerifyAllLinksWork(string pageUrl)
+    {
+        await Page.GotoAsync(pageUrl);
+
+        var links = await Page.QuerySelectorAllAsync("a");
+
+        var hrefs = (await Task.WhenAll(links.Select(async link => await link.GetAttributeAsync("href"))))
+            .Where(href => !string.IsNullOrEmpty(href))
+            .Distinct() 
+            .ToList();
+
+
+        using var httpClient = new HttpClient();
+
+        foreach (var href in hrefs)
+        {
+            if (!string.IsNullOrEmpty(href) && 
+                !href.StartsWith('#') && 
+                !href.StartsWith("javascript") &&
+                !href.StartsWith("mailto"))
+            {
+                // Ensure the URL is absolute
+                var linkUrl = new Uri(new Uri(_baseUrl), href).ToString();
+
+                try
+                {
+                    // Make the HTTP request and check if the link responds correctly
+                    var response = await httpClient.GetAsync(linkUrl);
+                    Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{linkUrl} is broken (Status code: {response.StatusCode}).");
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail($"{linkUrl} is broken: {ex.Message}");
+                }
+            }
+        }
     }
 
     public override BrowserNewContextOptions ContextOptions()
