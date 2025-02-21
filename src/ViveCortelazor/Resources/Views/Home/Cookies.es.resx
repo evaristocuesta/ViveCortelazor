@@ -135,7 +135,7 @@ En [**vivecortelazor.es**](/es), solo utilizamos **cookies de análisis**, espec
 Estas cookies nos permiten recopilar datos como el número de visitantes, las páginas más vistas y el tiempo de permanencia en el sitio. La información recopilada es completamente anónima y no permite identificar personalmente a los usuarios.
 
 Nombre | Proveedor | Propósito | Duración
------- | --------- | --------- | ---------  
+------ | --------- | --------- | --------
 _ga | Google Analytics | Distinguir usuarios únicos | 1 año
 _gid | Google Analytics | Diferenciar sesiones | 24 horas  
 _gat | Google Analytics | Limitar la tasa de solicitudes | 1 minuto  
