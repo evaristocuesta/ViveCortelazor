@@ -117,19 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Cortelazor and Sierra de Aracena" xml:space="preserve">
-    <value>Cortelazor and Sierra de Aracena</value>
+  <data name="What to do" xml:space="preserve">
+    <value>Qué hacer</value>
   </data>
-  <data name="Developed by" xml:space="preserve">
-    <value>Developed by</value>
-  </data>
-  <data name="History" xml:space="preserve">
-    <value>History</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Privacy" xml:space="preserve">
-    <value>Privacy</value>
+  <data name="What to do text" xml:space="preserve">
+    <value># Qué hacer en Cortelazor
+---</value>
   </data>
 </root>

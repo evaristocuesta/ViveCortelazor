@@ -132,4 +132,7 @@
   <data name="Privacy" xml:space="preserve">
     <value>Privacidad</value>
   </data>
+  <data name="What to do" xml:space="preserve">
+    <value>Qué hacer</value>
+  </data>
 </root>
