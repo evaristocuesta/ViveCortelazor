@@ -129,12 +129,12 @@
 Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para mejorar la experiencia del usuario, analizar el tráfico del sitio y recordar preferencias.
 
 ## 2. ¿Qué tipos de cookies utilizamos?
-En [**vivecortelazor.es**](https://www.vivecortelazor.es), solo utilizamos **cookies de análisis**, específicamente las de **Google Analytics**. Estas cookies nos ayudan a comprender cómo los visitantes interactúan con nuestra web, recopilando información de manera anónima.
+En [**vivecortelazor.es**](/es), solo utilizamos **cookies de análisis**, específicamente las de **Google Analytics**. Estas cookies nos ayudan a comprender cómo los visitantes interactúan con nuestra web, recopilando información de manera anónima.
 
 ### **Cookies de Google Analytics**
 Estas cookies nos permiten recopilar datos como el número de visitantes, las páginas más vistas y el tiempo de permanencia en el sitio. La información recopilada es completamente anónima y no permite identificar personalmente a los usuarios.
 
-Nombre | Proveedor | Propósito | Duración  
+Nombre | Proveedor | Propósito | Duración
 ------ | --------- | --------- | ---------  
 _ga | Google Analytics | Distinguir usuarios únicos | 1 año
 _gid | Google Analytics | Diferenciar sesiones | 24 horas  

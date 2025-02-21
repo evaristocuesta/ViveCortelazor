@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Cortelazor Streets" xml:space="preserve">
+    <value>Calles de Cortelazor</value>
+  </data>
+  <data name="Cortelazor Trees" xml:space="preserve">
+    <value>Árboles en Cortelazor</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Bienvenido a Vive Cortelazor, donde podrás encontrar información del encantador pueblo de Cortelazor la Real, en pleno corazón de la Sierra de Aracena. Disfruta de su naturaleza, historia y gastronomía únicas.</value>
   </data>
