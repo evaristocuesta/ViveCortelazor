@@ -1,6 +1,6 @@
 # [Vive Cortelazor](https://www.vivecortelazor.es)
 
-![Vive Cortelazor](src/ViveCortelazor/wwwroot/images/history-cortelazor.jpg)
+![Vive Cortelazor](src/ViveCortelazor/wwwroot/images/history/history-cortelazor.jpg)
 
 Welcome to [Vive Cortelazor](https://www.vivecortelazor.es), where you can find information about the charming village of Cortelazor la Real, located in the heart of the Sierra de Aracena. Enjoy its unique nature, history, and gastronomy.
 
