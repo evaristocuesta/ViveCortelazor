@@ -1,0 +1,17 @@
+﻿@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = $"{Localizer["What to do"].Value} - Vive Cortelazor - Sierra de Aracena";
+    ViewData["Keywords"] = Localizer["Keywords"];
+    ViewData["Description"] = Localizer["Description"];
+    ViewData["Image"] = "https://www.vivecortelazor.es/images/history/history-cortelazor.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "540";
+    ViewData["Robots"] = "all";
+}
+
+<div class="container">
+    <div class="article">
+        <markdown content="@Html.Raw(Localizer["What to do text"].Value)"></markdown>
+    </div>
+</div>
