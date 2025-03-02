@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>Descubre qué hacer en Cortelazor la Real - explora sitios históricos como la iglesia del siglo XVI, recorre senderos escénicos hasta el Charco Malo, disfruta de festividades tradicionales durante todo el año y saborea la gastronomía local con carnes de caza y quesos artesanales en este encantador pueblo de la Sierra de Aracena.</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Cortelazor la Real, Sierra de Aracena, Iglesia de Nuestra Señora de los Remedios, rutas de senderismo, Charco Malo, festividades tradicionales, turismo de pueblo español, gastronomía andaluza, Virgen de la Coronada, escapada rural España</value>
+  </data>
   <data name="What to do" xml:space="preserve">
     <value>Qué hacer</value>
   </data>
   <data name="What to do text" xml:space="preserve">
-    <value># Qué hacer en Cortelazor la Real
+    <value># Qué hacer en Cortelazor
 ---
 
 ![Cortelazor la Real](/images/what-to-do/cortelazor.jpg)
