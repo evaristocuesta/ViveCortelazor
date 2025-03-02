@@ -66,7 +66,10 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new BinResource($"{basePath}/images/index/cortelazor-streets.jpg"),
       new BinResource($"{basePath}/images/index/cortelazor-trees.jpg"),
       new BinResource($"{basePath}/images/carousel/cortelazor1.jpg"),
-      new BinResource($"{basePath}/images/carousel/cortelazor2.jpg"), 
+      new BinResource($"{basePath}/images/carousel/cortelazor2.jpg"),
+      new BinResource($"{basePath}/images/what-to-do/cortelazor.jpg"),
+      new BinResource($"{basePath}/images/what-to-do/charco-malo.jpg"),
+      new BinResource($"{basePath}/images/what-to-do/iglesia-nuestra-senora-remedios.jpg"),
       new PageResource($"{basePath}/sitemap.xml"),
       new PageResource($"{basePath}/robots.txt")]
     ));
