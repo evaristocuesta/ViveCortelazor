@@ -123,6 +123,9 @@
   <data name="Developed by" xml:space="preserve">
     <value>Desarrollado por</value>
   </data>
+  <data name="Hiking" xml:space="preserve">
+    <value>Senderismo</value>
+  </data>
   <data name="History" xml:space="preserve">
     <value>Historia</value>
   </data>

@@ -53,6 +53,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/en/history"),
       new PageResource($"{basePath}/es/que-hacer"),
       new PageResource($"{basePath}/en/what-to-do"),
+      new PageResource($"{basePath}/es/senderismo"),
+      new PageResource($"{basePath}/en/hiking"),
       new PageResource($"{basePath}/es/privacidad"),
       new PageResource($"{basePath}/en/privacy"),
       new PageResource($"{basePath}/es/cookies"),
@@ -128,6 +130,18 @@ app.MapControllerRoute(
     name: "WhatToDo-es",
     pattern: "{lang=es}/que-hacer",
     defaults: new { lang = "es", controller = "Home", action = "WhatToDo" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Hiking-en",
+    pattern: "{lang=en}/hiking",
+    defaults: new { lang = "en", controller = "Home", action = "Hiking" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Hiking-es",
+    pattern: "{lang=es}/senderismo",
+    defaults: new { lang = "es", controller = "Home", action = "Hiking" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
