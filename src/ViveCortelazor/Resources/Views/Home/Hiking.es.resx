@@ -117,33 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Cortelazor Streets" xml:space="preserve">
-    <value>Cortelazor Streets</value>
-  </data>
-  <data name="Cortelazor Trees" xml:space="preserve">
-    <value>Cortelazor Trees</value>
-  </data>
   <data name="Description" xml:space="preserve">
-    <value>Welcome to Vive Cortelazor, where you can find information about the charming village of Cortelazor la Real, located in the heart of the Sierra de Aracena. Enjoy its unique nature, history, and gastronomy.</value>
+    <value>Descubre las mejores rutas de senderismo en Cortelazor la Real, en plena Sierra de Aracena. Explora senderos únicos como la Ruta del Charco Malo, un espectacular recorrido entre bosques y arroyos. Naturaleza, aventura y paisajes inolvidables te esperan.</value>
   </data>
-  <data name="Introduction1" xml:space="preserve">
-    <value>Welcome to [**Vive Cortelazor**](/en), the place where you'll find all the information about [**Cortelazor la Real**](/en), a picturesque village in the **Sierra de Aracena and Picos de Aroche**, in the heart of the Natural Park. Surrounded by lush forests of holm oaks and cork trees, this destination is ideal for those seeking tranquility, nature, and tradition.</value>
+  <data name="Hiking" xml:space="preserve">
+    <value>Senderismo</value>
   </data>
-  <data name="Introduction2" xml:space="preserve">
-    <value>Walking through its cobbled streets, you'll discover the essence of mountain architecture, with white houses that contrast with the green of the surrounding fields. The rich heritage of [**Cortelazor**](/en) is reflected in its **18th-century church**, its ancient fountains and washing places, and the numerous [**hiking trails**](/en/hiking) that connect the village with other corners of the sierra.</value>
-  </data>
-  <data name="Introduction3" xml:space="preserve">
-    <value>In addition to its natural beauty, [**Cortelazor**](/en) is a place where **traditional gastronomy** plays a fundamental role. Products derived from **Iberian pork, honey, artisanal cheeses, and mountain stews** are just some of the delicacies you can enjoy in its taverns and bars.
+  <data name="Hiking Text" xml:space="preserve">
+    <value># Senderismo en Cortelazor
+---
 
-If you're looking for an authentic experience in contact with nature, [**history**](/en/history), and culture of the **Sierra de Aracena**, [**Vive Cortelazor**](/en) is your perfect guide to discover everything this wonderful village has to offer.</value>
+![Cortelazor la Real](/images/hiking/hiking.jpg)
+
+Cortelazor la Real, ubicado en pleno Parque Natural Sierra de Aracena y Picos de Aroche, es un destino ideal para los amantes del senderismo. Sus senderos serpentean entre bosques de encinas y alcornoques, arroyos cristalinos y antiguos caminos empedrados que conectan con la historia y la tradición de la zona.
+
+
+
+Entre sus rutas más destacadas, la Ruta del Charco Malo es una de las favoritas, llevando a los senderistas hasta una espectacular poza natural rodeada de un entorno de gran belleza. Ya seas un excursionista experimentado o simplemente quieras disfrutar de un paseo en plena naturaleza, en Cortelazor encontrarás recorridos para todos los niveles.
+
+
+
+![Cortelazor la Real](/images/hiking/charco-malo.jpg)
+
+Y después de una jornada de senderismo, nada mejor que reponer fuerzas disfrutando de la exquisita gastronomía de la Sierra de Aracena en cualquiera de los bares de Cortelazor. Prueba platos tradicionales como el jamón ibérico, el queso de la sierra o las setas de temporada, acompañados de un buen vino o una cerveza bien fría. ¡El mejor final para una ruta inolvidable!
+
+## Charco Malo
+este es el sendero asd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd fasd fasdf asd asd f
+
+## otro sendero
+asdfasdf asdf asd fasd f</value>
   </data>
   <data name="Keywords" xml:space="preserve">
-    <value>Cortelazor la Real, Sierra de Aracena, Travel to Cortelazor, Villages of the Sierra de Aracena, Rural tourism in Cortelazor, Nature in Cortelazor, Hiking in the Sierra de Aracena, Gastronomy of Cortelazor, Historical heritage of Cortelazor, What to see in Cortelazor, Accommodation in Cortelazor, Culture of the Sierra de Aracena, Outdoor activities in Cortelazor, Hiking routes in the Sierra de Aracena, Hiking routes in Cortelazor, Huelva villages, Andalusia, Andalusia villages</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Discover Cortelazor la Real, a charming gem in the Sierra de Aracena</value>
-  </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>senderismo en Cortelazor, rutas de senderismo Sierra de Aracena, Charco Malo Cortelazor, senderismo Huelva, rutas de montaña Andalucía, senderos Sierra de Aracena, naturaleza Cortelazor, senderismo en la Sierra, caminatas Huelva, rutas naturales Cortelazor</value>
   </data>
 </root>
