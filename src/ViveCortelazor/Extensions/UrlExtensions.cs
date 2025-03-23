@@ -13,6 +13,7 @@ public static class UrlExtensions
         }
 
         string? url = urlHelper.RouteUrl($"{routeName}-{language}", new { lang = language });
+        url = url ?? urlHelper.RouteUrl(routeName, new { lang = language });
         return url;
     }
 

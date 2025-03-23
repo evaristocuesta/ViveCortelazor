@@ -1,0 +1,17 @@
+﻿@model ViveCortelazor.Models.PageViewModel
+
+@{
+    ViewData["Title"] = $"{Model.Title} - Vive Cortelazor - Sierra de Aracena";
+    ViewData["Keywords"] = Model.Keywords;
+    ViewData["Description"] = Model.Description;
+    ViewData["Image"] = Model.Image;
+    ViewData["ImageWidth"] = Model.ImageWidth;
+    ViewData["ImageHeight"] = Model.ImageHeight;
+    ViewData["Robots"] = Model.Robots;
+}
+
+<div class="container">
+    <div class="article">
+        <markdown content="@Html.Raw(Model.Text)"></markdown>
+    </div>
+</div>
