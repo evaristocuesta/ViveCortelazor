@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Text.Json;
 using ViveCortelazor.Models;
 
 namespace ViveCortelazor.Controllers;
@@ -17,17 +18,38 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult History()
+    public IActionResult Page(string page)
     {
-        return View();
+        var lang = ControllerContext.RouteData.Values["lang"];
+        string jsonFilePath = Path.Combine("Pages", page, $"data.{lang}.json");
+
+        if (!System.IO.File.Exists(jsonFilePath))
+        {
+            return NotFound();
+        }
+
+        var json = System.IO.File.ReadAllText(jsonFilePath);
+        var viewModel = JsonSerializer.Deserialize<PageViewModel>(json);
+        
+        if (viewModel is null)
+        {
+            return NotFound();
+        }
+
+        string textFilePath = Path.Combine("Pages", page, $"text.{lang}.md");
+        
+        if (!System.IO.File.Exists(textFilePath))
+        {
+            return NotFound();
+        }
+
+        var text = System.IO.File.ReadAllText(textFilePath);
+        viewModel.Text = text;
+
+        return View("Page", viewModel);
     }
 
-    public IActionResult WhatToDo()
-    {
-        return View();
-    }
-
-    public IActionResult Hiking()
+    public IActionResult Blog()
     {
         return View();
     }

@@ -7,17 +7,17 @@
         <div class="row align-items-center">
             <div class="col-sm-12 col-md-4 order-md-2">
                 <p>
-                    <a href="@Url.RouteUrlLang("Index", ViewContext.GetLang())" title="@Localizer["Cortelazor and Sierra de Aracena"]">
+                    <a href="@Url.RouteUrl($"{ViewContext.GetLang()}/index")" title="@Localizer["Cortelazor and Sierra de Aracena"]">
                         <img class="logo-footer" src="~/images/fox.svg" alt="@Localizer["Cortelazor and Sierra de Aracena"]" />
                     </a>
                 </p>
             </div>
 
             <div class="col-sm-12 col-md-4 order-md-1">
-                <p><a href="@Url.RouteUrlLang("Index", ViewContext.GetLang())" title="@Localizer["Cortelazor and Sierra de Aracena"]">@Localizer["Cortelazor and Sierra de Aracena"]</a></p>
+                <p><a href="@Url.RouteUrl($"{ViewContext.GetLang()}/index", ViewContext.GetLang())" title="@Localizer["Cortelazor and Sierra de Aracena"]">@Localizer["Cortelazor and Sierra de Aracena"]</a></p>
                 <p>
-                    <a class="slim" href="@Url.RouteUrlLang("Privacy", ViewContext.GetLang())">@Localizer["Privacy"]</a> - 
-                    <a class="slim" href="@Url.RouteUrlLang("Cookies", ViewContext.GetLang())">@Localizer["Cookies"]</a>
+                    <a class="slim" href="@Url.RouteUrl($"{ViewContext.GetLang()}/privacy")">@Localizer["Privacy"]</a> -
+                    <a class="slim" href="@Url.RouteUrl($"{ViewContext.GetLang()}/cookies")">@Localizer["Cookies"]</a>
                 </p>
             </div>
 

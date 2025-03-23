@@ -43,6 +43,13 @@ builder.Services.AddMvc(opts =>
 var outputPath = args.Length >= 2 ? $"{args[1]}" : string.Empty;
 var basePath = args.Length == 3 ? $"/{args[2]}" : string.Empty;
 
+List<string> staticFiles = [];
+
+foreach (var  file in Directory.GetFiles("wwwroot/images"))
+{
+    staticFiles.Add(file);
+}
+
 builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
   new StaticResourcesInfoProvider(
     [
@@ -99,73 +106,73 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "Index-en",
+    name: "en/index",
     pattern: "en",
     defaults: new { lang = "en", controller = "Home", action = "Index" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Index-es",
+    name: "es/index",
     pattern: "es",
     defaults: new { lang = "es", controller = "Home", action = "Index" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "History-en",
+    name: "en/history",
     pattern: "{lang=en}/history",
-    defaults: new { lang = "en", controller = "Home", action = "History" },
+    defaults: new { lang = "en", controller = "Home", action = "Page", page = "history" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "History-es",
+    name: "es/history",
     pattern: "{lang=es}/historia",
-    defaults: new { lang = "es", controller = "Home", action = "History" },
+    defaults: new { lang = "es", controller = "Home", action = "Page", page = "history" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "WhatToDo-en",
+    name: "en/what-to-do",
     pattern: "{lang=en}/what-to-do",
-    defaults: new { lang = "en", controller = "Home", action = "WhatToDo" },
+    defaults: new { lang = "en", controller = "Home", action = "Page", page = "what-to-do" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "WhatToDo-es",
+    name: "es/what-to-do",
     pattern: "{lang=es}/que-hacer",
-    defaults: new { lang = "es", controller = "Home", action = "WhatToDo" },
+    defaults: new { lang = "es", controller = "Home", action = "Page", page = "what-to-do" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Hiking-en",
+    name: "en/hiking",
     pattern: "{lang=en}/hiking",
-    defaults: new { lang = "en", controller = "Home", action = "Hiking" },
+    defaults: new { lang = "en", controller = "Home", action = "Page", page = "hiking" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Hiking-es",
+    name: "es/hiking",
     pattern: "{lang=es}/senderismo",
-    defaults: new { lang = "es", controller = "Home", action = "Hiking" },
+    defaults: new { lang = "es", controller = "Home", action = "Page", page = "hiking" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Privacy-en",
+    name: "en/privacy",
     pattern: "{lang=en}/privacy",
     defaults: new { lang = "en", controller = "Home", action = "Privacy" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Privacy-es",
+    name: "es/privacy",
     pattern: "{lang=es}/privacidad",
     defaults: new { lang = "es", controller = "Home", action = "Privacy" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Cookies-en",
+    name: "en/cookies",
     pattern: "{lang=en}/cookies",
     defaults: new { lang = "en", controller = "Home", action = "Cookies" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "Cookies-es",
+    name: "es/cookies",
     pattern: "{lang=es}/cookies",
     defaults: new { lang = "es", controller = "Home", action = "Cookies" },
     constraints: new { lang = @"(\w{2})" });
