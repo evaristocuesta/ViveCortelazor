@@ -12,7 +12,7 @@ public class MarkdownTagHelper : TagHelper
         _markdownService = markdownService;
     }
 
-    public string Content { get; set; }
+    public string Content { get; set; } = string.Empty;
 
     public override void Process(TagHelperContext context, TagHelperOutput output)
     {
