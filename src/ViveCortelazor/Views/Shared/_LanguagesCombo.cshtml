@@ -15,12 +15,12 @@
     </a>
     <ul class="dropdown-menu">
         <li>
-            <a id="@langEs" class="dropdown-item @IsActive("es")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
+            <a id="@langEs" class="dropdown-item @IsActive("es")" href="@GetRoute("es")">
                 Español
             </a>
         </li>
         <li>
-            <a id="@langEn" class="dropdown-item @IsActive("en")" href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
+            <a id="@langEn" class="dropdown-item @IsActive("en")" href="@GetRoute("en")">
                 English
             </a>
         </li>
@@ -36,5 +36,19 @@
         }
 
         return string.Empty;
+    }
+
+    string? GetRoute(string lang)
+    {
+        string routeName = string.Empty;
+
+        if (ViewContext.RouteData.Values.ContainsKey("page"))
+        {
+            routeName = $"{lang}/{ViewContext.RouteData.Values["page"]}";
+            return Url.RouteUrlLang(routeName, lang);
+        }
+
+        routeName = $"{lang}/{ViewContext.RouteData.Values["action"]}";
+        return Url.RouteUrlLang(routeName, lang);
     }
 }
