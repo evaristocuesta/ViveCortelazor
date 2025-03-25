@@ -6,6 +6,7 @@ using System.Globalization;
 using ViveCortelazor.Pipelines;
 using AspNetStatic;
 using ViveCortelazor.Services;
+using ViveCortelazor.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,52 +39,15 @@ builder.Services.AddMvc(opts =>
 {
     opts.Filters.Add(new MiddlewareFilterAttribute(typeof(LocalizationPipeline)));
 })
-    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+.AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
 var outputPath = args.Length >= 2 ? $"{args[1]}" : string.Empty;
 var basePath = args.Length == 3 ? $"/{args[2]}" : string.Empty;
 
-List<string> staticFiles = [];
-
-foreach (var  file in Directory.GetFiles("wwwroot/images"))
+if (args.HasExitWhenDoneArg())
 {
-    staticFiles.Add(file);
+    builder.Services.AddSingleton<IStaticResourcesInfoProvider>(new StaticResourcesInfoProvider());
 }
-
-builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
-  new StaticResourcesInfoProvider(
-    [
-      new PageResource($"{basePath}/"),
-      new PageResource($"{basePath}/es"),
-      new PageResource($"{basePath}/en"),
-      new PageResource($"{basePath}/es/historia"),
-      new PageResource($"{basePath}/en/history"),
-      new PageResource($"{basePath}/es/que-hacer"),
-      new PageResource($"{basePath}/en/what-to-do"),
-      new PageResource($"{basePath}/es/senderismo"),
-      new PageResource($"{basePath}/en/hiking"),
-      new PageResource($"{basePath}/es/privacidad"),
-      new PageResource($"{basePath}/en/privacy"),
-      new PageResource($"{basePath}/es/cookies"),
-      new PageResource($"{basePath}/en/cookies"),
-      new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
-      new CssResource($"{basePath}/ViveCortelazor.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
-      new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"),
-      new BinResource($"{basePath}/images/fox.svg"),
-      new BinResource($"{basePath}/images/cookie-color.svg"),
-      new BinResource($"{basePath}/images/history/history-cortelazor.jpg"),
-      new BinResource($"{basePath}/images/index/cortelazor-streets.jpg"),
-      new BinResource($"{basePath}/images/index/cortelazor-trees.jpg"),
-      new BinResource($"{basePath}/images/carousel/cortelazor1.jpg"),
-      new BinResource($"{basePath}/images/carousel/cortelazor2.jpg"),
-      new BinResource($"{basePath}/images/what-to-do/cortelazor.jpg"),
-      new BinResource($"{basePath}/images/what-to-do/charco-malo.jpg"),
-      new BinResource($"{basePath}/images/hiking/hiking.jpg"),
-      new BinResource($"{basePath}/images/hiking/charco-malo.jpg"),
-      new BinResource($"{basePath}/images/what-to-do/iglesia-nuestra-senora-remedios.jpg"),
-      new PageResource($"{basePath}/sitemap.xml"),
-      new PageResource($"{basePath}/robots.txt")]
-    ));
 
 builder.Services.AddSingleton<IMarkdownService, MarkdownService>();
 
@@ -119,71 +83,74 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "en/history",
-    pattern: "{lang=en}/history",
+    pattern: "en/history",
     defaults: new { lang = "en", controller = "Home", action = "Page", page = "history" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "es/history",
-    pattern: "{lang=es}/historia",
+    pattern: "es/historia",
     defaults: new { lang = "es", controller = "Home", action = "Page", page = "history" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "en/what-to-do",
-    pattern: "{lang=en}/what-to-do",
+    pattern: "en/what-to-do",
     defaults: new { lang = "en", controller = "Home", action = "Page", page = "what-to-do" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "es/what-to-do",
-    pattern: "{lang=es}/que-hacer",
+    pattern: "es/que-hacer",
     defaults: new { lang = "es", controller = "Home", action = "Page", page = "what-to-do" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "en/hiking",
-    pattern: "{lang=en}/hiking",
+    pattern: "en/hiking",
     defaults: new { lang = "en", controller = "Home", action = "Page", page = "hiking" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "es/hiking",
-    pattern: "{lang=es}/senderismo",
+    pattern: "es/senderismo",
     defaults: new { lang = "es", controller = "Home", action = "Page", page = "hiking" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "en/privacy",
-    pattern: "{lang=en}/privacy",
+    pattern: "en/privacy",
     defaults: new { lang = "en", controller = "Home", action = "Privacy" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "es/privacy",
-    pattern: "{lang=es}/privacidad",
+    pattern: "es/privacidad",
     defaults: new { lang = "es", controller = "Home", action = "Privacy" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "en/cookies",
-    pattern: "{lang=en}/cookies",
+    pattern: "en/cookies",
     defaults: new { lang = "en", controller = "Home", action = "Cookies" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "es/cookies",
-    pattern: "{lang=es}/cookies",
+    pattern: "es/cookies",
     defaults: new { lang = "es", controller = "Home", action = "Cookies" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{lang=es}/{controller=Home}/{action=Index}/{id?}",
+    name: "/",
+    pattern: "/",
+    defaults: new { lang = "es", controller = "Home", action = "Index" },
     constraints: new { lang = @"(\w{2})" });
 
 if (args.HasExitWhenDoneArg())
 {
+    app.ConfigureAspNetStatic(basePath, outputPath);
+
     if (!Path.Exists(outputPath))
     {
         Console.WriteLine($"Creating directory {outputPath}");
