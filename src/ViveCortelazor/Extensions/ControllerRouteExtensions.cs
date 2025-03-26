@@ -54,7 +54,7 @@ public static class ControllerRouteExtensions
             foreach (var file in  Directory.GetFiles(directory, "data.*.json"))
             {
                 var json = System.IO.File.ReadAllText(file);
-                var viewModel = JsonSerializer.Deserialize<PageViewModel>(json);
+                var viewModel = JsonSerializer.Deserialize<ContentViewModel>(json);
 
                 if (viewModel is null)
                 {
@@ -67,6 +67,28 @@ public static class ControllerRouteExtensions
                     name: $"{viewModel.Language}/{pageName}",
                     pattern: $"{viewModel.Language}/{viewModel.Slug}",
                     defaults: new { lang = viewModel.Language, controller = "Home", action = "Page", page = pageName },
+                    constraints: new { lang = @"(\w{2})" });
+            }
+        }
+
+        foreach (var directory in Directory.GetDirectories("Blog"))
+        {
+            foreach (var file in Directory.GetFiles(directory, "data.*.json"))
+            {
+                var json = System.IO.File.ReadAllText(file);
+                var viewModel = JsonSerializer.Deserialize<ContentViewModel>(json);
+
+                if (viewModel is null)
+                {
+                    throw new InvalidOperationException($"Error deserializing {file}");
+                }
+
+                string postName = directory.Replace($"Blog{Path.DirectorySeparatorChar}", "");
+
+                app.MapControllerRoute(
+                    name: $"{viewModel.Language}/blog/{postName}",
+                    pattern: $"{viewModel.Language}/blog/{viewModel.Slug}",
+                    defaults: new { lang = viewModel.Language, controller = "Home", action = "Post", post = postName },
                     constraints: new { lang = @"(\w{2})" });
             }
         }

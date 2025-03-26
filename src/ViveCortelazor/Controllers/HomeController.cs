@@ -2,14 +2,19 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Text.Json;
 using ViveCortelazor.Models;
+using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Controllers;
 public class HomeController : Controller
 {
+    private readonly IContentService _contentService;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(
+        IContentService contentService,
+        ILogger<HomeController> logger)
     {
+        _contentService = contentService;
         _logger = logger;
     }
 
@@ -20,38 +25,27 @@ public class HomeController : Controller
 
     public IActionResult Page(string page)
     {
-        var lang = ControllerContext.RouteData.Values["lang"];
-        string jsonFilePath = Path.Combine("Pages", page, $"data.{lang}.json");
+        var viewModel = _contentService.GetContent(
+            "Pages", 
+            page, 
+            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");
 
-        if (!System.IO.File.Exists(jsonFilePath))
-        {
-            return NotFound();
-        }
-
-        var json = System.IO.File.ReadAllText(jsonFilePath);
-        var viewModel = JsonSerializer.Deserialize<PageViewModel>(json);
-        
-        if (viewModel is null)
-        {
-            return NotFound();
-        }
-
-        string textFilePath = Path.Combine("Pages", page, $"text.{lang}.md");
-        
-        if (!System.IO.File.Exists(textFilePath))
-        {
-            return NotFound();
-        }
-
-        var text = System.IO.File.ReadAllText(textFilePath);
-        viewModel.Text = text;
-
-        return View("Page", viewModel);
+        return View(viewModel);
     }
 
-    public IActionResult Blog()
+    public IActionResult Blog(int page = 1)
     {
         return View();
+    }
+
+    public IActionResult Post(string post)
+    {
+        var viewModel = _contentService.GetContent(
+            "Blog",
+            post,
+            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");
+
+        return View(viewModel);
     }
 
     public IActionResult Privacy()
