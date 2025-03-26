@@ -3,6 +3,8 @@
 public class PageViewModel
 {
     public required string Title { get; set; }
+    public required string Slug { get; set; }
+    public required string Language { get; set; }
     public string? Text { get; set; }
     public required string Keywords { get; set; }
     public required string Description { get; set; }
