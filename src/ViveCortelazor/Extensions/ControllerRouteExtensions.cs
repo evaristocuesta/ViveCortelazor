@@ -61,7 +61,7 @@ public static class ControllerRouteExtensions
                     throw new InvalidOperationException($"Error deserializing {file}");
                 }
 
-                string pageName = directory.Replace("Pages\\", "");
+                string pageName = directory.Replace($"Pages{Path.DirectorySeparatorChar}", "");
 
                 app.MapControllerRoute(
                     name: $"{viewModel.Language}/{pageName}",
