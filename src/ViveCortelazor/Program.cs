@@ -50,6 +50,7 @@ if (args.HasExitWhenDoneArg())
 }
 
 builder.Services.AddSingleton<IMarkdownService, MarkdownService>();
+builder.Services.AddSingleton<IContentService, ContentService>();
 
 var app = builder.Build();
 
