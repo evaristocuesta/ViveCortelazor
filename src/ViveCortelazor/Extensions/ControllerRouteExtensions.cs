@@ -71,6 +71,18 @@ public static class ControllerRouteExtensions
             }
         }
 
+        app.MapControllerRoute(
+                    name: $"es/blog",
+                    pattern: $"es/blog",
+                    defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = 1 },
+                    constraints: new { lang = @"(\w{2})" });
+
+        app.MapControllerRoute(
+            name: $"en/blog",
+            pattern: $"en/blog",
+            defaults: new { lang = "en", controller = "Blog", action = "Blog", pageNumber = 1 },
+            constraints: new { lang = @"(\w{2})" });
+
         foreach (var directory in Directory.GetDirectories("Blog"))
         {
             foreach (var file in Directory.GetFiles(directory, "data.*.json"))
