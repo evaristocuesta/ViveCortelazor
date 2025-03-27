@@ -48,6 +48,12 @@
             return Url.RouteUrlLang(routeName, lang);
         }
 
+        if (ViewContext.RouteData.Values.ContainsKey("post"))
+        {
+            routeName = $"{lang}/blog/{ViewContext.RouteData.Values["post"]}";
+            return Url.RouteUrlLang(routeName, lang);
+        }
+
         routeName = $"{lang}/{ViewContext.RouteData.Values["action"]}";
         return Url.RouteUrlLang(routeName, lang);
     }
