@@ -1,5 +1,6 @@
 ﻿@using ViveCortelazor.Extensions
-@model IReadOnlyList<ViveCortelazor.Models.ContentViewModel>
+@inject IViewLocalizer Localizer
+@model PagedList<ViveCortelazor.Models.ContentViewModel>
 
 @{
     ViewData["Title"] = $"Blog - Vive Cortelazor - Sierra de Aracena";
@@ -11,27 +12,50 @@
     // ViewData["Robots"] = Model.Robots;
 }
 
-<div class="container">
-    @foreach (var post in Model)
+<div class="container blog">
+    @foreach (var post in Model.Items)
     {
         <div class="row post mb-4">
             <div class="col-md-4">
-                <a class="nav-link" href="blog/@post.Slug">
+                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
                     <img src="@post.Image" class="img-fluid post-image rounded" alt="@post.Title">
                 </a>
             </div>
             <div class="col-md-8">
                 <h2>
-                    <a class="nav-link" href="blog/@post.Slug">
+                    <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
                         @post.Title
                     </a>
                 </h2>
                 <p class="text-muted">
-                    <a class="nav-link" href="blog/@post.Slug">
+                    <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
                         @post.Description
                     </a>
                 </p>
             </div>
         </div>
     }
+
+    <div class="row mt-4">
+        <div class="col-12 d-flex justify-content-between">
+            @if (Model.HasNextPage)
+            {
+                <a href="/@ViewContext.GetLang()/blog/@(Model.Page + 1)" class="btn pagination-button rounded py-2 px-3">
+                    <i class="bi bi-arrow-left me-2"></i>@Localizer["Previous"]
+                </a>
+            }
+            else
+            {
+                <div class="flex-grow-1"></div>
+            }
+
+
+            @if (Model.HasPreviousPage)
+            {
+                <a href="/@ViewContext.GetLang()/blog/@(Model.Page - 1)" class="btn pagination-button rounded py-2 px-3">
+                    @Localizer["Next"]<i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            }
+        </div>
+    </div>
 </div>

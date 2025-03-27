@@ -13,9 +13,10 @@ public class BlogController : Controller
 
     public IActionResult Blog(int pageNumber = 1)
     {
-        var posts = _contentService.GetContentList(
+        var posts = _contentService.GetPagedContentList(
             "Blog",
-            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");
+            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es", 
+            pageNumber);
 
         return View(posts);
     }

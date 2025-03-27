@@ -31,6 +31,7 @@ public class ContentService : IContentService
 
         var text = File.ReadAllText(textFilePath);
         viewModel.Text = text;
+        viewModel.Name = content;
 
         return viewModel;
     }
@@ -48,6 +49,22 @@ public class ContentService : IContentService
             contentList.Add(content);
         }
 
-        return contentList;
+        return contentList
+            .OrderByDescending(c => c.Date)
+            .ToList();
+    }
+
+    public PagedList<ContentViewModel> GetPagedContentList(string contentDirectory, string lang, int page = 1, int pageSize = 10)
+    {
+        var contentList = GetContentList(contentDirectory, lang);
+
+        var totalCount = contentList.Count;
+
+        var pagedContentList = contentList
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+
+        return new PagedList<ContentViewModel>(pagedContentList, page, pageSize, totalCount);
     }
 }
