@@ -66,7 +66,7 @@ public static class ControllerRouteExtensions
                 app.MapControllerRoute(
                     name: $"{viewModel.Language}/{pageName}",
                     pattern: $"{viewModel.Language}/{viewModel.Slug}",
-                    defaults: new { lang = viewModel.Language, controller = "Home", action = "Page", page = pageName },
+                    defaults: new { lang = viewModel.Language, controller = "Page", action = "Page", page = pageName },
                     constraints: new { lang = @"(\w{2})" });
             }
         }
@@ -88,7 +88,7 @@ public static class ControllerRouteExtensions
                 app.MapControllerRoute(
                     name: $"{viewModel.Language}/blog/{postName}",
                     pattern: $"{viewModel.Language}/blog/{viewModel.Slug}",
-                    defaults: new { lang = viewModel.Language, controller = "Home", action = "Post", post = postName },
+                    defaults: new { lang = viewModel.Language, controller = "Blog", action = "Post", post = postName },
                     constraints: new { lang = @"(\w{2})" });
             }
         }
