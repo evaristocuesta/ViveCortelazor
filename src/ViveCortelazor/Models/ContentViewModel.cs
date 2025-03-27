@@ -2,6 +2,7 @@
 
 public class ContentViewModel
 {
+    public string Name { get; set; } = string.Empty;
     public required string Title { get; set; }
     public DateOnly Date { get; set; }
     public required string Slug { get; set; }
@@ -17,8 +18,9 @@ public class ContentViewModel
 
     public static ContentViewModel ContentError => new()
     {
+        Name = "Error",
         Title = "Error",
-        Date = DateOnly.FromDateTime(DateTime.Now),
+        Date = DateOnly.FromDateTime(DateTime.UtcNow),
         Slug = "error",
         Language = "en",
         Text = "An error occurred.",

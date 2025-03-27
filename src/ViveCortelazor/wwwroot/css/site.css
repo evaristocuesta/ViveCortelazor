@@ -133,6 +133,12 @@ a.social-icon:hover {
     }
 }
 
+.blog {
+    max-width: 796px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .post {
     max-width: 796px;
     margin-left: auto;
@@ -165,6 +171,18 @@ a.social-icon:hover {
         margin-bottom: calc(var(--bs-gutter-x)* .5);
         object-fit: cover;
     }
+}
+
+.pagination-button {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #e9ecef;
+    color: #495057;
 }
 
 /*** Carousel Hero Header Start ***/

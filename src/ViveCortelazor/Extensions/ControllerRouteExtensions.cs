@@ -1,11 +1,12 @@
 ﻿using System.Text.Json;
 using ViveCortelazor.Models;
+using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Extensions;
 
 public static class ControllerRouteExtensions
 {
-    public static void AddControllerRoutes(this IEndpointRouteBuilder app)
+    public static void AddControllerRoutes(this WebApplication app)
     {
         app.MapControllerRoute(
             name: "en/index",
@@ -49,26 +50,28 @@ public static class ControllerRouteExtensions
             defaults: new { lang = "es", controller = "Home", action = "Index" },
             constraints: new { lang = @"(\w{2})" });
 
-        foreach (var directory in Directory.GetDirectories("Pages"))
+        var contentService = app.Services.GetRequiredService<IContentService>();
+
+        var pages = contentService.GetContentList("Pages", "es");
+
+        foreach (var page in pages)
         {
-            foreach (var file in  Directory.GetFiles(directory, "data.*.json"))
-            {
-                var json = System.IO.File.ReadAllText(file);
-                var viewModel = JsonSerializer.Deserialize<ContentViewModel>(json);
+            app.MapControllerRoute(
+                name: $"es/{page.Name}",
+                pattern: $"es/{page.Slug}",
+                defaults: new { lang = "es", controller = "Page", action = "Page", page = page.Name },
+                constraints: new { lang = @"(\w{2})" });
+        }
 
-                if (viewModel is null)
-                {
-                    throw new InvalidOperationException($"Error deserializing {file}");
-                }
+        pages = contentService.GetContentList("Pages", "en");
 
-                string pageName = directory.Replace($"Pages{Path.DirectorySeparatorChar}", "");
-
-                app.MapControllerRoute(
-                    name: $"{viewModel.Language}/{pageName}",
-                    pattern: $"{viewModel.Language}/{viewModel.Slug}",
-                    defaults: new { lang = viewModel.Language, controller = "Page", action = "Page", page = pageName },
-                    constraints: new { lang = @"(\w{2})" });
-            }
+        foreach (var page in pages)
+        {
+            app.MapControllerRoute(
+                name: $"en/{page.Name}",
+                pattern: $"en/{page.Slug}",
+                defaults: new { lang = "en", controller = "Page", action = "Page", page = page.Name },
+                constraints: new { lang = @"(\w{2})" });
         }
 
         app.MapControllerRoute(
@@ -83,26 +86,43 @@ public static class ControllerRouteExtensions
             defaults: new { lang = "en", controller = "Blog", action = "Blog", pageNumber = 1 },
             constraints: new { lang = @"(\w{2})" });
 
-        foreach (var directory in Directory.GetDirectories("Blog"))
+        var posts = contentService.GetContentList("Blog", "es");
+
+        foreach (var post in posts)
         {
-            foreach (var file in Directory.GetFiles(directory, "data.*.json"))
-            {
-                var json = System.IO.File.ReadAllText(file);
-                var viewModel = JsonSerializer.Deserialize<ContentViewModel>(json);
+            app.MapControllerRoute(
+                name: $"es/blog/{post.Name}",
+                pattern: $"es/blog/{post.Slug}",
+                defaults: new { lang = "es", controller = "Blog", action = "Post", post = post.Name },
+                constraints: new { lang = @"(\w{2})" });
+        }
 
-                if (viewModel is null)
-                {
-                    throw new InvalidOperationException($"Error deserializing {file}");
-                }
+        posts = contentService.GetContentList("Blog", "en");
 
-                string postName = directory.Replace($"Blog{Path.DirectorySeparatorChar}", "");
+        foreach (var post in posts)
+        {
+            app.MapControllerRoute(
+                name: $"en/blog/{post.Name}",
+                pattern: $"en/blog/{post.Slug}",
+                defaults: new { lang = "en", controller = "Blog", action = "Post", post = post.Name },
+                constraints: new { lang = @"(\w{2})" });
+        }
 
-                app.MapControllerRoute(
-                    name: $"{viewModel.Language}/blog/{postName}",
-                    pattern: $"{viewModel.Language}/blog/{viewModel.Slug}",
-                    defaults: new { lang = viewModel.Language, controller = "Blog", action = "Post", post = postName },
+        int numPagesPosts = (posts.Count / 10) + 1;
+
+        foreach (var page in Enumerable.Range(1, numPagesPosts))
+        {
+            app.MapControllerRoute(
+                    name: $"es/blog/{page}",
+                    pattern: $"es/blog/{page}",
+                    defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = page },
                     constraints: new { lang = @"(\w{2})" });
-            }
+
+            app.MapControllerRoute(
+                name: $"en/blog/{page}",
+                pattern: $"en/blog/{page}",
+                defaults: new { lang = "en", controller = "Blog", action = "Blog", pageNumber = page },
+                constraints: new { lang = @"(\w{2})" });
         }
     }
 }

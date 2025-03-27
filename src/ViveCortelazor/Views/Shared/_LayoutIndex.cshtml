@@ -45,7 +45,7 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.GetLang())">
+                <a class="navbar-brand" href="@Url.RouteUrl($"{ViewContext.GetLang()}/index")">
                     <img class="logo-navbar" src="~/images/fox.svg" alt="Cortelazor - Sierra de Aracena" />
                     Vive Cortelazor
                 </a>

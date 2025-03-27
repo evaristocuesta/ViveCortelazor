@@ -40,21 +40,11 @@
 
     string? GetRoute(string lang)
     {
-        string routeName = string.Empty;
-
-        if (ViewContext.RouteData.Values.ContainsKey("page"))
+        var routeValueDictionary = new RouteValueDictionary(ViewContext.RouteData.Values)
         {
-            routeName = $"{lang}/{ViewContext.RouteData.Values["page"]}";
-            return Url.RouteUrlLang(routeName, lang);
-        }
+            ["lang"] = lang
+        };
 
-        if (ViewContext.RouteData.Values.ContainsKey("post"))
-        {
-            routeName = $"{lang}/blog/{ViewContext.RouteData.Values["post"]}";
-            return Url.RouteUrlLang(routeName, lang);
-        }
-
-        routeName = $"{lang}/{ViewContext.RouteData.Values["action"]}";
-        return Url.RouteUrlLang(routeName, lang);
+        return Url.RouteUrl(routeValueDictionary);
     }
 }
