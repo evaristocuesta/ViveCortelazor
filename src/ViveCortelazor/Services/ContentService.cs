@@ -9,12 +9,12 @@ public class ContentService : IContentService
     {
         string jsonFilePath = Path.Combine(directory, content, $"data.{lang}.json");
 
-        if (!System.IO.File.Exists(jsonFilePath))
+        if (!File.Exists(jsonFilePath))
         {
             return ContentViewModel.ContentError;
         }
 
-        var json = System.IO.File.ReadAllText(jsonFilePath);
+        var json = File.ReadAllText(jsonFilePath);
         var viewModel = JsonSerializer.Deserialize<ContentViewModel>(json);
 
         if (viewModel is null)
@@ -24,14 +24,30 @@ public class ContentService : IContentService
 
         string textFilePath = Path.Combine(directory, content, $"text.{lang}.md");
 
-        if (!System.IO.File.Exists(textFilePath))
+        if (!File.Exists(textFilePath))
         {
             return ContentViewModel.ContentError;
         }
 
-        var text = System.IO.File.ReadAllText(textFilePath);
+        var text = File.ReadAllText(textFilePath);
         viewModel.Text = text;
 
         return viewModel;
+    }
+
+    public IReadOnlyList<ContentViewModel> GetContentList(string contentDirectory, string lang)
+    {
+        List<ContentViewModel> contentList = new();
+
+        foreach (var directory in Directory.GetDirectories(contentDirectory))
+        {
+            ContentViewModel content = GetContent(
+                contentDirectory, 
+                directory.Replace($"{contentDirectory}{Path.DirectorySeparatorChar}", string.Empty),
+                lang);
+            contentList.Add(content);
+        }
+
+        return contentList;
     }
 }

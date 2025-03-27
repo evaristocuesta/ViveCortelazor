@@ -133,6 +133,40 @@ a.social-icon:hover {
     }
 }
 
+.post {
+    max-width: 796px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+@media (max-width: 575px) {
+    .post {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.post-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 767px) {
+    .post-image {
+        width: 100%;
+        height: auto;
+        margin-top: calc(var(--bs-gutter-x)* .5);
+        margin-bottom: calc(var(--bs-gutter-x)* .5);
+        object-fit: cover;
+    }
+}
+
 /*** Carousel Hero Header Start ***/
 
 .carousel-caption div {
