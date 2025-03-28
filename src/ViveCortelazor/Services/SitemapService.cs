@@ -66,14 +66,14 @@ public class SitemapService : ISitemapService
 
         foreach (var page in pages)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/es/{page.Slug}", page.Date.ToDateTime(TimeOnly.MinValue), "monthly", 0.8));
+            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/es/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
         }
 
         pages = _contentService.GetContentList("Pages", "en");
 
         foreach (var page in pages)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/en/{page.Slug}", page.Date.ToDateTime(TimeOnly.MinValue), "monthly", 0.8));
+            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/en/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
         }
 
         return sitemapUrls;
@@ -91,14 +91,14 @@ public class SitemapService : ISitemapService
 
         foreach (var post in posts)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/es/blog/{post.Slug}", post.Date.ToDateTime(TimeOnly.MinValue), "monthly", 0.7));
+            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/es/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
 
         posts = _contentService.GetContentList("Blog", "en");
 
         foreach (var post in posts)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/en/blog/{post.Slug}", post.Date.ToDateTime(TimeOnly.MinValue), "monthly", 0.7));
+            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/en/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
 
         int numPagesPosts = (int)Math.Ceiling((double)posts.Count / 10);
