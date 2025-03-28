@@ -4,21 +4,14 @@ using ViveCortelazor.Models;
 using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Controllers;
-public class HomeController : Controller
+public class HomeController(IContentService contentService) : Controller
 {
-    private readonly IContentService _contentService;
-
-    public HomeController(IContentService contentService)
-    {
-        _contentService = contentService;
-    }
-
     public IActionResult Index()
     {
-        var posts = _contentService
+        var posts = contentService
             .GetContentList("Blog", ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es")
             .Take(3);
-        
+
         return View(posts);
     }
 

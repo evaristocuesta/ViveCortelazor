@@ -2,20 +2,14 @@
 using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Controllers;
-public class BlogController : Controller
+public class BlogController(IContentService contentService) : Controller
 {
-    private readonly IContentService _contentService;
-
-    public BlogController(IContentService contentService)
-    {
-        _contentService = contentService;
-    }
 
     public IActionResult Blog(int pageNumber = 1)
     {
-        var posts = _contentService.GetPagedContentList(
+        var posts = contentService.GetPagedContentList(
             "Blog",
-            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es", 
+            ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es",
             pageNumber);
 
         return View(posts);
@@ -23,7 +17,7 @@ public class BlogController : Controller
 
     public IActionResult Post(string post)
     {
-        var viewModel = _contentService.GetContent(
+        var viewModel = contentService.GetContent(
             "Blog",
             post,
             ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");

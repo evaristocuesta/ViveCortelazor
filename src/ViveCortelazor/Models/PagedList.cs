@@ -4,7 +4,7 @@ public class PagedList<T>
 {
     public PagedList()
     {
-        
+
     }
 
     public PagedList(IReadOnlyList<T> items, int page, int pageSize, int totalCount)

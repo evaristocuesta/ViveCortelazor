@@ -1,6 +1,4 @@
-﻿using System.Net.Http;
-
-namespace ViveCortelazor.Tests;
+﻿namespace ViveCortelazor.Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
@@ -96,7 +94,7 @@ public class ViveCortelazorTests : PageTest
 
         var srcs = (await Task.WhenAll(images.Select(async link => await link.GetAttributeAsync("src"))))
             .Where(href => !string.IsNullOrEmpty(href))
-            .Distinct() 
+            .Distinct()
             .ToList();
 
         using var httpClient = new HttpClient();
@@ -135,7 +133,7 @@ public class ViveCortelazorTests : PageTest
 
         var hrefs = (await Task.WhenAll(links.Select(async link => await link.GetAttributeAsync("href"))))
             .Where(href => !string.IsNullOrEmpty(href))
-            .Distinct() 
+            .Distinct()
             .ToList();
 
 
@@ -143,8 +141,8 @@ public class ViveCortelazorTests : PageTest
 
         foreach (var href in hrefs)
         {
-            if (!string.IsNullOrEmpty(href) && 
-                !href.StartsWith('#') && 
+            if (!string.IsNullOrEmpty(href) &&
+                !href.StartsWith('#') &&
                 !href.StartsWith("javascript") &&
                 !href.StartsWith("mailto"))
             {
