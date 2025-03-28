@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value>Descubre las últimas noticias, eventos y curiosidades de Cortelazor la Real. Mantente informado sobre la vida en este hermoso pueblo de la Sierra de Aracena.</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Cortelazor, noticias Cortelazor, blog Cortelazor, eventos Cortelazor, Sierra de Aracena, turismo rural, cultura, tradición, actualidad, Vive Cortelazor</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Siguiente</value>
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Anterior</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Blog y Noticias</value>
   </data>
 </root>
