@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using ViveCortelazor.Models;
-using ViveCortelazor.Services;
+﻿using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Extensions;
 
@@ -8,6 +6,11 @@ public static class ControllerRouteExtensions
 {
     public static void AddControllerRoutes(this WebApplication app)
     {
+        app.MapControllerRoute(
+            name: "sitemap",
+            pattern: "sitemap.xml",
+            defaults: new { controller = "Sitemap", action = "Index" });
+
         app.MapControllerRoute(
             name: "en/index",
             pattern: "en",
@@ -52,33 +55,18 @@ public static class ControllerRouteExtensions
 
         var contentService = app.Services.GetRequiredService<IContentService>();
 
-        var pages = contentService.GetContentList("Pages", "es");
+        AddPages(app, contentService);
 
-        foreach (var page in pages)
-        {
-            app.MapControllerRoute(
-                name: $"es/{page.Name}",
-                pattern: $"es/{page.Slug}",
-                defaults: new { lang = "es", controller = "Page", action = "Page", page = page.Name },
-                constraints: new { lang = @"(\w{2})" });
-        }
+        AddBlog(app, contentService);
+    }
 
-        pages = contentService.GetContentList("Pages", "en");
-
-        foreach (var page in pages)
-        {
-            app.MapControllerRoute(
-                name: $"en/{page.Name}",
-                pattern: $"en/{page.Slug}",
-                defaults: new { lang = "en", controller = "Page", action = "Page", page = page.Name },
-                constraints: new { lang = @"(\w{2})" });
-        }
-
+    private static void AddBlog(WebApplication app, IContentService contentService)
+    {
         app.MapControllerRoute(
-                    name: $"es/blog",
-                    pattern: $"es/blog",
-                    defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = 1 },
-                    constraints: new { lang = @"(\w{2})" });
+            name: $"es/blog",
+            pattern: $"es/blog",
+            defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = 1 },
+            constraints: new { lang = @"(\w{2})" });
 
         app.MapControllerRoute(
             name: $"en/blog",
@@ -108,20 +96,45 @@ public static class ControllerRouteExtensions
                 constraints: new { lang = @"(\w{2})" });
         }
 
-        int numPagesPosts = (posts.Count / 10) + 1;
+        int numPagesPosts = (int)Math.Ceiling((double)posts.Count / 10);
 
         foreach (var page in Enumerable.Range(1, numPagesPosts))
         {
             app.MapControllerRoute(
-                    name: $"es/blog/{page}",
-                    pattern: $"es/blog/{page}",
-                    defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = page },
-                    constraints: new { lang = @"(\w{2})" });
+                name: $"es/blog/{page}",
+                pattern: $"es/blog/{page}",
+                defaults: new { lang = "es", controller = "Blog", action = "Blog", pageNumber = page },
+                constraints: new { lang = @"(\w{2})" });
 
             app.MapControllerRoute(
                 name: $"en/blog/{page}",
                 pattern: $"en/blog/{page}",
                 defaults: new { lang = "en", controller = "Blog", action = "Blog", pageNumber = page },
+                constraints: new { lang = @"(\w{2})" });
+        }
+    }
+
+    private static void AddPages(WebApplication app, IContentService contentService)
+    {
+        var pages = contentService.GetContentList("Pages", "es");
+
+        foreach (var page in pages)
+        {
+            app.MapControllerRoute(
+                name: $"es/{page.Name}",
+                pattern: $"es/{page.Slug}",
+                defaults: new { lang = "es", controller = "Page", action = "Page", page = page.Name },
+                constraints: new { lang = @"(\w{2})" });
+        }
+
+        pages = contentService.GetContentList("Pages", "en");
+
+        foreach (var page in pages)
+        {
+            app.MapControllerRoute(
+                name: $"en/{page.Name}",
+                pattern: $"en/{page.Slug}",
+                defaults: new { lang = "en", controller = "Page", action = "Page", page = page.Name },
                 constraints: new { lang = @"(\w{2})" });
         }
     }
