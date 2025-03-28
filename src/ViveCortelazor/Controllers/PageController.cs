@@ -2,18 +2,11 @@
 using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Controllers;
-public class PageController : Controller
+public class PageController(IContentService contentService) : Controller
 {
-    private readonly IContentService _contentService;
-
-    public PageController(IContentService contentService)
-    {
-        _contentService = contentService;
-    }
-
     public IActionResult Page(string page)
     {
-        var viewModel = _contentService.GetContent(
+        var viewModel = contentService.GetContent(
             "Pages",
             page,
             ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");

@@ -1,12 +1,12 @@
+using AspNetStatic;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
-using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
-using ViveCortelazor.Pipelines;
-using AspNetStatic;
-using ViveCortelazor.Services;
 using ViveCortelazor.Extensions;
+using ViveCortelazor.Pipelines;
+using ViveCortelazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -43,7 +43,7 @@ public class ContentService : IContentService
         foreach (var directory in Directory.GetDirectories(contentDirectory))
         {
             ContentViewModel content = GetContent(
-                contentDirectory, 
+                contentDirectory,
                 directory.Replace($"{contentDirectory}{Path.DirectorySeparatorChar}", string.Empty),
                 lang);
             contentList.Add(content);
