@@ -1,13 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ViveCortelazor.Models;
+using ViveCortelazor.Services;
 
 namespace ViveCortelazor.Controllers;
 public class HomeController : Controller
 {
+    private readonly IContentService _contentService;
+
+    public HomeController(IContentService contentService)
+    {
+        _contentService = contentService;
+    }
+
     public IActionResult Index()
     {
-        return View();
+        var posts = _contentService
+            .GetContentList("Blog", ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es")
+            .Take(3);
+        
+        return View(posts);
     }
 
     public IActionResult Privacy()
