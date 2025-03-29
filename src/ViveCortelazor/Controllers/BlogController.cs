@@ -8,7 +8,7 @@ public class BlogController(IContentService contentService) : Controller
     public IActionResult Blog(int pageNumber = 1)
     {
         var posts = contentService.GetPagedContentList(
-            "Blog",
+            "Content/Blog",
             ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es",
             pageNumber);
 
@@ -18,7 +18,7 @@ public class BlogController(IContentService contentService) : Controller
     public IActionResult Post(string post)
     {
         var viewModel = contentService.GetContent(
-            "Blog",
+            "Content/Blog",
             post,
             ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");
 

@@ -49,14 +49,14 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
     {
         List<SitemapUrl> sitemapUrls = [];
 
-        var pages = contentService.GetContentList("Pages", "es");
+        var pages = contentService.GetContentList("Content/Pages", "es");
 
         foreach (var page in pages)
         {
             sitemapUrls.Add(new SitemapUrl($"{_host}/es/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
         }
 
-        pages = contentService.GetContentList("Pages", "en");
+        pages = contentService.GetContentList("Content/Pages", "en");
 
         foreach (var page in pages)
         {
@@ -70,14 +70,14 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
     {
         List<SitemapUrl> sitemapUrls = new();
 
-        var posts = contentService.GetContentList("Blog", "es");
+        var posts = contentService.GetContentList("Content/Blog", "es");
 
         foreach (var post in posts)
         {
             sitemapUrls.Add(new($"{_host}/es/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
 
-        posts = contentService.GetContentList("Blog", "en");
+        posts = contentService.GetContentList("Content/Blog", "en");
 
         foreach (var post in posts)
         {

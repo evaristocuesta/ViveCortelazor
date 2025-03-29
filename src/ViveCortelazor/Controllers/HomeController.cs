@@ -9,7 +9,7 @@ public class HomeController(IContentService contentService) : Controller
     public IActionResult Index()
     {
         var posts = contentService
-            .GetContentList("Blog", ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es")
+            .GetContentList("Content/Blog", ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es")
             .Take(3);
 
         return View(posts);
