@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -8,10 +8,10 @@
 
   <ItemGroup>
     <None Update="Content\Pages\**\*.md">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Content\Blog\**\*.md">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   
@@ -21,11 +21,10 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Content\Blog\" />
     <Folder Include="Content\Pages\" />
   </ItemGroup>
-
-  <Target Name="CleanContentDirectories" BeforeTargets="Build">
+  
+  <Target Name="CleanContentDirectories" AfterTargets="BeforeCompile">
     <RemoveDir Directories="$(OutputPath)Content\Pages;$(OutputPath)Content\Blog" />
     <MakeDir Directories="$(OutputPath)Content\Pages;$(OutputPath)Content\Blog" />
   </Target>
