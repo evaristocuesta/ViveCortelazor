@@ -126,6 +126,12 @@
   <data name="Description" xml:space="preserve">
     <value>Bienvenido a Vive Cortelazor, donde podrás encontrar información del encantador pueblo de Cortelazor la Real, en pleno corazón de la Sierra de Aracena. Disfruta de su naturaleza, historia y gastronomía únicas.</value>
   </data>
+  <data name="Hiking" xml:space="preserve">
+    <value>Senderismo</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Historia</value>
+  </data>
   <data name="Introduction1" xml:space="preserve">
     <value>Bienvenido a [**Vive Cortelazor**](/es), el lugar donde encontrarás toda la información sobre [**Cortelazor la Real**](/es), un pintoresco pueblo de la **Sierra de Aracena y Picos de Aroche**, en pleno Parque Natural. Rodeado de frondosos bosques de encinas y alcornoques, este destino es ideal para quienes buscan tranquilidad, naturaleza y tradición.</value>
   </data>
@@ -148,5 +154,8 @@ Si buscas una experiencia auténtica en contacto con la naturaleza, la [**histor
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>
+  </data>
+  <data name="What to do" xml:space="preserve">
+    <value>Qué hacer</value>
   </data>
 </root>

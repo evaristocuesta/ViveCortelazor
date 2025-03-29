@@ -19,6 +19,10 @@
     padding-top: 0px;
 }
 
+.smaller-text {
+    font-size: 1.5rem;
+}
+
 @media (min-width: 992px) {
     .post-home hr {
         display: none;

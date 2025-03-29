@@ -126,6 +126,12 @@
   <data name="Description" xml:space="preserve">
     <value>Welcome to Vive Cortelazor, where you can find information about the charming village of Cortelazor la Real, located in the heart of the Sierra de Aracena. Enjoy its unique nature, history, and gastronomy.</value>
   </data>
+  <data name="Hiking" xml:space="preserve">
+    <value>Hiking</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
   <data name="Introduction1" xml:space="preserve">
     <value>Welcome to [**Vive Cortelazor**](/en), the place where you'll find all the information about [**Cortelazor la Real**](/en), a picturesque village in the **Sierra de Aracena and Picos de Aroche**, in the heart of the Natural Park. Surrounded by lush forests of holm oaks and cork trees, this destination is ideal for those seeking tranquility, nature, and tradition.</value>
   </data>
@@ -148,5 +154,8 @@ If you're looking for an authentic experience in contact with nature, [**history
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
+  </data>
+  <data name="What to do" xml:space="preserve">
+    <value>What to do</value>
   </data>
 </root>
