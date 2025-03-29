@@ -74,7 +74,7 @@ public static class ControllerRouteExtensions
             defaults: new { lang = "en", controller = "Blog", action = "Blog", pageNumber = 1 },
             constraints: new { lang = @"(\w{2})" });
 
-        var posts = contentService.GetContentList("Blog", "es");
+        var posts = contentService.GetContentList("Content/Blog", "es");
 
         foreach (var post in posts)
         {
@@ -85,7 +85,7 @@ public static class ControllerRouteExtensions
                 constraints: new { lang = @"(\w{2})" });
         }
 
-        posts = contentService.GetContentList("Blog", "en");
+        posts = contentService.GetContentList("Content/Blog", "en");
 
         foreach (var post in posts)
         {
@@ -116,7 +116,7 @@ public static class ControllerRouteExtensions
 
     private static void AddPages(WebApplication app, IContentService contentService)
     {
-        var pages = contentService.GetContentList("Pages", "es");
+        var pages = contentService.GetContentList("Content/Pages", "es");
 
         foreach (var page in pages)
         {
@@ -127,7 +127,7 @@ public static class ControllerRouteExtensions
                 constraints: new { lang = @"(\w{2})" });
         }
 
-        pages = contentService.GetContentList("Pages", "en");
+        pages = contentService.GetContentList("Content/Pages", "en");
 
         foreach (var page in pages)
         {

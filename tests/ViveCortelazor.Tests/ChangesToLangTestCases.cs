@@ -11,11 +11,11 @@ internal class ChangesToLangTestCases : IEnumerable
     public IEnumerator GetEnumerator()
     {
         var esPosts = _contentService
-            .GetContentList("Blog", "es")
+            .GetContentList("Content/Blog", "es")
             .ToDictionary(k => k.Name, k => k);
         
         var enPosts = _contentService
-            .GetContentList("Blog", "en")
+            .GetContentList("Content/Blog", "en")
             .ToDictionary(k => k.Name, k => k);
 
         foreach (var post in esPosts.Values)
@@ -29,11 +29,11 @@ internal class ChangesToLangTestCases : IEnumerable
         }
 
         var esPages = _contentService
-            .GetContentList("Pages", "es")
+            .GetContentList("Content/Pages", "es")
             .ToDictionary(k => k.Name, k => k);
 
         var enPages = _contentService
-            .GetContentList("Pages", "en")
+            .GetContentList("Content/Pages", "en")
             .ToDictionary(k => k.Name, k => k);
 
         foreach (var page in esPages.Values)

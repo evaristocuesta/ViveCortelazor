@@ -7,7 +7,7 @@ public class PageController(IContentService contentService) : Controller
     public IActionResult Page(string page)
     {
         var viewModel = contentService.GetContent(
-            "Pages",
+            "Content/Pages",
             page,
             ControllerContext.RouteData.Values["lang"]?.ToString() ?? "es");
 
