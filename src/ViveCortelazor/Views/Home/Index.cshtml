@@ -51,37 +51,40 @@
 </div>
 
 <div class="container">
-    <div class="posts">
-        <div class="row">
-            <h4>@Localizer["Last posts"]</h4>
-            <hr />
-        </div>
-        <div class="row">
-            @foreach (var post in Model)
-            {
-                <div class="col-lg post-home">
-                    <div class="row mb-2">
-                        <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                            <img src="@post.Image" class="img-fluid rounded" alt="@post.Title">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <h2>
+    @if (Model.Count > 0)
+    {
+        <div class="posts">
+            <div class="row">
+                <h4 class="text-center">@Localizer["Latest posts"]</h4>
+                <hr />
+            </div>
+            <div class="row">
+                @foreach (var post in Model)
+                {
+                    <div class="col-lg post-home">
+                        <div class="row mb-2">
                             <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                @post.Title
+                                <img src="@post.Image" class="img-fluid rounded" alt="@post.Title">
                             </a>
-                        </h2>
-                        <p class="text-muted">
-                            <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                @post.Description
-                            </a>
-                        </p>
+                        </div>
+                        <div class="row">
+                            <h2>
+                                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
+                                    @post.Title
+                                </a>
+                            </h2>
+                            <p class="text-muted">
+                                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
+                                    @post.Description
+                                </a>
+                            </p>
+                        </div>
+                        <hr />
                     </div>
-                    <hr />
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
+    }
     <div class="introduction">
         <div class="row">
             <h4 class="text-center">@Localizer["Title"]</h4>
