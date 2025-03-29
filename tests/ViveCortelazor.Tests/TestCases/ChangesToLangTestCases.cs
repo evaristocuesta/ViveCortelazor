@@ -1,8 +1,7 @@
-﻿using Microsoft.Extensions.Hosting;
-using System.Collections;
+﻿using System.Collections;
 using ViveCortelazor.Services;
 
-namespace ViveCortelazor.Tests;
+namespace ViveCortelazor.Tests.TestCases;
 
 internal class ChangesToLangTestCases : IEnumerable
 {
