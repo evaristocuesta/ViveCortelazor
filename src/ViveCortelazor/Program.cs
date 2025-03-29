@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using ViveCortelazor.Extensions;
+using ViveCortelazor.Options;
 using ViveCortelazor.Pipelines;
 using ViveCortelazor.Services;
 
@@ -12,6 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.Configure<WebSettings>(
+    builder.Configuration.GetSection("WebSettings"));
 
 var supportedCultures = new[]
 {
