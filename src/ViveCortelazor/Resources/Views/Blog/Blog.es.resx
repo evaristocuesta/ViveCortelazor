@@ -126,6 +126,9 @@
   <data name="Next" xml:space="preserve">
     <value>Siguiente</value>
   </data>
+  <data name="No blog posts available" xml:space="preserve">
+    <value>No hay posts en el blog</value>
+  </data>
   <data name="Previous" xml:space="preserve">
     <value>Anterior</value>
   </data>

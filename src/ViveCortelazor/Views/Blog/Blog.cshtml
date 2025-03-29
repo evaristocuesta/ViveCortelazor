@@ -13,49 +13,58 @@
 }
 
 <div class="container blog">
-    @foreach (var post in Model.Items)
+    @if (Model.Items.Count > 0)
     {
-        <div class="row post mb-4">
-            <div class="col-md-4">
-                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                    <img src="@post.Image" class="img-fluid post-image rounded" alt="@post.Title">
-                </a>
+        @foreach (var post in Model.Items)
+        {
+            <div class="row post mb-4">
+                <div class="col-md-4">
+                    <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
+                        <img src="@post.Image" class="img-fluid post-image rounded" alt="@post.Title">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2>
+                        <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
+                            @post.Title
+                        </a>
+                    </h2>
+                    <p class="text-muted">
+                        <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
+                            @post.Description
+                        </a>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h2>
-                    <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                        @post.Title
+        }
+
+        <div class="row mt-4">
+            <div class="col-12 d-flex justify-content-between">
+                @if (Model.HasNextPage)
+                {
+                    <a href="/@ViewContext.GetLang()/blog/@(Model.Page + 1)" class="btn pagination-button rounded py-2 px-3">
+                        <i class="fas fa-angle-left"></i>&nbsp;@Localizer["Previous"]
                     </a>
-                </h2>
-                <p class="text-muted">
-                    <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                        @post.Description
+                }
+                else
+                {
+                    <div class="flex-grow-1"></div>
+                }
+
+
+                @if (Model.HasPreviousPage)
+                {
+                    <a href="/@ViewContext.GetLang()/blog/@(Model.Page - 1)" class="btn pagination-button rounded py-2 px-3">
+                        @Localizer["Next"]&nbsp;<i class="fas fa-angle-right"></i>
                     </a>
-                </p>
+                }
             </div>
         </div>
     }
-
-    <div class="row mt-4">
-        <div class="col-12 d-flex justify-content-between">
-            @if (Model.HasNextPage)
-            {
-                <a href="/@ViewContext.GetLang()/blog/@(Model.Page + 1)" class="btn pagination-button rounded py-2 px-3">
-                    <i class="fas fa-angle-left"></i>&nbsp;@Localizer["Previous"]
-                </a>
-            }
-            else
-            {
-                <div class="flex-grow-1"></div>
-            }
-
-
-            @if (Model.HasPreviousPage)
-            {
-                <a href="/@ViewContext.GetLang()/blog/@(Model.Page - 1)" class="btn pagination-button rounded py-2 px-3">
-                    @Localizer["Next"]&nbsp;<i class="fas fa-angle-right"></i>
-                </a>
-            }
+    else
+    {
+        <div class="row">
+            <h4>@Localizer["No blog posts available"]</h4>
         </div>
-    </div>
+    }
 </div>
