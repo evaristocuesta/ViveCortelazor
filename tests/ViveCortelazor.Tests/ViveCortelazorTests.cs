@@ -1,4 +1,6 @@
-﻿namespace ViveCortelazor.Tests;
+﻿using ViveCortelazor.Tests.TestCases;
+
+namespace ViveCortelazor.Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
