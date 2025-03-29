@@ -68,11 +68,7 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
 
     private List<SitemapUrl> AddBlog()
     {
-        var sitemapUrls = new List<SitemapUrl>
-        {
-            new($"{_host}/en/blog", DateTime.UtcNow, "monthly", 0.7),
-            new($"{_host}/es/blog", DateTime.UtcNow, "monthly", 0.7)
-        };
+        List<SitemapUrl> sitemapUrls = new();
 
         var posts = contentService.GetContentList("Blog", "es");
 
@@ -87,6 +83,9 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
         {
             sitemapUrls.Add(new($"{_host}/en/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
+
+        sitemapUrls.Add(new($"{_host}/en/blog", DateTime.UtcNow, "monthly", 0.7));
+        sitemapUrls.Add(new($"{_host}/es/blog", DateTime.UtcNow, "monthly", 0.7));
 
         int numPagesPosts = (int)Math.Ceiling((double)posts.Count / 10);
 
