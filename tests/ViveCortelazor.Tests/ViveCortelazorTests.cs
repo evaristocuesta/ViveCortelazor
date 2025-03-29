@@ -10,16 +10,11 @@ public class ViveCortelazorTests : PageTest
     [TestCase("", "Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es", "Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en", "Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("es/historia", "Historia - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("en/history", "History - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("es/que-hacer", "Qué hacer - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("en/what-to-do", "What to do - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("es/senderismo", "Senderismo - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("en/hiking", "Hiking - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/privacidad", "Política de privacidad - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/privacy", "Privacy policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/cookies", "Política de Cookies - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/cookies", "Cookies policy - Vive Cortelazor - Sierra de Aracena")]
+    [TestCaseSource(typeof(HasTitleAsyncTestCases))]
     public async Task HasTitleAsync(string url, string title)
     {
         await Page.GotoAsync(url);
@@ -31,16 +26,11 @@ public class ViveCortelazorTests : PageTest
     [TestCase("", "en", "lang-en")]
     [TestCase("es", "en", "lang-en")]
     [TestCase("en", "es", "lang-es")]
-    [TestCase("es/historia", "en/history", "lang-en")]
-    [TestCase("en/history", "es/historia", "lang-es")]
-    [TestCase("es/que-hacer", "en/what-to-do", "lang-en")]
-    [TestCase("en/what-to-do", "es/que-hacer", "lang-es")]
-    [TestCase("es/senderismo", "en/hiking", "lang-en")]
-    [TestCase("en/hiking", "es/senderismo", "lang-es")]
     [TestCase("es/privacidad", "en/privacy", "lang-en")]
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
+    [TestCaseSource(typeof(ChangesToLangTestCases))]
     public async Task ChangesToLangFromOffcanvasAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
@@ -53,16 +43,11 @@ public class ViveCortelazorTests : PageTest
         await Expect(Page).ToHaveURLAsync(new Regex($"{_baseUrl}{target}\\/?$"));
     }
 
-    [TestCase("es/historia", "en/history", "lang-en")]
-    [TestCase("en/history", "es/historia", "lang-es")]
-    [TestCase("es/que-hacer", "en/what-to-do", "lang-en")]
-    [TestCase("en/what-to-do", "es/que-hacer", "lang-es")]
-    [TestCase("es/senderismo", "en/hiking", "lang-en")]
-    [TestCase("en/hiking", "es/senderismo", "lang-es")]
     [TestCase("es/privacidad", "en/privacy", "lang-en")]
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
+    [TestCaseSource(typeof(ChangesToLangTestCases))]
     public async Task ChangesToLangFromHorizontalMenuAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
@@ -76,16 +61,11 @@ public class ViveCortelazorTests : PageTest
 
     [TestCase("en")]
     [TestCase("es")]
-    [TestCase("en/history")]
-    [TestCase("es/historia")]
-    [TestCase("en/what-to-do")]
-    [TestCase("es/que-hacer")]
-    [TestCase("en/hiking")]
-    [TestCase("es/senderismo")]
     [TestCase("es/privacidad")]
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllImagesExist(string pageUrl)
     {
         await Page.GotoAsync(pageUrl);
@@ -115,16 +95,11 @@ public class ViveCortelazorTests : PageTest
 
     [TestCase("en")]
     [TestCase("es")]
-    [TestCase("en/history")]
-    [TestCase("es/historia")]
-    [TestCase("en/what-to-do")]
-    [TestCase("es/que-hacer")]
-    [TestCase("en/hiking")]
-    [TestCase("es/senderismo")]
     [TestCase("es/privacidad")]
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllLinksWork(string pageUrl)
     {
         await Page.GotoAsync(pageUrl);

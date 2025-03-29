@@ -24,6 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\ViveCortelazor\ViveCortelazor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Microsoft.Playwright" />
     <Using Include="Microsoft.Playwright.NUnit" />
     <Using Include="NUnit.Framework" />
