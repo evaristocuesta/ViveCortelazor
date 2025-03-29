@@ -4,14 +4,14 @@ namespace ViveCortelazor.Extensions;
 
 public static class UrlExtensions
 {
-    public static string Canonical(this IUrlHelper urlHelper, RouteData routeData, string? language)
+    public static string Canonical(this IUrlHelper urlHelper, string host, RouteData routeData, string? language)
     {
         var routeParams = new RouteValueDictionary(routeData.Values)
         {
             ["lang"] = language
         };
 
-        var url = $"https://www.vivecortelazor.es{urlHelper.RouteUrl(routeParams)}";
+        var url = $"{host}{urlHelper.RouteUrl(routeParams)}";
         return url;
     }
 }

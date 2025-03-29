@@ -1,5 +1,15 @@
 ﻿@using System.Globalization
+@using Microsoft.Extensions.Options
 @using ViveCortelazor.Extensions
+@using ViveCortelazor.Options
+
+@inject IOptions<WebSettings> WebSettings
+
+@{
+    string currentCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, @CultureInfo.CurrentCulture.Name);
+    string esCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "es");
+    string enCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "en");
+}
 
 <title>@ViewData["Title"]</title>
 <meta name="description" content="@ViewData["Description"]" />
@@ -16,7 +26,7 @@
 <meta name="twitter:description" content="@ViewData["Description"]" />
 <meta name="twitter:image" content="@ViewData["Image"]" />
 <!-- Facebook Meta Tags-->
-<meta property="og:url" content="@Url.Canonical(ViewContext.RouteData, @CultureInfo.CurrentCulture.Name)" />
+<meta property="og:url" content="@currentCanonical" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="@ViewData["Title"]" />
 <meta property="og:site_name" content="Vive Cortelazor - Sierra de Aracena" />
@@ -31,7 +41,7 @@
 <!-- Icon-->
 <link rel="icon" type="image/svg+xml" href="~/images/fox.svg">
 <!-- Canonical-->
-<link rel="canonical" href="@Url.Canonical(ViewContext.RouteData, @CultureInfo.CurrentCulture.Name)" />
+<link rel="canonical" href="@currentCanonical" />
 <!-- Languages-->
-<link rel="alternate" hreflang="es" href="@Url.Canonical(ViewContext.RouteData, "es")" />
-<link rel="alternate" hreflang="en" href="@Url.Canonical(ViewContext.RouteData, "en")" />
+<link rel="alternate" hreflang="es" href="@esCanonical" />
+<link rel="alternate" hreflang="en" href="@enCanonical" />

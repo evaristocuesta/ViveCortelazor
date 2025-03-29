@@ -1,10 +1,12 @@
-﻿using System.Xml.Linq;
+﻿using Microsoft.Extensions.Options;
+using System.Xml.Linq;
+using ViveCortelazor.Options;
 
 namespace ViveCortelazor.Services;
 
-public class SitemapService(IContentService contentService) : ISitemapService
+public class SitemapService(IContentService contentService, IOptions<WebSettings> options) : ISitemapService
 {
-    private const string BASE_URL = "https://www.vivecortelazor.es";
+    private readonly string _host = options.Value.Host;
 
     public XDocument GetSitemap()
     {
@@ -34,12 +36,12 @@ public class SitemapService(IContentService contentService) : ISitemapService
         public double Priority { get; set; } = Priority;
     }
 
-    private static List<SitemapUrl> AddHomeRoutes()
+    private List<SitemapUrl> AddHomeRoutes()
     {
         return
         [
-            new($"{BASE_URL}/en", DateTime.UtcNow, "monthly", 1.0),
-            new($"{BASE_URL}/es", DateTime.UtcNow, "monthly", 1.0)
+            new($"{_host}/en", DateTime.UtcNow, "monthly", 1.0),
+            new($"{_host}/es", DateTime.UtcNow, "monthly", 1.0)
         ];
     }
 
@@ -51,14 +53,14 @@ public class SitemapService(IContentService contentService) : ISitemapService
 
         foreach (var page in pages)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/es/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
+            sitemapUrls.Add(new SitemapUrl($"{_host}/es/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
         }
 
         pages = contentService.GetContentList("Pages", "en");
 
         foreach (var page in pages)
         {
-            sitemapUrls.Add(new SitemapUrl($"{BASE_URL}/en/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
+            sitemapUrls.Add(new SitemapUrl($"{_host}/en/{page.Slug}", DateTime.UtcNow, "monthly", 0.8));
         }
 
         return sitemapUrls;
@@ -68,30 +70,30 @@ public class SitemapService(IContentService contentService) : ISitemapService
     {
         var sitemapUrls = new List<SitemapUrl>
         {
-            new($"{BASE_URL}/en/blog", DateTime.UtcNow, "monthly", 0.7),
-            new($"{BASE_URL}/es/blog", DateTime.UtcNow, "monthly", 0.7)
+            new($"{_host}/en/blog", DateTime.UtcNow, "monthly", 0.7),
+            new($"{_host}/es/blog", DateTime.UtcNow, "monthly", 0.7)
         };
 
         var posts = contentService.GetContentList("Blog", "es");
 
         foreach (var post in posts)
         {
-            sitemapUrls.Add(new($"{BASE_URL}/es/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
+            sitemapUrls.Add(new($"{_host}/es/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
 
         posts = contentService.GetContentList("Blog", "en");
 
         foreach (var post in posts)
         {
-            sitemapUrls.Add(new($"{BASE_URL}/en/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
+            sitemapUrls.Add(new($"{_host}/en/blog/{post.Slug}", DateTime.UtcNow, "monthly", 0.7));
         }
 
         int numPagesPosts = (int)Math.Ceiling((double)posts.Count / 10);
 
         foreach (var page in Enumerable.Range(2, numPagesPosts - 1))
         {
-            sitemapUrls.Add(new($"{BASE_URL}/es/blog/{page}", DateTime.UtcNow, "monthly", 0.6));
-            sitemapUrls.Add(new($"{BASE_URL}/en/blog/{page}", DateTime.UtcNow, "monthly", 0.6));
+            sitemapUrls.Add(new($"{_host}/es/blog/{page}", DateTime.UtcNow, "monthly", 0.6));
+            sitemapUrls.Add(new($"{_host}/en/blog/{page}", DateTime.UtcNow, "monthly", 0.6));
         }
 
         return sitemapUrls;
