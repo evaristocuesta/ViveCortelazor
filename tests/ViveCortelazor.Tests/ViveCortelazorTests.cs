@@ -25,6 +25,24 @@ public class ViveCortelazorTests : PageTest
         await Expect(Page).ToHaveTitleAsync(title);
     }
 
+    [Test]
+    [TestCaseSource(typeof(MetaTagsTestCases))]
+    public async Task VerifyMetaTagsAsync(string url, string expectedCanonical, Dictionary<string, string> expectedAlternates)
+    {
+        await Page.GotoAsync(url);
+
+        // Verify canonical link
+        var canonicalLink = await Page.GetAttributeAsync("link[rel='canonical']", "href");
+        Assert.That(canonicalLink, Is.EqualTo(expectedCanonical), $"Canonical link mismatch for {url}");
+
+        // Verify alternate links
+        foreach (var alternate in expectedAlternates)
+        {
+            var alternateLink = await Page.GetAttributeAsync($"link[rel='alternate'][hreflang='{alternate.Key}']", "href");
+            Assert.That(alternateLink, Is.EqualTo(alternate.Value), $"Alternate link mismatch for {url} and hreflang {alternate.Key}");
+        }
+    }
+
     [TestCase("", "en", "lang-en")]
     [TestCase("es", "en", "lang-en")]
     [TestCase("en", "es", "lang-es")]
