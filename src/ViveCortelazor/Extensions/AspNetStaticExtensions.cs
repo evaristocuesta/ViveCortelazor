@@ -59,7 +59,7 @@ public static class AspNetStaticExtensions
 
     private static void AddStaticResources(StaticResourcesInfoProvider staticResourcesProvider, string basePath)
     {
-        staticResourcesProvider.Add(new CssResource($"{basePath}/ViveCortelazor.styles.css"));
+        AddPartialCss(staticResourcesProvider, basePath);
 
         foreach (var file in Directory.GetFiles("wwwroot/", "*.*", SearchOption.AllDirectories))
         {
@@ -81,6 +81,11 @@ public static class AspNetStaticExtensions
                     break;
             }
         }
+    }
+
+    private static void AddPartialCss(StaticResourcesInfoProvider staticResourcesProvider, string basePath)
+    {
+        staticResourcesProvider.Add(new CssResource($"{basePath}/ViveCortelazor.styles.css"));
     }
 
     static class ResourceFactory

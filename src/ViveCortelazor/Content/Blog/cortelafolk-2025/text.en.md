@@ -11,7 +11,7 @@ The **festival** is born from the joint effort of **neighbors, local institution
 
 Following the success of the inaugural edition, which featured outstanding performances by traditional groups and received an excellent response from the public, **Cortelafolk** aims to position itself as a reference event in the regional **folk music** scene. This year's program has been significantly expanded, offering a complete cultural experience with diverse activities for all audiences.
 
-![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpeg)
+![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpg)
 
 ## Program
 
