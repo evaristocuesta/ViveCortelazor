@@ -11,7 +11,7 @@ El **festival** nace del esfuerzo conjunto entre **vecinos, instituciones locale
 
 Tras el éxito de la edición inaugural, que contó con destacadas actuaciones de grupos tradicionales y una excelente respuesta del público, **Cortelafolk** aspira a posicionarse como un evento de referencia en el panorama de la **música folk** regional. La programación de este año se ha ampliado significativamente, ofreciendo una experiencia cultural completa con diversas actividades para todos los públicos.
 
-![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpeg)
+![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpg)
 
 ## Programación
 
