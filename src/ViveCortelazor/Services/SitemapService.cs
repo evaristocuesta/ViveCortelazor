@@ -16,7 +16,7 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
 
         return new XDocument(
             new XDeclaration("1.0", "utf-8", "yes"),
-            new XElement(XName.Get("urlset", "http://www.sitemaps.org/schemas/sitemap/0.9"),
+            new XElement("urlset",
                 new XAttribute(XNamespace.Xmlns + "xsi", "http://www.w3.org/2001/XMLSchema-instance"),
                 urls.Select(url => new XElement("url",
                     new XElement("loc", url.Loc),
