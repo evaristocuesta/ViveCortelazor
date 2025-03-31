@@ -59,6 +59,8 @@ public static class AspNetStaticExtensions
 
     private static void AddStaticResources(StaticResourcesInfoProvider staticResourcesProvider, string basePath)
     {
+        staticResourcesProvider.Add(new CssResource($"{basePath}/ViveCortelazor.styles.css"));
+
         foreach (var file in Directory.GetFiles("wwwroot/", "*.*", SearchOption.AllDirectories))
         {
             var resource = ResourceFactory.CreateResource($"{basePath}{file.Replace("wwwroot", "").Replace(Path.DirectorySeparatorChar, '/')}");
