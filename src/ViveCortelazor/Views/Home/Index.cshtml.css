@@ -19,6 +19,11 @@
     padding-top: 0px;
 }
 
+.post-home img {
+    max-height: 200px;
+    border-radius: 12px;
+}
+
 .smaller-text {
     font-size: 1.5rem;
 }

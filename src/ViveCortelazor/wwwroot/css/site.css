@@ -169,7 +169,8 @@ a.social-icon:hover {
 
 @media (max-width: 767px) {
     .post-image {
-        width: 100%;
+
+        max-height: 200px;
         height: auto;
         margin-top: calc(var(--bs-gutter-x)* .5);
         margin-bottom: calc(var(--bs-gutter-x)* .5);
