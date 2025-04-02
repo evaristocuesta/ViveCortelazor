@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
-using System;
+﻿using Microsoft.Extensions.Options;
 using System.Xml.Linq;
 using ViveCortelazor.Options;
 
