@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
+using System;
 using System.Xml.Linq;
 using ViveCortelazor.Options;
 
@@ -14,15 +16,16 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
         urls.AddRange(AddPages());
         urls.AddRange(AddBlog());
 
+        XNamespace xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9";
+
         return new XDocument(
-            new XDeclaration("1.0", "utf-8", "yes"),
-            new XElement("urlset",
-                new XAttribute(XNamespace.Xmlns + "xsi", "http://www.w3.org/2001/XMLSchema-instance"),
-                urls.Select(url => new XElement("url",
-                    new XElement("loc", url.Loc),
-                    new XElement("lastmod", url.LastMod.ToString("yyyy-MM-ddTHH:mm:ssZ")),
-                    new XElement("changefreq", url.ChangeFreq),
-                    new XElement("priority", url.Priority)
+            new XDeclaration("1.0", "utf-8", null),
+            new XElement(xmlns + "urlset", new XAttribute("xmlns", xmlns),
+                urls.Select(url => new XElement(xmlns + "url",
+                    new XElement(xmlns + "loc", url.Loc),
+                    new XElement(xmlns + "lastmod", url.LastMod.ToString("yyyy-MM-ddTHH:mm:ssZ")),
+                    new XElement(xmlns + "changefreq", url.ChangeFreq),
+                    new XElement(xmlns + "priority", url.Priority)
                 ))
             )
         );
