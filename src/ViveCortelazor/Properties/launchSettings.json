@@ -28,6 +28,26 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "ContinuousIntegration": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      //"commandLineArgs": "ssg c:\\ssg",
+      "applicationUrl": "https://localhost:7169;http://localhost:5033",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "ContinuousIntegration"
+      }
+    },
+    "Production": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      //"commandLineArgs": "ssg c:\\ssg",
+      "applicationUrl": "https://localhost:7169;http://localhost:5033",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
