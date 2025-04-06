@@ -30,9 +30,7 @@ jobs:
         ASPNETCORE_ENVIRONMENT: ContinuousIntegration
       working-directory: ./src/ViveCortelazor
     - name: Generate pages
-      run: |
-        export ASPNETCORE_ENVIRONMENT=ContinuousIntegration
-        dotnet run --no-restore --configuration Release ssg ../../web
+      run: dotnet run --launch-profile "ContinuousIntegration" --no-restore --configuration Release ssg ../../web
       working-directory: ./src/ViveCortelazor
 
     - name: HTTP Server Action

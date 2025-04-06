@@ -59,6 +59,8 @@ builder.Services.AddSingleton<ISitemapService, SitemapService>();
 
 var app = builder.Build();
 
+Console.WriteLine($"ENV: {app.Environment.EnvironmentName}");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

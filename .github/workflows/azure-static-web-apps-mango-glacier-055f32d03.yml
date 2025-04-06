@@ -37,7 +37,7 @@ jobs:
       working-directory: ./src/ViveCortelazor
     
     - name: Generate pages
-      run: dotnet run --no-restore --configuration Release ssg ../../dist
+      run: dotnet run --launch-profile "Production" --no-restore --configuration Release ssg ../../dist
       working-directory: ./src/ViveCortelazor
 
     - name: Deploy
