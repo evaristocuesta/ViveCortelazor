@@ -5,9 +5,15 @@ namespace ViveCortelazor.Tests.TestCases;
 
 public class MetaTagsTestCases : IEnumerable
 {
-    private const string _baseUrl = "https://www.vivecortelazor.es";
+    private readonly string _baseUrl;
 
     private readonly IContentService _contentService = new ContentService();
+
+    public MetaTagsTestCases()
+    {
+        _baseUrl = TestContext.Parameters["BaseUrl"] ?? string.Empty;
+        _baseUrl = _baseUrl.EndsWith('/') ? _baseUrl[..^1] : _baseUrl;
+    }
 
     public IEnumerator GetEnumerator()
     {
