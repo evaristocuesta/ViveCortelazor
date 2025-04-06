@@ -5,13 +5,13 @@ El Festival **Cortelafolk** regresa a **Cortelazor la Real** los días **25 y 26
 
 Con **entrada libre** y **actividades gratuitas**, el evento contará con una variada programación que incluirá **conciertos, cine, juegos de mesa, títeres, talleres, mercadillo y una deliciosa oferta gastronómica**.
 
-![Cortelafolk logo](/images/blog/cortelafolk-2025/cortelafolk-logo.jpg)
+![Cortelafolk logo](/images/blog/2025-03-31-cortelafolk-2025/cortelafolk-logo.jpg)
 
 El **festival** nace del esfuerzo conjunto entre **vecinos, instituciones locales y empresas de la zona**. Los **niños y niñas del colegio** local han realizado un interesante trabajo de documentación sobre las raíces de la **música folk** y los artistas participantes. Por su parte, las integrantes de la **Asociación 'La Palomera'** han creado un espectacular telón artesanal que servirá como elemento decorativo central en el escenario ubicado en la emblemática **Plaza del Olmo**.
 
 Tras el éxito de la edición inaugural, que contó con destacadas actuaciones de grupos tradicionales y una excelente respuesta del público, **Cortelafolk** aspira a posicionarse como un evento de referencia en el panorama de la **música folk** regional. La programación de este año se ha ampliado significativamente, ofreciendo una experiencia cultural completa con diversas actividades para todos los públicos.
 
-![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpg)
+![Cortelafolk cartel](/images/blog/2025-03-31-cortelafolk-2025/phonto.jpg)
 
 ## Programación
 

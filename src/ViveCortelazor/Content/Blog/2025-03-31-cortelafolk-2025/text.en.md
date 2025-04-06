@@ -5,13 +5,13 @@ The **Cortelafolk** Festival returns to **Cortelazor la Real** on **April 25th a
 
 With **free admission** and **complimentary activities**, the event will feature a varied program including **concerts, cinema, board games, puppet shows, workshops, a marketplace and delicious gastronomic offerings**.
 
-![Cortelafolk logo](/images/blog/cortelafolk-2025/cortelafolk-logo.jpg)
+![Cortelafolk logo](/images/blog/2025-03-31-cortelafolk-2025/cortelafolk-logo.jpg)
 
 The **festival** is born from the joint effort of **neighbors, local institutions and businesses in the area**. The **schoolchildren** have conducted interesting research on the roots of **folk music** and the participating artists. Meanwhile, members of the **'La Palomera' Association** have created a spectacular handcrafted backdrop that will serve as the central decorative element on the stage located in the emblematic **Plaza del Olmo**.
 
 Following the success of the inaugural edition, which featured outstanding performances by traditional groups and received an excellent response from the public, **Cortelafolk** aims to position itself as a reference event in the regional **folk music** scene. This year's program has been significantly expanded, offering a complete cultural experience with diverse activities for all audiences.
 
-![Cortelafolk cartel](/images/blog/cortelafolk-2025/phonto.jpg)
+![Cortelafolk cartel](/images/blog/2025-03-31-cortelafolk-2025/phonto.jpg)
 
 ## Program
 
