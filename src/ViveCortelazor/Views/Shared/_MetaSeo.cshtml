@@ -9,30 +9,31 @@
     string currentCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, @CultureInfo.CurrentCulture.Name);
     string esCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "es");
     string enCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "en");
+    string imagePath = $"{WebSettings.Value.Host}{ViewData["Image"]}";
 }
 
 <title>@ViewData["Title"]</title>
 <meta name="description" content="@ViewData["Description"]" />
 <meta name="keywords" content="@ViewData["Keywords"]" />
-<meta name="image" content="@ViewData["Image"]" />
+<meta name="image" content="@imagePath" />
 <meta name="author" content="Evaristo Cuesta" />
 <!-- Google - Search Engine Tags-->
 <meta itemprop="name" content="@ViewData["Title"]" />
 <meta itemprop="description" content="@ViewData["Description"]" />
-<meta itemprop="image" content="@ViewData["Image"]" />
+<meta itemprop="image" content="@imagePath" />
 <!-- Twitter Meta Tags-->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="@ViewData["Title"]" />
 <meta name="twitter:description" content="@ViewData["Description"]" />
-<meta name="twitter:image" content="@ViewData["Image"]" />
+<meta name="twitter:image" content="@imagePath" />
 <!-- Facebook Meta Tags-->
 <meta property="og:url" content="@currentCanonical" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="@ViewData["Title"]" />
 <meta property="og:site_name" content="Vive Cortelazor - Sierra de Aracena" />
 <meta property="og:description" content="@ViewData["Description"]" />
-<meta property="og:image" content="@ViewData["Image"]" />
-<meta property="og:image:secure_url" content="@ViewData["Image"]" />
+<meta property="og:image" content="@imagePath" />
+<meta property="og:image:secure_url" content="@imagePath" />
 <meta property="og:image:alt" content="@ViewData["Description"]" />
 <meta property="og:image:height" content="@ViewData["ImageHeight"]" />
 <meta property="og:image:width" content="@ViewData["ImageWidth"]" />
