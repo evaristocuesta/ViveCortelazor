@@ -23,14 +23,16 @@ jobs:
       run: dotnet restore
       working-directory: ./src/ViveCortelazor
     - name: Build
-      run: dotnet build --no-restore --configuration Release
+      run: |
+        export ASPNETCORE_ENVIRONMENT=ContinuousIntegration
+        dotnet build --no-restore --configuration Release
       env:
         ASPNETCORE_ENVIRONMENT: ContinuousIntegration
       working-directory: ./src/ViveCortelazor
     - name: Generate pages
-      run: dotnet run --no-restore --configuration Release ssg ../../web
-      env:
-        ASPNETCORE_ENVIRONMENT: ContinuousIntegration
+      run: |
+        export ASPNETCORE_ENVIRONMENT=ContinuousIntegration
+        dotnet run --no-restore --configuration Release ssg ../../web
       working-directory: ./src/ViveCortelazor
 
     - name: HTTP Server Action
