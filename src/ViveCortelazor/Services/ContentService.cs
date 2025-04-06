@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Globalization;
+using System.Text.Json;
 using ViveCortelazor.Models;
 
 namespace ViveCortelazor.Services;
@@ -20,6 +21,12 @@ public class ContentService : IContentService
         if (viewModel is null)
         {
             return ContentViewModel.ContentError;
+        }
+
+        if (content.Length > 11 && 
+            DateOnly.TryParse(content.AsSpan(0, 10), CultureInfo.InvariantCulture, out DateOnly date))
+        {
+            viewModel.Date = date;
         }
 
         string textFilePath = Path.Combine(directory, content, $"text.{lang}.md");
