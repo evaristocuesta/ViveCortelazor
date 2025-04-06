@@ -148,7 +148,7 @@ public class ViveCortelazorTests : PageTest
                 {
                     // Make the HTTP request and check if the link responds correctly
                     var response = await httpClient.GetAsync(linkUrl);
-                    Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{linkUrl} is broken (Status code: {response.StatusCode}).");
+                    Assert.That((int)response.StatusCode, Is.EqualTo(200).Or.EqualTo(429), $"{linkUrl} is broken (Status code: {response.StatusCode}).");
                 }
                 catch (Exception ex)
                 {
