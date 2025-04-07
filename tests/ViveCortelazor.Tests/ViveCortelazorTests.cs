@@ -158,6 +158,80 @@ public class ViveCortelazorTests : PageTest
         }
     }
 
+    [TestCase("en")]
+    [TestCase("es")]
+    [TestCase("es/privacidad")]
+    [TestCase("en/privacy")]
+    [TestCase("es/cookies")]
+    [TestCase("en/cookies")]
+    [TestCaseSource(typeof(VerifyAllTestCases))]
+    public async Task VerifyAllMetaImagesExist(string pageUrl)
+    {
+        await Page.GotoAsync(pageUrl);
+
+        var metaImages = await Page.QuerySelectorAllAsync("meta[name='image'], meta[itemprop='image'], meta[name='twitter:image'], meta[property='og:image']");
+
+        var srcs = (await Task.WhenAll(metaImages.Select(async meta => await meta.GetAttributeAsync("content"))))
+            .Where(content => !string.IsNullOrEmpty(content))
+            .Distinct()
+            .ToList();
+
+        using var httpClient = new HttpClient();
+
+        foreach (var src in srcs)
+        {
+            if (!string.IsNullOrEmpty(src))
+            {
+                // Ensure the URL is absolute
+                var imageUrl = new Uri(new Uri(_baseUrl), src).ToString();
+
+                // Make the HTTP request and check if the link responds correctly
+                var response = await httpClient.GetAsync(imageUrl);
+                Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{imageUrl} does not exist");
+            }
+        }
+    }
+
+    [TestCase("en")]
+    [TestCase("es")]
+    [TestCase("es/privacidad")]
+    [TestCase("en/privacy")]
+    [TestCase("es/cookies")]
+    [TestCase("en/cookies")]
+    [TestCaseSource(typeof(VerifyAllTestCases))]
+    public async Task VerifyAllCssAndJsFilesExist(string pageUrl)
+    {
+        await Page.GotoAsync(pageUrl);
+
+        var cssFiles = await Page.QuerySelectorAllAsync("link[rel='stylesheet']");
+        var jsFiles = await Page.QuerySelectorAllAsync("script[src]");
+
+        var cssSrcs = (await Task.WhenAll(cssFiles.Select(async link => await link.GetAttributeAsync("href"))))
+            .Where(href => !string.IsNullOrEmpty(href))
+            .Distinct()
+            .ToList();
+
+        var jsSrcs = (await Task.WhenAll(jsFiles.Select(async script => await script.GetAttributeAsync("src"))))
+            .Where(src => !string.IsNullOrEmpty(src))
+            .Distinct()
+            .ToList();
+
+        using var httpClient = new HttpClient();
+
+        foreach (var src in cssSrcs.Concat(jsSrcs))
+        {
+            if (!string.IsNullOrEmpty(src))
+            {
+                // Ensure the URL is absolute
+                var fileUrl = new Uri(new Uri(_baseUrl), src).ToString();
+
+                // Make the HTTP request and check if the file responds correctly
+                var response = await httpClient.GetAsync(fileUrl);
+                Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{fileUrl} does not exist");
+            }
+        }
+    }
+
     public override BrowserNewContextOptions ContextOptions()
     {
         _baseUrl = TestContext.Parameters["BaseUrl"] ?? string.Empty;
