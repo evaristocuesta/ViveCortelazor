@@ -1,4 +1,5 @@
 using AspNetStatic;
+using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.AspNetCore.Mvc;
@@ -57,6 +58,10 @@ builder.Services.AddSingleton<IMarkdownService, MarkdownService>();
 builder.Services.AddSingleton<IContentService, ContentService>();
 builder.Services.AddSingleton<ISitemapService, SitemapService>();
 
+StaticWebAssetsLoader.UseStaticWebAssets(
+    builder.Environment,
+    builder.Configuration);
+
 var app = builder.Build();
 
 Console.WriteLine($"ENV: {app.Environment.EnvironmentName}");
@@ -82,19 +87,7 @@ app.AddControllerRoutes();
 if (args.HasExitWhenDoneArg())
 {
     app.ConfigureAspNetStatic(basePath, outputPath);
-
-    if (!Path.Exists(outputPath))
-    {
-        Console.WriteLine($"Creating directory {outputPath}");
-        Directory.CreateDirectory(outputPath);
-    }
-
-    Console.WriteLine($"Generating static content in {outputPath}");
-
-    app.GenerateStaticContent(outputPath,
-        alwaysDefaultFile: true,
-        exitWhenDone: true,
-        dontUpdateLinks: true);
+    app.GenerateStaticContent(outputPath);
 }
 
 await app.RunAsync();

@@ -19,6 +19,13 @@ public static class AspNetStaticExtensions
         AddStaticResources(staticResourcesProvider, basePath);
         AddEndpoints(app, basePath, staticResourcesProvider);
 
+        return app;
+    }
+
+    public static IApplicationBuilder GenerateStaticContent(
+        this WebApplication app,
+        string outputPath)
+    {
         if (!Path.Exists(outputPath))
         {
             Console.WriteLine($"Creating directory {outputPath}");
