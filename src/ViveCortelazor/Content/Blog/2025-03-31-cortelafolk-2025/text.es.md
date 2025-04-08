@@ -1,5 +1,4 @@
-﻿# Cortelafolk 2025
-## II Festival de Música Folk en Cortelazor
+﻿## II Festival de Música Folk en Cortelazor
 
 El Festival **Cortelafolk** regresa a **Cortelazor la Real** los días **25 y 26 de abril de 2025**, ofreciendo un fin de semana lleno de **música, cultura y tradición** en un entorno incomparable.
 
