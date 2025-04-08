@@ -1,5 +1,4 @@
-﻿# Cortelafolk 2025
-## II Folk Music Festival in Cortelazor
+﻿## II Folk Music Festival in Cortelazor
 
 The **Cortelafolk** Festival returns to **Cortelazor la Real** on **April 25th and 26th, 2025**, offering a weekend full of **music, culture and tradition** in an incomparable setting.
 
