@@ -161,20 +161,16 @@ a.social-icon:hover {
 }
 
 .post-image {
-    height: 200px;
-    width: 200px;
+    max-height: 500px;
     object-fit: cover;
     object-position: center;
+    margin-bottom: calc(var(--bs-gutter-x)* .5);
 }
 
 @media (max-width: 767px) {
     .post-image {
-
-        max-height: 200px;
-        height: auto;
+        max-height: 300px;
         margin-top: calc(var(--bs-gutter-x)* .5);
-        margin-bottom: calc(var(--bs-gutter-x)* .5);
-        object-fit: cover;
     }
 }
 
