@@ -105,24 +105,7 @@
                 @foreach (var post in Model)
                 {
                     <div class="col-lg post-home">
-                        <div class="row mb-2">
-                            <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                <img src="@post.Image" class="img-fluid rounded" alt="@post.Title">
-                            </a>
-                        </div>
-                        <div class="row">
-                            <h2>
-                                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                    @post.Title
-                                </a>
-                            </h2>
-                            <p class="text-muted">
-                                <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                    @post.Description
-                                </a>
-                            </p>
-                        </div>
-                        <hr />
+                        @await Html.PartialAsync("_Post", post)
                     </div>
                 }
             </div>

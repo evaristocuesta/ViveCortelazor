@@ -17,29 +17,7 @@
     {
         @foreach (var post in Model.Items)
         {
-            <div class="post">
-                <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                            <img src="@post.Image" class="img-fluid post-image rounded" alt="@post.Title">
-                        </a>
-                    </div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-md-12">
-                        <h2>
-                            <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                @post.Title
-                            </a>
-                        </h2>
-                        <p class="text-muted">
-                            <a class="nav-link" href="/@ViewContext.GetLang()/blog/@post.Slug">
-                                @post.Description
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            @await Html.PartialAsync("_Post", post)
         }
 
         <div class="row mt-4">

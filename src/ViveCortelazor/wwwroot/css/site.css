@@ -50,6 +50,17 @@ h5 {
     color: var(--color-palette-dark-1);
 }
 
+blockquote {
+    font-size: inherit; 
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    color: #555;
+}
+
+.blockquote {
+    font-size: 1rem;
+}
+
 a {
     text-decoration: none;
     font-weight: 600;
