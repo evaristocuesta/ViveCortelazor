@@ -16,6 +16,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy", "Privacy policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/cookies", "Política de Cookies - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/cookies", "Cookies policy - Vive Cortelazor - Sierra de Aracena")]
+    [TestCase("page-no-exists", "Página no encontrada - Vive Cortelazor - Sierra de Aracena")]
     [TestCaseSource(typeof(HasTitleAsyncTestCases))]
     public async Task HasTitleAsync(string url, string title)
     {
@@ -85,6 +86,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllImagesExist(string pageUrl)
     {
@@ -119,6 +121,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllLinksWork(string pageUrl)
     {
@@ -198,6 +201,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllCssAndJsFilesExist(string pageUrl)
     {
