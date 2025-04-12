@@ -92,6 +92,11 @@ a:hover {
     height: 150px !important;
 }
 
+.cortelafolk-logo {
+    width: 300px !important;
+    height: auto !important;
+}
+
 .custom-toggler {
     position: absolute;
     right: 15px;
