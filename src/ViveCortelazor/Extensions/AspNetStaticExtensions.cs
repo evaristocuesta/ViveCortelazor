@@ -56,7 +56,10 @@ public static class AspNetStaticExtensions
                 Route = e.RoutePattern.RawText,
                 Name = e.Metadata.OfType<RouteNameMetadata>().FirstOrDefault()?.RouteName
             })
+            .Where(e => !"Error".Equals(e.Name))
             .ToList();
+
+        staticResourcesProvider.Add(new PageResource($"{basePath}/es/error/404") { OutFile = $"{basePath}/404.html" });
 
         foreach (var route in routeEndpoints)
         {

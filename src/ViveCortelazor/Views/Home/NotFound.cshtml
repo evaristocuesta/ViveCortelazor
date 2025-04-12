@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using ViveCortelazor.Extensions
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["PageNotFound"];
+}
+
+<div class="container pb-3 text-not-found">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+            <a class="fox-not-found" href="@Url.RouteUrl($"{ViewContext.GetLang()}")" title="Vive Cortelazor">
+                <img src="~/images/fox.svg" alt="Vive Cortelazor"/>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center col-sm-12 col-md-12">
+            <p><a href="/es" title="Vive Cortelazor">Inicio</a> / <a href="/en" title="Vive Cortelazor">Home</a></p>
+        </div>
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>404 - @Localizer["PageNotFound"]</h1>
+        </div>
+        <div class="text-center col-sm-12 col-md-12">
+            <p>Perharps this page is lost in some corner of Cortelazor</p>
+        </div>
+        <div class="text-center col-sm-12 col-md-12">
+            <p>Quizás esta página está perdida en algún rincón de Cortelazor</p>
+        </div>
+    </div>
+</div>
+

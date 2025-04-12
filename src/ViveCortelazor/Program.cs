@@ -74,6 +74,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseStatusCodePagesWithReExecute("/es/error/{0}");
+
 app.UseHttpsRedirection();
 app.MapStaticAssets();
 
