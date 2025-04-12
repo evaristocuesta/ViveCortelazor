@@ -53,6 +53,12 @@ public static class ControllerRouteExtensions
             defaults: new { lang = "es", controller = "Home", action = "Index" },
             constraints: new { lang = @"(\w{2})" });
 
+        app.MapControllerRoute(
+            name: "Error",
+            pattern: "es/error/{statusCode}",
+            defaults: new { lang = "es", controller = "Home", action = "Error", statusCode = 0 },
+            constraints: new { lang = @"(\w{2})" });
+
         var contentService = app.Services.GetRequiredService<IContentService>();
 
         AddPages(app, contentService);
