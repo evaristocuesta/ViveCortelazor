@@ -40,6 +40,11 @@
 
     string? GetRoute(string lang)
     {
+        if ("Error".Equals(ViewContext.RouteData.Values["Action"]))
+        {
+            return Url.Action("Index", "Home", new { lang });
+        }
+
         var routeValueDictionary = new RouteValueDictionary(ViewContext.RouteData.Values)
         {
             ["lang"] = lang
