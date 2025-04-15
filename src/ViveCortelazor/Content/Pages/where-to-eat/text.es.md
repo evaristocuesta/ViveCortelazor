@@ -30,7 +30,7 @@ El trato es cercano, amable y muy familiar y con precios populares.
 
 Ubicado en el antiguo matadero del pueblo, este mesón ha sabido conservar la esencia del lugar con un toque rústico y acogedor. **Mesón El Matadero** destaca por sus carnes a la brasa, especialmente el secreto ibérico y la presa, además de platos de cuchara y postres caseros. La decoración y el entorno te transportan al pasado con cada bocado.
 
-🔗 [Instagram de Mesón El Matadero](https://www.instagram.com/mesonelmatadero/)
+🔗 [Facebook de Mesón El Matadero](https://www.facebook.com/elmataderocortelazor)
 
 ---
 
