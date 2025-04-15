@@ -20,10 +20,6 @@
     <PackageReference Include="Markdig" Version="0.40.0" />
   </ItemGroup>
   
-  <ItemGroup>
-    <Folder Include="Content\Pages\" />
-  </ItemGroup>
-  
   <Target Name="CleanContentDirectories" AfterTargets="BeforeCompile">
     <RemoveDir Directories="$(OutputPath)Content\Pages;$(OutputPath)Content\Blog" />
     <MakeDir Directories="$(OutputPath)Content\Pages;$(OutputPath)Content\Blog" />
