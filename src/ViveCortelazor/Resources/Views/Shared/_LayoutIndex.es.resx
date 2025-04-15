@@ -138,4 +138,7 @@
   <data name="What to do" xml:space="preserve">
     <value>Qué hacer</value>
   </data>
+  <data name="Where to eat" xml:space="preserve">
+    <value>Dónde comer</value>
+  </data>
 </root>
