@@ -28,32 +28,13 @@ El trato es cercano, amable y muy familiar y con precios populares.
 
 ## Mesón El Matadero
 
-Ubicado en el antiguo matadero del pueblo, este mesón ha sabido conservar la esencia del lugar con un toque rústico y acogedor. **Mesón El Matadero** destaca por sus carnes a la brasa, especialmente el secreto ibérico y la presa, además de platos de cuchara y postres caseros. La decoración y el entorno te transportan al pasado con cada bocado.
+Con un nombre que evoca su historia, **Mesón El Matadero** está ubicado en el antiguo matadero familiar del pueblo, un edificio con solera reconvertido en un espacio rústico y acogedor donde la cocina tradicional cobra todo el protagonismo. Desde su apertura en 2015, se ha convertido en una referencia gastronómica en la zona, gracias a su respeto por el producto y su apuesta por el sabor auténtico de la sierra.
 
----
-La carne, tanto a la brasa como en horno de leña o, a fuego lento, los embutidos ibéricos y quesos, las verduras de la huerta  y los huevos de corral componen una carta equilibrada de auténtica calidad y sabor tradicional.
+Su carta gira en torno a los **derivados del cerdo ibérico criado en la dehesa**, la **ternera seleccionada**, las **verduras de la huerta**, los **huevos de corral** y una elaboración lenta, cuidada, en horno de leña. Aquí encontrarás **carnes a la brasa**, **guisos tradicionales**, **cocidos** y especialidades como el **codillo de cerdo a baja temperatura**, rematado con un toque final en el horno que le da un sabor inconfundible. Y si vas un fin de semana por la noche, no te pierdas sus **pizzas al horno de leña**.
 
-Los postres son elaborados artesanalmente, una delicia que varía según la época.
+Los **postres caseros** varían según la época del año y se elaboran de forma artesanal, con mimo y tradición. En verano, podrás disfrutar además de una **terraza con chiringuito y piscina**, con unas **vistas espectaculares a la sierra**, que lo convierten en un lugar perfecto para relajarse y saborear la vida.
 
-Cocidos y guisos tradicionales de la zona.
-
-Celebramos todo tipo de eventos.
-
-Ubicado en Cortelazor la Real (Huelva), este mesón les ofrece los mejores derivados del cerdo ibérico criado en la dehesa serrana y una selecta ternera.
-
-Especialidades
-Cocina rica y hecha con mucha ilusión para gente que le gusta comer y disfrutar de cada bocado de la vida... es la comida de... El matadero.
-
-Conoce un poco más la historia del negocio
-Established in 2015.
-
-Es un sitio con "solera", ubicado en un antiguo matadero familiar tradicional de la sierra, cocina tradicional basada en horno de leña, que se hace notar en el sabor de sus carnes y postres totalmente caseros. Es algo distinto a otros restaurantes, Especialmente recomendado antes de anochecer, tiene unas vistas magnificas a la sierra.
-
-Especialidad de la casa , nuestro codillo de cerdo hecho a baja temperatura y el toque final en nuestro horno de leña. Tampoco puedes perderte las pizzas al horno de leña que se ofrecen los fines de semana por la noche. 
-
-en verano, podrás disfrutar de la terraza y piscina que tiene con unas vistas impresionantes. 
----
-
+Además, **ofrecen alojamiento** y **celebran todo tipo de eventos**, convirtiéndose en un espacio completo para disfrutar de Cortelazor al máximo.
 
 🔗 [Facebook de Mesón El Matadero](https://www.facebook.com/elmataderocortelazor)
 
