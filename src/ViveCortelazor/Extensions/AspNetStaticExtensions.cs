@@ -1,4 +1,5 @@
 ﻿using AspNetStatic;
+using AspNetStatic.Optimizer;
 
 namespace ViveCortelazor.Extensions;
 
@@ -63,6 +64,12 @@ public static class AspNetStaticExtensions
 
         foreach (var route in routeEndpoints)
         {
+            if ("sitemap.xml".Equals(route.Route))
+            {
+                staticResourcesProvider.Add(new PageResource($"{basePath}{route.Route}") { OptimizationType = OptimizationType.None });
+                continue;
+            }
+
             staticResourcesProvider.Add(new PageResource($"{basePath}{route.Route}"));
         }
     }
@@ -115,7 +122,7 @@ public static class AspNetStaticExtensions
                 return new BinResource(path);
             }
 
-            return new PageResource(path);
+            return new PageResource(path) { OptimizationType = OptimizationType.None };
         }
     }
 }
