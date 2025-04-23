@@ -12,8 +12,6 @@ El ambiente es familiar, la atención cercana y amable, y los precios muy razona
 
 🔗 [Bar Plaza](https://barplazacortelazor.wordpress.com)
 
----
-
 ## Mesón El Maño
 
 Ubicado también en la plaza principal del pueblo, el Mesón El Maño es otro de esos lugares donde comer en **Cortelazor** se convierte en toda una experiencia. Ideal para entrar en calor tras una [**ruta por la Sierra de Aracena**](/es/senderismo).
@@ -24,7 +22,6 @@ El trato es cercano, amable y muy familiar y con precios populares.
 
 🔗 [Facebook de Mesón El Maño](https://www.facebook.com/MESON-El-MA%C3%91O-719860541365299/)
 
----
 
 ## Mesón El Matadero
 
@@ -38,14 +35,21 @@ Además, **ofrecen alojamiento** y **celebran todo tipo de eventos**, convirtié
 
 🔗 [Facebook de Mesón El Matadero](https://www.facebook.com/elmataderocortelazor)
 
----
 
 ## Mesón Los Madroños
 
-Rodeado de naturaleza, en una ubicación privilegiada a las afueras del pueblo, **Mesón Los Madroños** es el sitio perfecto para disfrutar de una comida al aire libre. Su carta ofrece una variedad de platos ibéricos, setas de temporada y recetas locales. Muy recomendable para grupos y familias, con espacio amplio y un ambiente muy agradable.
+Rodeado de naturaleza y ubicado en una finca a las afueras del pueblo, **Mesón Los Madroños** es el lugar ideal para disfrutar de la **gastronomía serrana al aire libre**, en un entorno tranquilo con **vistas espectaculares a la Sierra de Aracena** y al propio pueblo de **Cortelazor**.
+
+Su carta combina la tradición y el sabor auténtico: **carnes ibéricas a la brasa asadas al fuego**, **setas de temporada**, **chacinas selectas**, **revueltos**, **ensaladas con tomate recién recolectado** y platos tan populares como el **solomillo con jamón, patatas y huevo**, el **salmorejo** o sus deliciosas **croquetas variadas**. Los **postres caseros**, como la **tarta de queso al horno** o el **coulant de chocolate**, son el broche perfecto.
+
+El ambiente es agradable y muy familiar, ideal para grupos grandes, comidas de amigos o celebraciones. Ofrecen **menús especiales para bodas, bautizos, comuniones y otros eventos**, con un servicio rápido y muy atento.
+
+Además, aquí podrás encontrar una espectacular **piscina infinita de agua salada**, perfecta para pasar el día en verano sin agobios ni masificaciones. Eso sí, ¡reserva con antelación!
+
+El mesón forma parte de la **Finca El Chaparral**, que cuenta con **apartamentos rústicos** para hasta seis personas, rodeados de jardines, con terrazas exteriores y unas vistas de ensueño. Una opción perfecta para quienes quieren comer bien, descansar y conectar con la naturaleza.
 
 🔗 [Facebook de Mesón Los Madroños](https://www.facebook.com/mesonlosmadronos)
 
 ---
 
-¿Con ganas de probarlo todo? En Cortelazor la Real, el sabor de la sierra te espera en cada mesa.
+¿Con ganas de probarlo todo? En **Cortelazor la Real**, el sabor de la sierra te espera en cada mesa.
