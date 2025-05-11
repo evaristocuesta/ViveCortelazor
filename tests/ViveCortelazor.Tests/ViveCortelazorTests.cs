@@ -80,6 +80,7 @@ public class ViveCortelazorTests : PageTest
         await Expect(Page).ToHaveURLAsync(new Regex($"{_baseUrl}{target}\\/?$"));
     }
 
+    [TestCase("")]
     [TestCase("en")]
     [TestCase("es")]
     [TestCase("es/privacidad")]
@@ -115,6 +116,7 @@ public class ViveCortelazorTests : PageTest
         }
     }
 
+    [TestCase("")]
     [TestCase("en")]
     [TestCase("es")]
     [TestCase("es/privacidad")]
@@ -161,6 +163,7 @@ public class ViveCortelazorTests : PageTest
         }
     }
 
+    [TestCase("")]
     [TestCase("en")]
     [TestCase("es")]
     [TestCase("es/privacidad")]
@@ -195,6 +198,7 @@ public class ViveCortelazorTests : PageTest
         }
     }
 
+    [TestCase("")]
     [TestCase("en")]
     [TestCase("es")]
     [TestCase("es/privacidad")]
