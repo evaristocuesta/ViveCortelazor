@@ -1,0 +1,41 @@
+name: Tests production
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+    
+    - name: Restore tests dependencies
+      run: dotnet restore
+      working-directory: ./tests/ViveCortelazor.Tests
+
+    - name: Build Tests
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./tests/ViveCortelazor.Tests
+
+    - name: Ensure browsers are installed
+      run: pwsh bin/Release/net9.0/playwright.ps1 install --with-deps
+      working-directory: ./tests/ViveCortelazor.Tests
+
+    - name: Tests
+      run: dotnet test --verbosity normal --configuration Release --settings production.runsettings
+      working-directory: ./tests/ViveCortelazor.Tests
