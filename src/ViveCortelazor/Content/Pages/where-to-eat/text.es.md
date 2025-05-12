@@ -1,8 +1,9 @@
 ﻿# Dónde comer en Cortelazor
-
-Descubrir **Cortelazor** no es solo disfrutar de sus calles encaladas y su entorno natural privilegiado. También es saborear su gastronomía, con platos caseros, carnes ibéricas y recetas tradicionales que saben a sierra y a [historia](/es/historia). En este rincón de la **Sierra de Aracena**, comer bien no es una opción, es una garantía. Te invitamos a conocer los **bares y mesones** donde el buen comer es parte del alma del pueblo.
+---
 
 ![Bar Plaza](/images/where-to-eat/where-to-eat.jpg)
+
+Descubrir **Cortelazor** no es solo disfrutar de sus calles encaladas y su entorno natural privilegiado. También es saborear su gastronomía, con platos caseros, carnes ibéricas y recetas tradicionales que saben a sierra y a [historia](/es/historia). En este rincón de la **Sierra de Aracena**, comer bien no es una opción, es una garantía. Te invitamos a conocer los **bares y mesones** donde el buen comer es parte del alma del pueblo.
 
 ## Bar Plaza
 
