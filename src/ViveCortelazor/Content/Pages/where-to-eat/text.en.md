@@ -1,8 +1,9 @@
-﻿## Where to Eat in Cortelazor
-
-Discovering **Cortelazor** is not just about wandering its whitewashed streets and stunning natural surroundings. It’s also about tasting its cuisine, with homemade dishes, Iberian meats, and traditional recipes full of flavor and [history](/en/history). In this corner of the **Sierra de Aracena**, eating well isn’t optional—it’s guaranteed. Here are the best **bars and restaurants** where food is part of the town’s soul.
+﻿# Where to Eat in Cortelazor
+---
 
 ![Bar Plaza](/images/where-to-eat/where-to-eat.jpg)
+
+Discovering **Cortelazor** is not just about wandering its whitewashed streets and stunning natural surroundings. It’s also about tasting its cuisine, with homemade dishes, Iberian meats, and traditional recipes full of flavor and [history](/en/history). In this corner of the **Sierra de Aracena**, eating well isn’t optional—it’s guaranteed. Here are the best **bars and restaurants** where food is part of the town’s soul.
 
 ## Bar Plaza
 
