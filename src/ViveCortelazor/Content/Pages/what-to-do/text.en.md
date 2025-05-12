@@ -3,7 +3,7 @@
 
 ![Cortelazor la Real](/images/what-to-do/cortelazor.jpg)
 
-[**Cortelazor la Real**](/en) is a perfect destination for lovers of nature, [**history**](/en/history), and gastronomy. Its privileged environment and cultural richness offer numerous activities to enjoy an unforgettable getaway. Below is a guide on what to do in this charming corner of the **Sierra de Aracena**.
+[**Cortelazor la Real**](/en) is a perfect destination for lovers of nature, [**history**](/en/history), and [**gastronomy**](/en/where-to-eat). Its privileged environment and cultural richness offer numerous activities to enjoy an unforgettable getaway. Below is a guide on what to do in this charming corner of the **Sierra de Aracena**.
 
 ## Places to See
 
@@ -32,11 +32,11 @@ The festive calendar of [**Cortelazor la Real**](/en) is filled with traditional
 
 ### February
 - **Carnival**: Celebrated with a lively parade and costume contests. One of the most curious traditions is the **burial of the ham**.
-- **Andalusia Day (February 28th)**: A **traditional slaughter** takes place in the village square, with tastings and activities related to **local gastronomy**.
+- **Andalusia Day (February 28th)**: A **traditional slaughter** takes place in the village square, with tastings and activities related to [**local gastronomy**](/en/where-to-eat).
 
 ### March - April
 - **Easter**: In this village, Holy Thursday is celebrated with a procession of Our Lady of Sorrows and the Crucified Lord, Good Friday with a Stations of the Cross, Holy Saturday with a procession of the Resurrected Lord, which traditionally takes place at the home of a steward, followed by the burning of Judas. Easter Sunday features a very early morning procession with the Virgin of the Remedies and the Resurrected Lord.
-- **Cortelafolk Festival**: Since 2024, this festival offers performances by international artists and a market with food and crafts.
+- **Cortelafolk Festival**: Since 2024, this festival offers performances by international artists and a market with [**food**](/en/where-to-eat) and crafts.
 
 ### May
 - **May Crosses**: The streets are adorned with altars decorated with flowers, and traditional breads and sweets are blessed.
@@ -54,14 +54,14 @@ The festive calendar of [**Cortelazor la Real**](/en) is filled with traditional
 
 ## Gastronomy
 
-The gastronomy of [**Cortelazor la Real**](/en) is a true reflection of its natural surroundings and culinary traditions. Here, you can enjoy dishes made with high-quality local ingredients:
+The [**gastronomy of Cortelazor la Real**](/en/where-to-eat) is a true reflection of its natural surroundings and culinary traditions. Here, you can enjoy dishes made with high-quality local ingredients:
 
 - **Game meats**: Venison and wild boar take center stage in stews and roasts made with traditional Sierra recipes.
 - **Goat cheese and cured meats**: Artisanally produced, they are a delight for lovers of intense flavors.
 - **Chestnuts**: A key ingredient in many dishes, from stews to typical desserts.
 - **Seasonal mushrooms**: In autumn, mushrooms become a prized delicacy, used in scrambled eggs, stews, and soups.
-- **Local bars and restaurants**: Cozy spaces where you can enjoy traditional cuisine in a warm atmosphere.
+- [**Local bars and restaurants**](/en/where-to-eat): Cozy spaces where you can enjoy traditional cuisine in a warm atmosphere.
 
 ## Enjoy Cortelazor
 
-Whether you're exploring its trails, discovering its monuments, participating in its festivities, or indulging in its gastronomy, [**Cortelazor la Real**](/en) offers a unique experience. Immerse yourself in the magic of this charming village and discover everything it has to offer.
+Whether you're exploring its trails, discovering its monuments, participating in its festivities, or [**indulging in its gastronomy**](/en/where-to-eat), [**Cortelazor la Real**](/en) offers a unique experience. Immerse yourself in the magic of this charming village and discover everything it has to offer.

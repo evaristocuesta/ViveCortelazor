@@ -3,7 +3,7 @@
 
 ![Cortelazor la Real](/images/what-to-do/cortelazor.jpg)
 
-[**Cortelazor la Real**](/es) es un destino perfecto para los amantes de la naturaleza, la [**historia**](/es/historia) y la gastronomía. Su entorno privilegiado y su riqueza cultural ofrecen multitud de actividades para disfrutar de una escapada inolvidable. A continuación, te presentamos una guía sobre qué hacer en este encantador rincón de la **Sierra de Aracena**.
+[**Cortelazor la Real**](/es) es un destino perfecto para los amantes de la naturaleza, la [**historia**](/es/historia) y la [**gastronomía**](/es/donde-comer). Su entorno privilegiado y su riqueza cultural ofrecen multitud de actividades para disfrutar de una escapada inolvidable. A continuación, te presentamos una guía sobre qué hacer en este encantador rincón de la **Sierra de Aracena**.
 
 ## Sitios para ver
 
@@ -32,11 +32,11 @@ El calendario festivo de [**Cortelazor la Real**](/es) está lleno de eventos tr
 
 ### Febrero
 - **Carnavales**: Se celebra con un animado pasacalles y concursos de disfraces. Una de las tradiciones más curiosas es el **entierro del jamón**.
-- **Día de Andalucía (28 de febrero)**: Se lleva a cabo una **matanza tradicional** en la plaza del pueblo, con degustaciones y actividades relacionadas con la **gastronomía local**.
+- **Día de Andalucía (28 de febrero)**: Se lleva a cabo una **matanza tradicional** en la plaza del pueblo, con degustaciones y actividades relacionadas con la [**gastronomía local**](/es/donde-comer).
 
 ### Marzo - Abril
 - **Pascua de Semana Santa**: En esta localidad se celebra el Jueves Santo con una procesión de la Virgen de los Dolores y el Señor Crucificado, el Viernes Santo con un Viacrucis, Sábado Santo con una procesión del Señor Resucitado, como tradición aquí se pone en casa de un mayordomo, y seguidamente se quema el Judas. El Domingo de Resurrección tiene lugar una procesión muy temprano por la mañana, con la Virgen de los Remedios y el Señor Resucitado.
-- **Festival Cortelafolk**: Desde 2024, este festival ofrece actuaciones de artistas internacionales y un mercadillo de comida y artesanía.
+- **Festival Cortelafolk**: Desde 2024, este festival ofrece actuaciones de artistas internacionales y un mercadillo de [**comida**](/es/donde-comer) y artesanía.
 
 ### Mayo
 - **Cruces de Mayo**: Se adornan las calles con altares decorados con flores y se bendicen hornazos, panecillos y dulces típicos.
@@ -54,14 +54,14 @@ El calendario festivo de [**Cortelazor la Real**](/es) está lleno de eventos tr
 
 ## Gastronomía
 
-La gastronomía de [**Cortelazor la Real**](/es) es un fiel reflejo de su entorno natural y tradiciones culinarias. Aquí podrás degustar platos elaborados con productos autóctonos de gran calidad:
+La [**gastronomía de Cortelazor la Real**](/es/donde-comer) es un fiel reflejo de su entorno natural y tradiciones culinarias. Aquí podrás degustar platos elaborados con productos autóctonos de gran calidad:
 
 - **Carnes de caza**: El venado y el jabalí son protagonistas de guisos y asados con recetas tradicionales de la sierra.
 - **Queso de cabra y chacinas**: Elaborados artesanalmente, son un deleite para los amantes de los sabores intensos.
 - **Castañas**: Ingrediente esencial en muchas preparaciones, desde guisos hasta postres típicos.
 - **Setas de temporada**: En otoño, las setas se convierten en un manjar apreciado, utilizado en revueltos, guisos y sopas.
-- **Bares y restaurantes locales**: Espacios acogedores donde degustar la gastronomía tradicional en un ambiente familiar.
+- [**Bares y restaurantes locales**](/es/donde-comer): Espacios acogedores donde degustar la gastronomía tradicional en un ambiente familiar.
 
 ## Disfruta de Cortelazor
 
-Ya sea recorriendo sus senderos, explorando sus monumentos, participando en sus festividades o deleitándote con su gastronomía, [**Cortelazor la Real**](/es) ofrece una experiencia única. Sumérgete en la magia de este encantador pueblo y descubre todo lo que tiene para ofrecer.
+Ya sea recorriendo sus senderos, explorando sus monumentos, participando en sus festividades o [**deleitándote con su gastronomía**](/es/donde-comer), [**Cortelazor la Real**](/es) ofrece una experiencia única. Sumérgete en la magia de este encantador pueblo y descubre todo lo que tiene para ofrecer.
