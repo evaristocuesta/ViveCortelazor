@@ -7,7 +7,7 @@
 
 Among its most outstanding routes, the [**Charco Malo Route**](/en/hiking#charco-malo) is one of the favorites, taking hikers to a **spectacular natural pool** surrounded by an environment of great beauty. Whether you're an experienced hiker or simply want to enjoy a walk in nature, in [**Cortelazor**](/en) you'll find routes for all levels.
 
-And after a day of hiking, there's nothing better than regaining your strength by enjoying the exquisite **gastronomy** of the **Sierra de Aracena** in any of the bars in [**Cortelazor**](/en). Try traditional dishes such as **Iberian ham, mountain cheese, or seasonal mushrooms**, accompanied by a good wine or a cold beer. Also discover [**what you can see in Cortelazor**](/en/what-to-do) with a pleasant walk. The perfect end to an unforgettable route!
+And after a day of hiking, there's nothing better than regaining your strength by enjoying the exquisite [**gastronomy of the Sierra de Aracena**](/en/where-to-eat) in any of the [**bars and restaurants in Cortelazor**](/en/where-to-eat). Try traditional dishes such as **Iberian ham, mountain cheese, or seasonal mushrooms**, accompanied by a good wine or a cold beer. Also discover [**what you can see in Cortelazor**](/en/what-to-do) with a pleasant walk. The perfect end to an unforgettable route!
 
 ![Cortelazor la Real](/images/hiking/charco-malo.jpg)
 

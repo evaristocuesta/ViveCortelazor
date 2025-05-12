@@ -7,7 +7,7 @@
 
 Entre sus rutas más destacadas, la [**Ruta del Charco Malo**](/es/senderismo#charco-malo) es una de las favoritas, llevando a los senderistas hasta una **espectacular poza natural** rodeada de un entorno de gran belleza. Ya seas un excursionista experimentado o simplemente quieras disfrutar de un paseo en plena naturaleza, en [**Cortelazor**](/es) encontrarás recorridos para todos los niveles.
 
-Y después de una jornada de senderismo, nada mejor que reponer fuerzas disfrutando de la exquisita **gastronomía** de la **Sierra de Aracena** en cualquiera de los bares de [**Cortelazor**](/es). Prueba platos tradicionales como el **jamón ibérico, el queso de la sierra o las setas** de temporada, acompañados de un buen vino o una cerveza bien fría. Descubre también lo [**que puedes ver en Cortelazor**](/es/que-hacer) con un agradable paseo ¡El mejor final para una ruta inolvidable!
+Y después de una jornada de senderismo, nada mejor que reponer fuerzas disfrutando de la exquisita [**gastronomía de la Sierra de Aracena**](/es/donde-comer) en cualquiera de los [bares y restaurantes de Cortelazor**](/es/donde-comer). Prueba platos tradicionales como el **jamón ibérico, el queso de la sierra o las setas** de temporada, acompañados de un buen vino o una cerveza bien fría. Descubre también lo [**que puedes ver en Cortelazor**](/es/que-hacer) con un agradable paseo ¡El mejor final para una ruta inolvidable!
 
 ![Cortelazor la Real](/images/hiking/charco-malo.jpg)
 
