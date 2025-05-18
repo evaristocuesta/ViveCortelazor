@@ -1,6 +1,6 @@
 ﻿El próximo **sábado 31 de mayo a las 20:00 horas**, la Asociación Cultural **La Mano Verde** en Cortelazor acogerá un esperado reencuentro musical: el cantautor **Adrián Lara** vuelve a subirse al escenario del Callejón del Rosario tras más de dos años desde su primera actuación en este mágico rincón de arte y naturaleza.
 
-![Adrián Lara en La Mano Verde, Cortelazor](/images/blog/2025-05-18-concierto-adrian-lara-la-mano-verde/adrian-lara-01.jpeg)
+![Adrián Lara en La Mano Verde, Cortelazor](/images/blog/2025-05-18-concierto-adrian-lara-la-mano-verde/adrian-lara-01.jpg)
 
 Adrián es un joven músico sevillano cuya vida parece escrita entre acordes y paisajes. Su trayectoria, marcada por una profunda conexión con el viaje y la exploración, lo ha llevado a cruzar fronteras físicas y musicales. Desde sus primeros pasos con el bajo a los 8 años, su paso por varios grupos de rock-funk y sus viajes por Europa con guitarra en mano desde los 17, Adrián ha ido construyendo una identidad artística rica en influencias y sensibilidad.
 
