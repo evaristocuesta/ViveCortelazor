@@ -1,6 +1,6 @@
 ﻿The upcoming **Saturday, May 31 at 8:00 PM**, the Cultural Association **La Mano Verde** in Cortelazor will host a long-awaited musical reunion: the singer-songwriter **Adrián Lara** returns to the Callejón del Rosario stage, more than two years after his first performance in this magical corner of art and nature.
 
-![Adrián Lara at La Mano Verde, Cortelazor](/images/blog/2025-05-18-concierto-adrian-lara-la-mano-verde/adrian-lara-01.jpeg)
+![Adrián Lara at La Mano Verde, Cortelazor](/images/blog/2025-05-18-concierto-adrian-lara-la-mano-verde/adrian-lara-01.jpg)
 
 Adrián is a young musician from Seville whose life seems to be written between chords and landscapes. His path, deeply rooted in travel and exploration, has taken him across both physical and musical borders. From his early days playing bass at the age of 8, through his time in various rock-funk bands, and his journeys across Europe with a guitar since he was 17, Adrián has developed a musical identity rich in influence and emotion.
 
