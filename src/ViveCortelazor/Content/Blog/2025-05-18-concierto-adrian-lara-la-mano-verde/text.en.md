@@ -8,6 +8,18 @@ His songs draw from the **flamenco rumba** of his homeland, flow through the gen
 
 It was during a creative period in Paraguay that Adrián recorded his album *Mis orillas* (2019), at the Music Zone studio in Villarrica. One of its standout tracks is "**Azucena**", a healing song accompanied by a beautiful music video recorded alongside musician Leandro Duarte.
 
+<div class="ratio ratio-16x9">
+    <iframe 
+        src="https://www.youtube-nocookie.com/embed/CYDlhIe6Hns?si=-7Zx0-VXflTlkhj1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
 Those who attended his first performance at La Mano Verde still recall the closeness of his voice, the warmth of his melodies, and the honesty in his message. This new event promises fresh songs, new stories, and the same sincere essence: a musical journey to what is deep and true.
 
 **Saturday, May 31 at 8:00 PM**

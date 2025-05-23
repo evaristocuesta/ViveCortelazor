@@ -8,6 +8,18 @@ Sus canciones beben de la **rumba flamenca** de su tierra, se deslizan por los r
 
 Fue precisamente en Paraguay, durante una etapa de creación, donde Adrián grabó su álbum *Mis orillas* (2019), en el estudio Music Zone de Villarrica. De ese disco nace “**Azucena**”, una canción que él mismo describe como sanadora, y que cuenta con un hermoso videoclip grabado junto al músico Leandro Duarte.
 
+<div class="ratio ratio-16x9">
+    <iframe 
+        src="https://www.youtube-nocookie.com/embed/CYDlhIe6Hns?si=-7Zx0-VXflTlkhj1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
 Quienes asistieron a su primera actuación en La Mano Verde aún recuerdan la cercanía de su voz, la calidez de sus melodías y la honestidad de su mensaje. Esta nueva cita promete nuevos temas, nuevas historias, y la misma esencia que lo caracteriza: un viaje musical hacia lo profundo y lo verdadero.
 
 **Sábado 31 de mayo a las 20:00 horas**
