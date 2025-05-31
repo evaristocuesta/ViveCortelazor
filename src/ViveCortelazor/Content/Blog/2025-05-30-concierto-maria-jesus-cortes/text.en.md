@@ -2,7 +2,7 @@
 
 **Tickets: €10 / €8 for members / Free for children**
 
-The artist **María Jesús Cortés Espejo** will offer a very special concert at **La Mano Verde**, in the heart of **Cortelazor la Real**, on **June 13th at 9:00 PM**. A unique opportunity to enjoy her intimate singing, her guitar, and her musical universe filled with roots, emotion, and strength.
+The artist **María Jesús Cortés Espejo** will offer a very special concert at **La Mano Verde**, **Cortelazor la Real**, on **June 13th at 9:00 PM**. A unique opportunity to enjoy her intimate singing, her guitar, and her musical universe filled with roots, emotion, and strength.
 
 ![María Jesús Cortés at La Mano Verde, Cortelazor](/images/blog/2025-05-30-concierto-maria-jesus-cortes/maria-jesus-cortes.jpg)
 

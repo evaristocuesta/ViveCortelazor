@@ -2,7 +2,7 @@
 
 **Entrada: €10 / €8 para socios / Gratis para menores**
 
-La artista María Jesús Cortés Espejo ofrecerá un concierto muy especial en **La Mano Verde**, en el corazón de **Cortelazor la Real**, el próximo **13 de junio a las 21:00 horas**. Una oportunidad única para disfrutar de su cante íntimo, su guitarra y su universo musical cargado de raíces, emoción y fuerza.
+La artista María Jesús Cortés Espejo ofrecerá un concierto muy especial en **La Mano Verde**, **Cortelazor la Real**, el próximo **13 de junio a las 21:00 horas**. Una oportunidad única para disfrutar de su cante íntimo, su guitarra y su universo musical cargado de raíces, emoción y fuerza.
 
 ![María Jesús Cortés en la Mano Verde, Cortelazor](/images/blog/2025-05-30-concierto-maria-jesus-cortes/maria-jesus-cortes.jpg)
 
