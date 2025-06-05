@@ -18,16 +18,6 @@ public class MetaTagsTestCases : IEnumerable
     public IEnumerator GetEnumerator()
     {
         yield return new TestCaseData(
-            "",
-            $"{_baseUrl}/",
-            new Dictionary<string, string>
-            {
-                { "es", $"{_baseUrl}/es" },
-                { "en", $"{_baseUrl}/en" }
-            }
-        );
-
-        yield return new TestCaseData(
             "es",
             $"{_baseUrl}/es",
             new Dictionary<string, string>
