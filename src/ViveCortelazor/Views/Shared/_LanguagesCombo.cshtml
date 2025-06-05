@@ -7,21 +7,22 @@
     var dropdownId = string.IsNullOrEmpty(Model) ? "languages" : Model;
     var langEs = string.IsNullOrEmpty(Model) ? "lang-es" : $"{Model}-lang-es";
     var langEn = string.IsNullOrEmpty(Model) ? "lang-en" : $"{Model}-lang-en";
+    var currentFlag = ViewContext.GetLang() == "es" ? "/images/es-32.png" : "/images/en-32.png";
 }
 
 <li class="nav-item dropdown">
     <a id="@dropdownId" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        @Localizer[ViewContext.GetLang()]
+        <img src="@currentFlag" alt="@Localizer[ViewContext.GetLang()]" />&nbsp; @Localizer[ViewContext.GetLang()]
     </a>
     <ul class="dropdown-menu">
         <li>
             <a id="@langEs" class="dropdown-item @IsActive("es")" href="@GetRoute("es")">
-                Español
+                <img src="/images/es-32.png" alt="Español" />&nbsp; Español
             </a>
         </li>
         <li>
             <a id="@langEn" class="dropdown-item @IsActive("en")" href="@GetRoute("en")">
-                English
+                <img src="/images/en-32.png" alt="English" />&nbsp; English
             </a>
         </li>
     </ul>
@@ -41,6 +42,11 @@
     string? GetRoute(string lang)
     {
         if ("Error".Equals(ViewContext.RouteData.Values["Action"]))
+        {
+            return Url.Action("Index", "Home", new { lang });
+        }
+
+        if ("ChooseLanguage".Equals(ViewContext.RouteData.Values["Action"]))
         {
             return Url.Action("Index", "Home", new { lang });
         }

@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+    ViewData["Title"] = "Vive Cortelazor - Sierra de Aracena";
+    ViewData["Keywords"] = "Cortelazor la Real, Sierra de Aracena, Cortelazor";
+    ViewData["Description"] = "Selecciona el idioma para poder disfrutar de Cortelazor la Real";
+    ViewData["Image"] = "/images/carousel/cortelazor1.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "1080";
+    ViewData["Robots"] = "all";
+}
+
+<div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img loading="lazy" src="~/images/carousel/cortelazor1.jpg" class="img-fluid" alt="Cortelazor la Real">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="text-white text-uppercase fw-bold line-break">Selecciona el idioma</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center p-4">
+                                <a href="@Url.RouteUrl($"es/index")">
+                                    <img class="z-3 main-logo mb-3 mb-md-4" src="~/images/es-128.png" alt="Español" />
+                                    <h2 class="text-white text-uppercase fw-bold line-break">Español</h2>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 text-center text-white text-uppercase fw-bold p-4">
+                                <a href="@Url.RouteUrl($"en/index")">
+                                    <img class="z-3 main-logo mb-3 mb-md-4" src="~/images/en-128.png" alt="English" />
+                                    <h2 class="text-white text-uppercase fw-bold line-break">English</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

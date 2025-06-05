@@ -15,6 +15,11 @@ public class HomeController(IContentService contentService) : Controller
         return View(posts);
     }
 
+    public IActionResult ChooseLanguage()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
