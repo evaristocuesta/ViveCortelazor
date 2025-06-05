@@ -15,7 +15,7 @@ public class HomeController(IContentService contentService) : Controller
         return View(posts);
     }
 
-    public IActionResult ChooseLanguage()
+    public IActionResult Home()
     {
         return View();
     }

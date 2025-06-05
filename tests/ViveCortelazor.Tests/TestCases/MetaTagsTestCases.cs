@@ -19,7 +19,7 @@ public class MetaTagsTestCases : IEnumerable
     {
         yield return new TestCaseData(
             "",
-            $"{_baseUrl}/es",
+            $"{_baseUrl}/",
             new Dictionary<string, string>
             {
                 { "es", $"{_baseUrl}/es" },

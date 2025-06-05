@@ -50,7 +50,7 @@ public static class ControllerRouteExtensions
         app.MapControllerRoute(
             name: "/",
             pattern: "/",
-            defaults: new { lang = "es", controller = "Home", action = "ChooseLanguage" },
+            defaults: new { lang = "es", controller = "Home", action = "Home" },
             constraints: new { lang = @"(\w{2})" });
 
         app.MapControllerRoute(

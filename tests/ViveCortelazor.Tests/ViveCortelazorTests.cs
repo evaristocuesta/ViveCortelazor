@@ -45,6 +45,7 @@ public class ViveCortelazorTests : PageTest
     }
 
     [TestCase("", "en", "lang-en")]
+    [TestCase("", "es", "lang-es")]
     [TestCase("es", "en", "lang-en")]
     [TestCase("en", "es", "lang-es")]
     [TestCase("es/privacidad", "en/privacy", "lang-en")]
