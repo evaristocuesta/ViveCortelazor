@@ -46,7 +46,7 @@
             return Url.Action("Index", "Home", new { lang });
         }
 
-        if ("ChooseLanguage".Equals(ViewContext.RouteData.Values["Action"]))
+        if ("Home".Equals(ViewContext.RouteData.Values["Action"]))
         {
             return Url.Action("Index", "Home", new { lang });
         }

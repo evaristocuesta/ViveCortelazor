@@ -6,7 +6,7 @@
 @inject IOptions<WebSettings> WebSettings
 
 @{
-    bool chooseLanguage = "ChooseLanguage".Equals(ViewContext.RouteData.Values["Action"]);
+    bool chooseLanguage = "Home".Equals(ViewContext.RouteData.Values["Action"]);
     string currentCanonical = Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, @CultureInfo.CurrentCulture.Name);
     string esCanonical = chooseLanguage ? $"{WebSettings.Value.Host}/es" : Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "es");
     string enCanonical = chooseLanguage ? $"{WebSettings.Value.Host}/en" : Url.Canonical(WebSettings.Value.Host, ViewContext.RouteData, "en");
