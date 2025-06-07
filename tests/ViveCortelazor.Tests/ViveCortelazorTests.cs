@@ -18,7 +18,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/cookies", "Cookies policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("page-no-exists", "Página no encontrada - Vive Cortelazor - Sierra de Aracena")]
     [TestCaseSource(typeof(HasTitleAsyncTestCases))]
-    public async Task HasTitleAsync(string url, string title)
+    public async Task HasTitle(string url, string title)
     {
         await Page.GotoAsync(url);
 
@@ -28,7 +28,7 @@ public class ViveCortelazorTests : PageTest
 
     [Test]
     [TestCaseSource(typeof(MetaTagsTestCases))]
-    public async Task VerifyMetaTagsAsync(string url, string expectedCanonical, Dictionary<string, string> expectedAlternates)
+    public async Task VerifyMetaTags(string url, string expectedCanonical, Dictionary<string, string> expectedAlternates)
     {
         await Page.GotoAsync(url);
 
@@ -53,7 +53,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
     [TestCaseSource(typeof(ChangesToLangTestCases))]
-    public async Task ChangesToLangFromOffcanvasAsync(string origin, string target, string lang)
+    public async Task ChangesToLangFromOffcanvas(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
 
@@ -70,7 +70,7 @@ public class ViveCortelazorTests : PageTest
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
     [TestCaseSource(typeof(ChangesToLangTestCases))]
-    public async Task ChangesToLangFromHorizontalMenuAsync(string origin, string target, string lang)
+    public async Task ChangesToLangFromHorizontalMenu(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
 

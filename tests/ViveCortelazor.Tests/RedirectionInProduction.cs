@@ -55,7 +55,7 @@ public class RedirectionInProduction : PageTest
 
     [Test]
     [TestCase("https://www.vivecortelazor.es", "https://www.vivecortelazor.es/", "https://www.vivecortelazor.es/es", "https://www.vivecortelazor.es/en")]
-    public async Task VerifyMetaTagsAsync(string url, string expectedCanonical, string expectedAlternateEs, string expectedAlternateEn)
+    public async Task VerifyMetaTagsWithBots(string url, string expectedCanonical, string expectedAlternateEs, string expectedAlternateEn)
     {
         var context = await Browser.NewContextAsync(new()
         {
