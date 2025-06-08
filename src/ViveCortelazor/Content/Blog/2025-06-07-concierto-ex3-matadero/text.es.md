@@ -1,9 +1,9 @@
-﻿**Sábado, 21 de junio de 2025 a partir de las 23:00 h en Mesón el Matadero**
+﻿**Sábado, 21 de junio de 2025 a partir de las 23:00 h en [Mesón el Matadero](/es/donde-comer#meson-el-matadero)**
 
-Este **sábado 21 de junio** no puedes faltar a la apertura de temporada de conciertos de verano en el **Mesón el Matadero**: el grupo [**EX3**](https://www.instagram.com/ex3_aracena) llega con su potente directo de **rock and blues**.
+Este **sábado 21 de junio** no puedes faltar a la apertura de temporada de conciertos de verano en el [**Mesón el Matadero**](/es/donde-comer#meson-el-matadero): el grupo [**EX3**](https://www.instagram.com/ex3_aracena) llega con su potente directo de **rock and blues**.
 
 * **Hora:** A partir de las **23:00 h**
-* **Lugar:** [Mesón El Matadero, Cortelazor (Huelva)](https://www.instagram.com/meson_el_matadero)
+* **Lugar:** [Mesón El Matadero, Cortelazor (Huelva)](/es/donde-comer#meson-el-matadero)
 
 ![Concierto EX3 en El Matadero](/images/blog/2025-06-07-concierto-ex3-matadero/ex3-matadero.jpg)
 
@@ -25,7 +25,7 @@ Si te gusta el blues, el rock y los directos auténticos, no te los puedes perde
 
 ### [Disfruta también de la gastronomía serrana](/es/donde-comer)
 
-Aprovecha la ocasión para **cenar en El Matadero** antes del concierto y [saborear los mejores platos de la **Sierra de Aracena**](/es/donde-comer). En su carta encontrarás:
+Aprovecha la ocasión para [**cenar en El Matadero**](/es/donde-comer#meson-el-matadero) antes del concierto y [saborear los mejores platos de la **Sierra de Aracena**](/es/donde-comer). En su carta encontrarás:
 
 * **Carnes a la brasa**
 * **Guisos tradicionales y cocidos**
@@ -36,6 +36,6 @@ Una [experiencia gastronómica en Cortelazor](/es/donde-comer) que marida a la p
 
 ### ¡Te esperamos en Cortelazor!
 
-Ven con tus amigos, [disfruta del **Día del Chopo**](/es/que-hacer), saborea la cocina del Mesón El Matadero y déjate llevar por el mejor **rock and blues** con [**EX3**](https://www.instagram.com/ex3_aracena).
+Ven con tus amigos, [disfruta del **Día del Chopo**](/es/que-hacer), saborea la cocina del [**Mesón El Matadero**](/es/donde-comer#meson-el-matadero) y déjate llevar por el mejor **rock and blues** con [**EX3**](https://www.instagram.com/ex3_aracena).
 
 ¡Nos vemos el **21 de junio** en **Cortelazor**!

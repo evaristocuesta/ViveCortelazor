@@ -1,9 +1,9 @@
-﻿**Saturday, June 21, 2025, from 11:00 p.m. at Mesón El Matadero**
+﻿**Saturday, June 21, 2025, from 11:00 p.m. at [Mesón El Matadero](/en/where-to-eat#meson-el-matadero)**
 
-This **Saturday, June 21**, don’t miss the opening of the summer concert season at **Mesón El Matadero**: the band [**EX3**](https://www.instagram.com/ex3_aracena) is bringing their powerful **rock and blues** live show.
+This **Saturday, June 21**, don’t miss the opening of the summer concert season at [**Mesón El Matadero**](/en/where-to-eat#meson-el-matadero): the band [**EX3**](https://www.instagram.com/ex3_aracena) is bringing their powerful **rock and blues** live show.
 
 * **Time:** From **11:00 p.m.**
-* **Location:** [Mesón El Matadero, Cortelazor (Huelva)](https://www.instagram.com/meson_el_matadero)
+* **Location:** [Mesón El Matadero, Cortelazor (Huelva)](/en/where-to-eat#meson-el-matadero)
 
 ![EX3 Concert at El Matadero](/images/blog/2025-06-07-concierto-ex3-matadero/ex3-matadero.jpg)
 
@@ -25,7 +25,7 @@ If you love blues, rock, and authentic live music, this is a show you can't miss
 
 ### [Enjoy the local cuisine too](/en/where-to-eat)
 
-Make the most of the evening by **having dinner at El Matadero** before the concert and [savoring the best dishes from the **Sierra de Aracena**](/en/where-to-eat). Their menu features:
+Make the most of the evening by [**having dinner at El Matadero**](/en/where-to-eat#meson-el-matadero) before the concert and [savoring the best dishes from the **Sierra de Aracena**](/en/where-to-eat). Their menu features:
 
 * **Charcoal-grilled meats**
 * **Traditional stews and casseroles**
@@ -36,6 +36,6 @@ A [culinary experience in Cortelazor](/en/where-to-eat) that pairs perfectly wit
 
 ### See you in Cortelazor!
 
-Come with your friends, [enjoy the **Día del Chopo**](/en/what-to-do), taste the cuisine of Mesón El Matadero, and let yourself be carried away by the best **rock and blues** with [**EX3**](https://www.instagram.com/ex3_aracena).
+Come with your friends, [enjoy the **Día del Chopo**](/en/what-to-do), taste the cuisine of [**Mesón El Matadero**](/en/where-to-eat#meson-el-matadero), and let yourself be carried away by the best **rock and blues** with [**EX3**](https://www.instagram.com/ex3_aracena).
 
 See you on **June 21** in **Cortelazor**!
