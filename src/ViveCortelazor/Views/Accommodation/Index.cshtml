@@ -1,0 +1,17 @@
+﻿@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = $"{Localizer["Title"].Value}";
+    ViewData["Keywords"] = Localizer["Keywords"];
+    ViewData["Description"] = Localizer["Description"];
+    ViewData["Image"] = "/images/carousel/cortelazor1.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "1080";
+    ViewData["Robots"] = "all";
+}
+
+<div class="container accommodations">
+    <div class="accommodation">
+        <h1>@Localizer["Where to sleep"]</h1>
+    </div>
+</div>
