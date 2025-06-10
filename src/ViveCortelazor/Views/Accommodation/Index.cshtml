@@ -1,4 +1,5 @@
 ﻿@inject IViewLocalizer Localizer
+@model List<ViveCortelazor.Models.AccommodationViewmodel>
 
 @{
     ViewData["Title"] = $"{Localizer["Title"].Value}";
@@ -11,7 +12,16 @@
 }
 
 <div class="container accommodations">
-    <div class="accommodation">
+    <div class="accommodations">
         <h1>@Localizer["Where to sleep"]</h1>
+    </div>
+
+    <div class="row">
+        @foreach (var accommodation in Model)
+        {
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                @await Html.PartialAsync("_Accommodation", accommodation)
+            </div>
+        }
     </div>
 </div>
