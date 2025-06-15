@@ -43,7 +43,7 @@ The festive calendar of [**Cortelazor la Real**](/en) is filled with traditional
 - **Pilgrimage of the Virgen de la Coronada (second Sunday of May)**: A procession in honor of the village's patron saint, accompanied by community gatherings and festive events.
 
 ### June
-- **Festivities in Honor of Saint John (June 24th)**: A poplar tree is cut in the countryside and transported to the village, where it is raised on the church tower as a festive symbol.
+- [**Festivities in Honor of Saint John**](/en/blog/chopo-festival) - [**Fiesta del Chopo**](/en/blog/chopo-festival) (weekend around June 24th): A poplar tree is cut in the countryside and transported to the village, where it is raised on the church tower as a festive symbol.
 
 ### July
 - **Cultural Week**: Held in the third week of July, this week is filled with cultural and sporting activities for all age groups, including concerts, crafts, lectures, and more.

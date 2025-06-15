@@ -7,7 +7,7 @@ Este **sábado 21 de junio** no puedes faltar a la apertura de temporada de conc
 
 ![Concierto EX3 en El Matadero](/images/blog/2025-06-07-concierto-ex3-matadero/ex3-matadero.jpg)
 
-Además, este día es especial en **Cortelazor** porque [celebramos **el Día del Chopo**](/es/que-hacer), una de las fiestas populares más queridas del pueblo. ¿Qué mejor manera de completar la jornada que con música en directo, buena comida y el mejor ambiente?
+Además, este día es especial en **Cortelazor** porque [celebramos **la Fiesta del Chopo**](/es/blog/fiesta-del-chopo), una de las fiestas populares más queridas del pueblo. ¿Qué mejor manera de completar la jornada que con música en directo, buena comida y el mejor ambiente?
 
 ### Conoce a EX3
 
@@ -36,6 +36,6 @@ Una [experiencia gastronómica en Cortelazor](/es/donde-comer) que marida a la p
 
 ### ¡Te esperamos en Cortelazor!
 
-Ven con tus amigos, [disfruta del **Día del Chopo**](/es/que-hacer), saborea la cocina del [**Mesón El Matadero**](/es/donde-comer#meson-el-matadero) y déjate llevar por el mejor **rock and blues** con [**EX3**](https://www.instagram.com/ex3_aracena).
+Ven con tus amigos, [disfruta de la **Fiesta del Chopo**](/es/que-hacer), saborea la cocina del [**Mesón El Matadero**](/es/donde-comer#meson-el-matadero) y déjate llevar por el mejor **rock and blues** con [**EX3**](https://www.instagram.com/ex3_aracena).
 
 ¡Nos vemos el **21 de junio** en **Cortelazor**!
