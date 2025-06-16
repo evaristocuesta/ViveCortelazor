@@ -43,7 +43,7 @@ El calendario festivo de [**Cortelazor la Real**](/es) está lleno de eventos tr
 - **Romería de la Virgen de la Coronada (segundo domingo de mayo)**: Una procesión en honor a la patrona del pueblo, acompañada de convivencia y festividades populares.
 
 ### Junio
-- **Fiestas en honor a San Juan (24 de junio)**: Se corta un chopo en el campo y se transporta hasta el pueblo, donde se levanta en la torre de la iglesia como símbolo festivo.
+- [**Fiestas en honor a San Juan**](/es/blog/fiesta-del-chopo) - [**Fiesta del Chopo**](/es/blog/fiesta-del-chopo) (fin de semana alrededor del 24 de junio): Se corta un chopo en el campo y se transporta hasta el pueblo, donde se levanta en la torre de la iglesia como símbolo festivo.
 
 ### Julio
 - **Semana Cultural**: Se celebra en la tercera semana de julio, una semana llena de actividades culturales y deportivas para todos los sectores de la población, incluyendo conciertos, manualidades, ponencias, entre otras actividades.

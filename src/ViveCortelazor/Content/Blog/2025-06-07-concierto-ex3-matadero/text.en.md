@@ -7,7 +7,7 @@ This **Saturday, June 21**, don’t miss the opening of the summer concert seaso
 
 ![EX3 Concert at El Matadero](/images/blog/2025-06-07-concierto-ex3-matadero/ex3-matadero.jpg)
 
-This day is also special in **Cortelazor** because we’re celebrating [**Día del Chopo**](/en/what-to-do), one of the village’s most beloved local festivals. What better way to end the day than with live music, great food, and the best atmosphere?
+This day is also special in **Cortelazor** because we’re celebrating [**Fiesta del Chopo**](/en/blog/chopo-festival), one of the village’s most beloved local festivals. What better way to end the day than with live music, great food, and the best atmosphere?
 
 ### Meet EX3
 
@@ -36,6 +36,6 @@ A [culinary experience in Cortelazor](/en/where-to-eat) that pairs perfectly wit
 
 ### See you in Cortelazor!
 
-Come with your friends, [enjoy the **Día del Chopo**](/en/what-to-do), taste the cuisine of [**Mesón El Matadero**](/en/where-to-eat#meson-el-matadero), and let yourself be carried away by the best **rock and blues** with [**EX3**](https://www.instagram.com/ex3_aracena).
+Come with your friends, [enjoy the **Fiesta del Chopo**](/en/what-to-do), taste the cuisine of [**Mesón El Matadero**](/en/where-to-eat#meson-el-matadero), and let yourself be carried away by the best **rock and blues** with [**EX3**](https://www.instagram.com/ex3_aracena).
 
 See you on **June 21** in **Cortelazor**!
