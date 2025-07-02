@@ -27,7 +27,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "launchUrl": "es/blog/fiesta-del-chopo"
+      "launchUrl": "es/blog/concierto-mapa"
     },
     "ContinuousIntegration": {
       "commandName": "Project",
