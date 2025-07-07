@@ -132,10 +132,13 @@
   <data name="No blog posts available" xml:space="preserve">
     <value>No hay posts en el blog</value>
   </data>
+  <data name="Page" xml:space="preserve">
+    <value>Página</value>
+  </data>
   <data name="Previous" xml:space="preserve">
     <value>Anterior</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Blog y Noticias</value>
+    <value>Blog y Noticias de Cortelazor</value>
   </data>
 </root>
