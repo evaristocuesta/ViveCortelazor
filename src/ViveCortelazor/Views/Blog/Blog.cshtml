@@ -3,9 +3,9 @@
 @model PagedList<ViveCortelazor.Models.ContentViewModel>
 
 @{
-    ViewData["Title"] = $"{Localizer["Title"].Value} - Vive Cortelazor - Sierra de Aracena";
+    ViewData["Title"] = $"{Localizer["Title"].Value} - {Localizer["Page"].Value} {Model.Page}";
     ViewData["Keywords"] = Localizer["Keywords"];
-    ViewData["Description"] = Localizer["Description"];
+    ViewData["Description"] = $"{Localizer["Description"]} - {Localizer["Page"].Value} {Model.Page}";
     ViewData["Image"] = "/images/carousel/cortelazor1.jpg";
     ViewData["ImageWidth"] = "1920";
     ViewData["ImageHeight"] = "1080";
