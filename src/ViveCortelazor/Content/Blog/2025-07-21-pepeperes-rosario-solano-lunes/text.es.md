@@ -19,7 +19,7 @@ Con una dramaturgia cuidada y una dirección musical sensible, el espectáculo n
 
 ---
 
-**Sábado 25 de julio a las 22:00 horas**
+**Viernes 25 de julio a las 22:00 horas**
 
 **La Mano Verde**
 

@@ -19,7 +19,7 @@ With carefully crafted dramaturgy and sensitive musical direction, the performan
 
 ---
 
-**Saturday, July 25 at 10:00 PM**
+**Friday, July 25 at 10:00 PM**
 
 **La Mano Verde**
 
