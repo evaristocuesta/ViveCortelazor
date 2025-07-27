@@ -1,9 +1,9 @@
 ﻿# Historia de Cortelazor la Real
 ---
 
-![Cortelazor la Real](/images/history/history-cortelazor.jpg)
-
 [**Cortelazor la Real**](/es) es un pintoresco municipio de la provincia de Huelva, enclavado en el Parque Natural Sierra de Aracena y Picos de Aroche. Su historia se remonta a tiempos prehistóricos, con evidencias de ocupación humana desde la Edad del Bronce. A lo largo de los siglos, diversas civilizaciones han dejado su huella en este hermoso rincón de la Sierra de Huelva.
+
+![Cortelazor la Real](/images/history/history-cortelazor.jpg)
 
 ### Orígenes y etimología
 
@@ -26,6 +26,8 @@ El siglo XX trajo consigo una importante emigración, especialmente tras la Guer
 En las últimas décadas, la economía se ha diversificado con la ganadería del cerdo ibérico, la construcción y el turismo rural, destacando la recolección de setas y castañas como actividades complementarias.
 
 ### Patrimonio y cultura
+
+![Olmo centenario de Cortelazor](/images/history/century-old-elm-cortelazor.jpg)
 
 [**Cortelazor la Real**](/es) cuenta con un valioso patrimonio histórico, entre el que destaca la **Iglesia de Nuestra Señora de los Remedios**, construida en 1565 y ampliada en el siglo XVIII. En su interior se conserva "La Divina Pastora", una obra pictórica del siglo XVIII atribuida a Alonso Miguel de Tovar.
 
