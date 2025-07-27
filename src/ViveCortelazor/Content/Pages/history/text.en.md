@@ -1,9 +1,9 @@
 ﻿# History of Cortelazor la Real
 ---
 
-![Cortelazor la Real](/images/history/history-cortelazor.jpg)
-
 [**Cortelazor la Real**](/en) is a picturesque municipality in the province of Huelva, nestled in the Sierra de Aracena and Picos de Aroche Natural Park. Its history dates back to prehistoric times, with evidence of human occupation since the Bronze Age. Over the centuries, various civilizations have left their mark on this beautiful corner of the Sierra de Huelva.
+
+![Cortelazor la Real](/images/history/history-cortelazor.jpg)
 
 ### Origins and Etymology
 
@@ -26,6 +26,8 @@ The 20th century brought significant emigration, especially after the Civil War 
 In recent decades, the economy has diversified with Iberian pig farming, construction, and rural tourism, with mushroom and chestnut harvesting standing out as complementary activities.
 
 ### Heritage and Culture
+
+![Century-old elm of Cortelazor](/images/history/century-old-elm-cortelazor.jpg)
 
 [**Cortelazor la Real**](/en) boasts valuable historical heritage, including the **Church of Nuestra Señora de los Remedios**, built in 1565 and expanded in the 18th century. Inside, "La Divina Pastora," an 18th-century painting attributed to Alonso Miguel de Tovar, is preserved.
 
