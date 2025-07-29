@@ -4,7 +4,7 @@
 
 Este **jueves 18 de julio**, prepárate para una noche única en **El Gallo Negro Cortelazor**, con una propuesta musical que atraviesa fronteras y géneros.  
 
-![Concierto de RÂFUNKY en Cortelazor](/images/blog/2025-07-15-aysu-concierto-gallo-negro/aysu-cartel.jpg)
+![Concierto Aysu en Cortelazor](/images/blog/2025-07-15-aysu-concierto-gallo-negro/aysu-cartel.jpg)
 
 Nos visita **AySu**, artista de género fluido, creadora de un sonido propio que combina raíces turcas, fuego flamenco, Afrobeat, dancehall, reggae, Afro house, hip-hop y ritmos globales. Productora, cantante, DJ y live looper, AySu (anteriormente conocida como Sister I en la escena reggae) nos invita a un espectáculo en vivo donde construye canciones originales **en directo**, tejiendo paisajes sonoros con loops, voz y beats.  
 
