@@ -27,7 +27,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "launchUrl": "es/blog/concierto-mapa"
+      "launchUrl": "es/blog/concierto-laura-dos-santos"
     },
     "ContinuousIntegration": {
       "commandName": "Project",
