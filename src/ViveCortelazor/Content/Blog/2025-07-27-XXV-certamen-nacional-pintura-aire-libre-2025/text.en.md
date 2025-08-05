@@ -39,6 +39,8 @@ The **jury's decision** will be announced at approximately **8:00 p.m. in Plaza 
 
 **Important**: All awarded artworks will become part of the municipal collection and the **Pérez Guerra Painting Museum**, including reproduction rights.
 
+![Certamen Nacional de Pintura al Aire Libre de Cortelazor](/images/certamen-nacional-pintura-aire-libre-cortelazor/certamen-pintura-cortelazor-01.jpg)
+
 ## Schoolchildren’s Painting Day
 
 Young children will also have their moment. All **school-aged children** are welcome to participate in the **Schoolchildren’s Painting Day**, by registering between **9:00 and 11:00 a.m.** at the Painting Museum. Materials and supports will be provided. Finished works must be submitted between **2:00 and 3:00 p.m.** at the same location. Each participant will receive a **certificate of participation**.
