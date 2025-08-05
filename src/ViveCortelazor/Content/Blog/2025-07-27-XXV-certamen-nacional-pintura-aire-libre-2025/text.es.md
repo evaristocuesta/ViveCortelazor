@@ -39,6 +39,8 @@ Podrán inscribirse también **artistas noveles** entre **14 y 18 años**, cumpl
 
 **Importante**: Las obras premiadas pasarán a formar parte del patrimonio municipal y del **Museo de Pintura “Pérez Guerra”**, incluyendo sus derechos de reproducción.
 
+![Certamen Nacional de Pintura al Aire Libre de Cortelazor](/images/certamen-nacional-pintura-aire-libre-cortelazor/certamen-pintura-cortelazor-01.jpg)
+
 ## Día de la Pintura para Escolares
 
 Los más pequeños también tendrán su espacio. Todos los **niños en edad escolar** podrán participar en el **Día de la Pintura Escolar**, inscribiéndose entre las **09:00 y las 11:00 h** en el Museo de Pintura. Se les facilitará el soporte y material necesario, y deberán entregar sus obras entre las **14:00 y las 15:00 h** en el mismo lugar. Cada participante recibirá un **diploma** como reconocimiento.
