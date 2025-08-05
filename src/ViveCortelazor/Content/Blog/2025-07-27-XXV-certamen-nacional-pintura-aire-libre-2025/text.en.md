@@ -1,4 +1,4 @@
-﻿Cortelazor la Real will host the **25th National Outdoor Painting Competition** on **August 9, 2025**. This event has become a well-established part of the national art scene and is celebrating its **25th anniversary** this year. Participation is open to Spanish artists and foreign artists residing in Spain.
+﻿Cortelazor la Real will host the [**25th National Outdoor Painting Competition**](/en/national-open-air-painting-competition-cortelazor) on **August 9, 2025**. This event has become a well-established part of the national art scene and is celebrating its **25th anniversary** this year. Participation is open to Spanish artists and foreign artists residing in Spain.
 
 ![Poster of the 25th National Outdoor Painting Competition](/images/blog/2025-07-27-XXV-certamen-nacional-pintura-aire-libre-2025/cartel-certamen-pintura-2025-cortelazor.jpg)
 

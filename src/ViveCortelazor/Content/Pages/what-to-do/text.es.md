@@ -49,7 +49,7 @@ El calendario festivo de [**Cortelazor la Real**](/es) está lleno de eventos tr
 - **Semana Cultural**: Se celebra en la tercera semana de julio, una semana llena de actividades culturales y deportivas para todos los sectores de la población, incluyendo conciertos, manualidades, ponencias, entre otras actividades.
 
 ### Agosto
-- **Certamen Nacional de Pintura al Aire Libre (primer sábado de agosto)**: Artistas de toda Andalucía llenan las calles con sus caballetes, pintando los rincones más bellos del pueblo.
+- [**Certamen Nacional de Pintura al Aire Libre**](/es/certamen-nacional-pintura-aire-libre-cortelazor) (normalmente primer sábado de agosto): Artistas de toda Andalucía llenan las calles con sus caballetes, pintando los rincones más bellos del pueblo.
 - **Fiestas Patronales en honor a la Virgen de los Remedios (13-15 de agosto)**: Se celebran con música en la plaza y el esperado "toro de fuego".
 
 ## Gastronomía
