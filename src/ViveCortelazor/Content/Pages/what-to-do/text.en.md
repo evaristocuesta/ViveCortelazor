@@ -49,7 +49,7 @@ The festive calendar of [**Cortelazor la Real**](/en) is filled with traditional
 - **Cultural Week**: Held in the third week of July, this week is filled with cultural and sporting activities for all age groups, including concerts, crafts, lectures, and more.
 
 ### August
-- **National Open-Air Painting Contest (first Saturday of August)**: Artists from all over Andalusia set up their easels in the streets, painting the most beautiful corners of the village.
+- [**National Open-Air Painting Contest**](/en/national-open-air-painting-competition-cortelazor) (usually the first Saturday in August): Artists from all over Andalusia set up their easels in the streets, painting the most beautiful corners of the village.
 - **Patron Saint Festivities in Honor of Nuestra Señora de los Remedios (August 13-15)**: Celebrated with music in the square and the much-anticipated "fire bull."
 
 ## Gastronomy

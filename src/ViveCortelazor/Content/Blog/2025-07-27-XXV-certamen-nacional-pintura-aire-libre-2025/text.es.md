@@ -1,4 +1,4 @@
-﻿El próximo **9 de agosto de 2025**, Cortelazor la Real celebra el **XXV Certamen Nacional de Pintura al Aire Libre**, una cita ya consolidada en el panorama artístico nacional, que este año conmemora su **25º aniversario**. La participación está abierta a artistas españoles y extranjeros residentes en España.
+﻿El próximo **9 de agosto de 2025**, Cortelazor la Real celebra el [**XXV Certamen Nacional de Pintura al Aire Libre**](/es/certamen-nacional-pintura-aire-libre-cortelazor), una cita ya consolidada en el panorama artístico nacional, que este año conmemora su **25º aniversario**. La participación está abierta a artistas españoles y extranjeros residentes en España.
 
 ![Cartel del XXV Certamen Nacional de Pintura al Aire Libre](/images/blog/2025-07-27-XXV-certamen-nacional-pintura-aire-libre-2025/cartel-certamen-pintura-2025-cortelazor.jpg)
 
@@ -38,6 +38,8 @@ Podrán inscribirse también **artistas noveles** entre **14 y 18 años**, cumpl
 * **Premio "Alternativo"**: Exposición individual en el Museo de Pintura José Pérez Guerra en el año siguiente al certamen. La muestra deberá contar con al menos 10 obras.
 
 **Importante**: Las obras premiadas pasarán a formar parte del patrimonio municipal y del **Museo de Pintura “Pérez Guerra”**, incluyendo sus derechos de reproducción.
+
+![Certamen Nacional de Pintura al Aire Libre de Cortelazor](/images/certamen-nacional-pintura-aire-libre-cortelazor/certamen-pintura-cortelazor-01.jpg)
 
 ## Día de la Pintura para Escolares
 
