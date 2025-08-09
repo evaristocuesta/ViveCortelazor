@@ -1,5 +1,7 @@
 ﻿From **August 14 to 17, 2025**, Cortelazor la Real celebrates its **Patron Saint Festivities in honor of Nuestra Señora de Los Remedios**, an essential date in the festive calendar of the Sierra de Aracena. For four days, the town is filled with color, music, and tradition, attracting locals and visitors to enjoy a unique atmosphere.
 
+![Fiestas Patronales 2025 Cortelazor](/images/blog/2025-08-09-fiestas-patronales-2025/fiestas-patronales-cortelazor-2025.jpg)
+
 ## Triduum in Honor of Nuestra Señora de Los Remedios
 The triduum will take place from **August 11 to 13** at 8:00 p.m. in the parish church.
 
