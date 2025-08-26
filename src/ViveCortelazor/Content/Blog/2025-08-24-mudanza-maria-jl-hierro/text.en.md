@@ -15,7 +15,7 @@ The exhibition is organized with the support of the **Cortelazor Town Council** 
 
 ## About the artist: María JL Hierro
 
-[**María JL Hierro**](https://www.mariajlhierro.com) (Huelva, 1985) is a multidisciplinary conceptual artist whose work revolves around language, words, and everyday phrases. Her artistic proposal focuses on **tipoesía** (visual poetry), a form of expression that uses letters, color, and positioning to create works that are completed in the viewer’s mind.
+**María JL Hierro** (Huelva, 1985) is a multidisciplinary conceptual artist whose work revolves around language, words, and everyday phrases. Her artistic proposal focuses on **tipoesía** (visual poetry), a form of expression that uses letters, color, and positioning to create works that are completed in the viewer’s mind.
 
 Her creative process arises from reflecting on haste, change, and human relationships, using reading and words as both weapons and shields. Through minimal transformations and a direct visual language, she opens spaces for thought and questioning.
 

@@ -15,7 +15,7 @@ La exposición está organizada con el apoyo del **Ayuntamiento de Cortelazor** 
 
 ## Sobre la artista: María JL Hierro
 
-[**María JL Hierro**](https://www.mariajlhierro.com) (Huelva, 1985) es una artista conceptual multidisciplinar cuyo trabajo gira en torno al lenguaje, las palabras y las frases cotidianas. Su propuesta se centra en la **tipoesía**, una poesía visual que utiliza letras, color y posición para generar piezas que terminan de completarse en la mente del espectador.
+**María JL Hierro** (Huelva, 1985) es una artista conceptual multidisciplinar cuyo trabajo gira en torno al lenguaje, las palabras y las frases cotidianas. Su propuesta se centra en la **tipoesía**, una poesía visual que utiliza letras, color y posición para generar piezas que terminan de completarse en la mente del espectador.
 
 Su proceso creativo parte de la reflexión sobre las prisas, los cambios y las relaciones humanas, utilizando la lectura y la palabra como armas y armaduras. A través de transformaciones mínimas y un lenguaje visual directo, logra abrir espacios de pensamiento y cuestionamiento.
 
