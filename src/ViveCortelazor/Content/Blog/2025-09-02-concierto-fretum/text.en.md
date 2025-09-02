@@ -4,7 +4,7 @@
 
 Next **Saturday, September 6 at 9:30 PM**, La Mano Verde hosts **Fretum**, the musical project of **Paco Flor Ávila**, an intimate and special proposal to enjoy in the heart of the Sierra.
 
-![Fretum Concert](/images/blog/2025-09-02-concierto-fretum/banner.jpg)
+![Fretum Concert](/images/blog/2025-09-02-concierto-fretum/cartel.jpg)
 
 ### Who is Paco Flor?
 

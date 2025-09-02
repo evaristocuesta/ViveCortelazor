@@ -4,7 +4,7 @@
 
 El próximo **sábado 6 de septiembre a las 21:30 horas**, La Mano Verde acoge a **Fretum**, el proyecto musical de **Paco Flor Ávila**, una propuesta íntima y especial para disfrutar en plena sierra.
 
-![Concierto Fretum](/images/blog/2025-09-02-concierto-fretum/banner.jpg)
+![Concierto Fretum](/images/blog/2025-09-02-concierto-fretum/cartel.jpg)
 
 ### ¿Quién es Paco Flor?
 
