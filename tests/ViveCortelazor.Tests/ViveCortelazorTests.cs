@@ -7,6 +7,9 @@ namespace ViveCortelazor.Tests;
 public class ViveCortelazorTests : PageTest
 {
     private string _baseUrl = string.Empty;
+    private static readonly HashSet<string> CheckedLinks = new();
+    private static readonly HashSet<string> CheckedImages = new();
+    private static readonly HashSet<string> CheckedCssAndJs = new();
 
     [Test]
     [TestCase("", "Vive Cortelazor - Sierra de Aracena")]
@@ -110,6 +113,13 @@ public class ViveCortelazorTests : PageTest
                 // Ensure the URL is absolute
                 var imageUrl = new Uri(new Uri(_baseUrl), src).ToString();
 
+                lock (CheckedImages)
+                {
+                    if (CheckedImages.Contains(imageUrl))
+                        continue;
+                    CheckedImages.Add(imageUrl);
+                }
+
                 // Make the HTTP request and check if the link responds correctly
                 var response = await httpClient.GetAsync(imageUrl);
                 Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{imageUrl} does not exist");
@@ -149,6 +159,13 @@ public class ViveCortelazorTests : PageTest
             {
                 // Ensure the URL is absolute
                 var linkUrl = new Uri(new Uri(_baseUrl), href).ToString();
+
+                lock (CheckedLinks)
+                {
+                    if (CheckedLinks.Contains(linkUrl))
+                        continue;
+                    CheckedLinks.Add(linkUrl);
+                }
 
                 try
                 {
@@ -192,6 +209,13 @@ public class ViveCortelazorTests : PageTest
                 // Ensure the URL is absolute
                 var imageUrl = new Uri(new Uri(_baseUrl), src).ToString();
 
+                lock (CheckedImages)
+                {
+                    if (CheckedImages.Contains(imageUrl))
+                        continue;
+                    CheckedImages.Add(imageUrl);
+                }
+
                 // Make the HTTP request and check if the link responds correctly
                 var response = await httpClient.GetAsync(imageUrl);
                 Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{imageUrl} does not exist");
@@ -233,6 +257,13 @@ public class ViveCortelazorTests : PageTest
             {
                 // Ensure the URL is absolute
                 var fileUrl = new Uri(new Uri(_baseUrl), src).ToString();
+
+                lock (CheckedCssAndJs)
+                {
+                    if (CheckedCssAndJs.Contains(fileUrl))
+                        continue;
+                    CheckedCssAndJs.Add(fileUrl);
+                }
 
                 // Make the HTTP request and check if the file responds correctly
                 var response = await httpClient.GetAsync(fileUrl);
