@@ -268,14 +268,6 @@ a.social-icon:hover {
     }
 }
 
-.post-image {
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: calc(var(--bs-gutter-x)* .5);
-}
-
-
 
 /*** Carousel Hero Header Start ***/
 
