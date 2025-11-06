@@ -202,12 +202,6 @@ a.social-icon:hover {
         color: #495057;
     }
 
-.accommodations {
-    /*    max-width: 796px;
-    margin-left: auto;
-    margin-right: auto;*/
-}
-
 .accommodation {
     margin-left: auto;
     margin-right: auto;
@@ -265,6 +259,12 @@ a.social-icon:hover {
         background-color: white;
         padding: 25px;
         border-radius: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .accommodation {
+        padding: 20px;
     }
 }
 
