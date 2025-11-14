@@ -120,6 +120,12 @@
   <data name="Accommodation" xml:space="preserve">
     <value>Alojamiento</value>
   </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descubre los mejores alojamientos rurales en Cortelazor, en plena Sierra de Aracena. Casas rurales con encanto, naturaleza, tranquilidad y autenticidad andaluza. Encuentra aquí tu casa perfecta para desconectar.</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>alojamientos en cortelazor, casas rurales en cortelazor, turismo rural cortelazor, dormir en cortelazor, alojamiento sierra de aracena, casas rurales sierra de aracena, dónde alojarse en cortelazor, escapada rural huelva, turismo cortelazor la real, casa rural con encanto huelva, vacaciones rurales sierra de aracena, alquiler casa rural cortelazor</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Alojamiento en Cortelazor</value>
   </data>
