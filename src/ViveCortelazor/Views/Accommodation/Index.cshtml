@@ -1,0 +1,27 @@
+﻿@inject IViewLocalizer Localizer
+@model List<ViveCortelazor.Models.AccommodationViewmodel>
+
+@{
+    ViewData["Title"] = $"{Localizer["Title"].Value}";
+    ViewData["Keywords"] = Localizer["Keywords"];
+    ViewData["Description"] = Localizer["Description"];
+    ViewData["Image"] = "/images/carousel/cortelazor1.jpg";
+    ViewData["ImageWidth"] = "1920";
+    ViewData["ImageHeight"] = "1080";
+    ViewData["Robots"] = "all";
+}
+
+<div class="container">
+    <div class="accommodations">
+        <h1>@Localizer["Where to sleep"]</h1>
+    </div>
+
+    <div class="row">
+        @foreach (var accommodation in Model)
+        {
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                @await Html.PartialAsync("_Accommodation", accommodation)
+            </div>
+        }
+    </div>
+</div>

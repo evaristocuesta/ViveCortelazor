@@ -1,0 +1,31 @@
+﻿@using ViveCortelazor.Extensions
+@inject IViewLocalizer Localizer
+@model ViveCortelazor.Models.AccommodationViewmodel
+
+<div class="accommodation h-100 d-flex flex-column">
+    <div class="row">
+        <div class="col">
+            <a class="nav-link" href="@Model.Url" target="_blank">
+                <img src="@Model.Image" class="img-fluid accommodation-image rounded" alt="@Model.Name">
+            </a>
+        </div>
+    </div>
+    <div class="row flex-fill" style="flex:1 1 auto;">
+        <div class="col accommodation-content d-flex flex-column h-100">
+            <h5>
+                <a class="nav-link" href="@Model.Url" target="_blank">
+                    @Model.Name
+                </a>
+            </h5>
+            <p class="mb-1">
+                @Model.Description
+            </p>
+            <p class="text-muted mb-0">
+                @Model.Description2
+            </p>
+            <div class="availability-btn-container">
+                <a href="@Model.Url" target="_blank" class="availability-btn">@Localizer["Availability"]</a>
+            </div>
+        </div>
+    </div>
+</div>

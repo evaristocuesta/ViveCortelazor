@@ -48,6 +48,18 @@ public static class ControllerRouteExtensions
             constraints: new { lang = @"(\w{2})" });
 
         app.MapControllerRoute(
+            name: "es/where-to-sleep",
+            pattern: "es/donde-dormir",
+            defaults: new { lang = "es", controller = "Accommodation", action = "Index" },
+            constraints: new { lang = @"(\w{2})" });
+
+        app.MapControllerRoute(
+            name: "en/where-to-sleep",
+            pattern: "en/where-to-sleep",
+            defaults: new { lang = "en", controller = "Accommodation", action = "Index" },
+            constraints: new { lang = @"(\w{2})" });
+
+        app.MapControllerRoute(
             name: "/",
             pattern: "/",
             defaults: new { lang = "es", controller = "Home", action = "Home" },

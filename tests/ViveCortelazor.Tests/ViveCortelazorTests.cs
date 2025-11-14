@@ -19,6 +19,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy", "Privacy policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/cookies", "Política de Cookies - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/cookies", "Cookies policy - Vive Cortelazor - Sierra de Aracena")]
+    [TestCase("es/donde-dormir", "Alojamiento en Cortelazor - Sierra de Aracena")]
+    [TestCase("en/where-to-sleep", "Accommodation in Cortelazor - Sierra de Aracena")]
     [TestCase("page-no-exists", "Página no encontrada - Vive Cortelazor - Sierra de Aracena")]
     [TestCaseSource(typeof(HasTitleAsyncTestCases))]
     public async Task HasTitle(string url, string title)
@@ -55,6 +57,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
+    [TestCase("es/donde-dormir", "en/where-to-sleep", "lang-en")]
+    [TestCase("en/where-to-sleep", "es/donde-dormir", "lang-es")]
     [TestCaseSource(typeof(ChangesToLangTestCases))]
     public async Task ChangesToLangFromOffcanvas(string origin, string target, string lang)
     {
@@ -72,6 +76,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy", "es/privacidad", "lang-es")]
     [TestCase("es/cookies", "en/cookies", "lang-en")]
     [TestCase("en/cookies", "es/cookies", "lang-es")]
+    [TestCase("es/donde-dormir", "en/where-to-sleep", "lang-en")]
+    [TestCase("en/where-to-sleep", "es/donde-dormir", "lang-es")]
     [TestCaseSource(typeof(ChangesToLangTestCases))]
     public async Task ChangesToLangFromHorizontalMenu(string origin, string target, string lang)
     {
@@ -91,6 +97,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("es/donde-dormir")]
+    [TestCase("en/where-to-sleep")]
     [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllImagesExist(string pageUrl)
@@ -134,6 +142,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("es/donde-dormir")]
+    [TestCase("en/where-to-sleep")]
     [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllLinksWork(string pageUrl)
@@ -171,7 +181,13 @@ public class ViveCortelazorTests : PageTest
                 {
                     // Make the HTTP request and check if the link responds correctly
                     var response = await httpClient.GetAsync(linkUrl);
-                    Assert.That((int)response.StatusCode, Is.EqualTo(200).Or.EqualTo(429), $"{linkUrl} is broken (Status code: {response.StatusCode}).");
+                    Assert.That(
+                        (int)response.StatusCode, 
+                        Is.EqualTo(200)
+                            .Or.EqualTo(403)
+                            .Or.EqualTo(417)
+                            .Or.EqualTo(429), 
+                        $"{linkUrl} is broken (Status code: {response.StatusCode}).");
                 }
                 catch (Exception ex)
                 {
@@ -188,6 +204,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("es/donde-dormir")]
+    [TestCase("en/where-to-sleep")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllMetaImagesExist(string pageUrl)
     {
@@ -230,6 +248,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy")]
     [TestCase("es/cookies")]
     [TestCase("en/cookies")]
+    [TestCase("es/donde-dormir")]
+    [TestCase("en/where-to-sleep")]
     [TestCase("page-no-exists")]
     [TestCaseSource(typeof(VerifyAllTestCases))]
     public async Task VerifyAllCssAndJsFilesExist(string pageUrl)

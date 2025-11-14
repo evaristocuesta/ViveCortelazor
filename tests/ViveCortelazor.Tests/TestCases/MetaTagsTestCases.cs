@@ -77,6 +77,26 @@ public class MetaTagsTestCases : IEnumerable
             }
         );
 
+        yield return new TestCaseData(
+            "es/donde-dormir",
+            $"{_baseUrl}/es/donde-dormir",
+            new Dictionary<string, string>
+            {
+                { "es", $"{_baseUrl}/es/donde-dormir" },
+                { "en", $"{_baseUrl}/en/where-to-sleep" }
+            }
+        );
+
+        yield return new TestCaseData(
+            "en/where-to-sleep",
+            $"{_baseUrl}/en/where-to-sleep",
+            new Dictionary<string, string>
+            {
+                { "es", $"{_baseUrl}/es/donde-dormir" },
+                { "en", $"{_baseUrl}/en/where-to-sleep" }
+            }
+        );
+
         var esPosts = _contentService
             .GetContentList("Content/Blog", "es")
             .ToDictionary(k => k.Name, k => k);

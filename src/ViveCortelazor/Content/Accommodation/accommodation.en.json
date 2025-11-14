@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Casa Piedras",
+    "description": "Entire house for 2 guests",
+    "description2": "1 bedroom, 1 bathroom, kitchen",
+    "image": "/images/accommodation/casa-piedras.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014676"
+  },
+  {
+    "name": "La Casa de mi Tía María",
+    "description": "Entire house for 3 guests",
+    "description2": "1 bedroom, 1 bathroom, kitchen",
+    "image": "/images/accommodation/la-casa-de-mi-tia-maria.jpg",
+    "url": "https://www.lacasademitiamaria.com"
+  },
+  {
+    "name": "Finca El Chaparral",
+    "description": "4 complete houses up to 6 guests",
+    "description2": "2 bedrooms, 1 bathroom, kitchen",
+    "image": "/images/accommodation/finca-el-chaparral.jpg",
+    "url": "https://www.booking.com/hotel/es/finca-el-chaparral.es.html"
+  },
+  {
+    "name": "Valle del Arroyo",
+    "description": "3 complete houses for 2 guests",
+    "description2": "1 bedroom, 1 bathroom, kitchen",
+    "image": "/images/accommodation/valle-del-arroyo.jpg",
+    "url": "https://www.valledelarroyo.com/"
+  },
+  {
+    "name": "Finca La Caprichosa",
+    "description": "Entire estate up to 16 guests",
+    "description2": "8 bedrooms, 7 bathrooms, kitchen",
+    "image": "/images/accommodation/finca-la-caprichosa.jpg",
+    "url": "https://www.booking.com/hotel/es/finca-caprichosa.es.html"
+  },
+  {
+    "name": "Casa Maricolilla",
+    "description": "Entire house for 7 guests",
+    "description2": "3 bedrooms, 3 bathrooms, kitchen",
+    "image": "/images/accommodation/casa-maricolilla.jpg",
+    "url": "https://www.casaruralcortelazor.com/"
+  },
+  {
+    "name": "El Pintaillo",
+    "description": "Entire house for 10 guests",
+    "description2": "4 bedrooms, 2 bathrooms, kitchen",
+    "image": "/images/accommodation/el-pintaillo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014710"
+  },
+  {
+    "name": "Las casas de la Tía Sabina",
+    "description": "4 apartments for 2 guests",
+    "description2": "1 bedroom, 1 bathroom, kitchen",
+    "image": "/images/accommodation/casas-tia-sabina.jpg",
+    "url": "https://www.booking.com/hotel/es/apartamentos-tia-sabina.es.html"
+  },
+  {
+    "name": "Casita del Chopo",
+    "description": "Entire house for 2 guests",
+    "description2": "1 bedroom, 2 bathrooms, kitchen",
+    "image": "/images/accommodation/casita-del-chopo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014688"
+  },
+  {
+    "name": "Casa Campo",
+    "description": "Entire house for 4 guests",
+    "description2": "2 bedrooms, 1 bathroom, kitchen",
+    "image": "/images/accommodation/casa-campo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700039721"
+  },
+  {
+    "name": "La Solana",
+    "description": "Entire house for 10 guests",
+    "description2": "4 bedrooms, 3 bathrooms, kitchen",
+    "image": "/images/accommodation/la-solana.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014695"
+  },
+  {
+    "name": "Casa Fidela",
+    "description": "Apartment for 4 guests",
+    "description2": "2 bedrooms, 1 bathroom, kitchen",
+    "image": "/images/accommodation/casa-fidela.jpg",
+    "url": "https://www.lasierraviva.com/listing/700032739"
+  },
+  {
+    "name": "Casa Doval",
+    "description": "Rooms for 2 guests",
+    "description2": "2 bedrooms, 1 private bathroom",
+    "image": "/images/accommodation/casa-doval.jpg",
+    "url": "https://www.booking.com/hotel/es/casa-doval.es.html"
+  },
+  {
+    "name": "Posada Matadero",
+    "description": "Rooms for 2 guests",
+    "description2": "2 bedrooms, 1 private bathroom",
+    "image": "/images/accommodation/posada-matadero.jpg",
+    "url": "https://www.booking.com/hotel/es/la-posada-del-matadero.html"
+  },
+  {
+    "name": "Casa Annette",
+    "description": "Rooms for 2 guests",
+    "description2": "4 bedrooms, 1 shared bathroom",
+    "image": "/images/accommodation/casa-annette.jpg",
+    "url": "https://www.booking.com/hotel/es/casa-annette.es.html"
+  }
+]

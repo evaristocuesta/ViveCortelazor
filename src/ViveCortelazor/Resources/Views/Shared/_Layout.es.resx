@@ -135,4 +135,7 @@
   <data name="Where to eat" xml:space="preserve">
     <value>Dónde comer</value>
   </data>
+  <data name="Where to sleep" xml:space="preserve">
+    <value>Dónde dormir</value>
+  </data>
 </root>

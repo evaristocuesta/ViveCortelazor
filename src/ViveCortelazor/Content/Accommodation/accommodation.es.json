@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Casa Piedras",
+    "description": "Casa completa para 2 personas",
+    "description2": "1 habitación, 1 baño, cocina",
+    "image": "/images/accommodation/casa-piedras.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014676"
+  },
+  {
+    "name": "La Casa de mi Tía María",
+    "description": "Casa completa para 3 personas",
+    "description2": "1 habitación, 1 baño, cocina",
+    "image": "/images/accommodation/la-casa-de-mi-tia-maria.jpg",
+    "url": "https://www.lacasademitiamaria.com"
+  },
+  {
+    "name": "Finca El Chaparral",
+    "description": "4 Casas completas hasta 6 personas",
+    "description2": "2 habitaciones, 1 baño, cocina",
+    "image": "/images/accommodation/finca-el-chaparral.jpg",
+    "url": "https://www.booking.com/hotel/es/finca-el-chaparral.es.html"
+  },
+  {
+    "name": "Valle del Arroyo",
+    "description": "3 Casas completas para 2 personas",
+    "description2": "1 habitación, 1 baño, cocina",
+    "image": "/images/accommodation/valle-del-arroyo.jpg",
+    "url": "https://www.valledelarroyo.com/"
+  },
+  {
+    "name": "Finca La Caprichosa",
+    "description": "Finca completa hasta 16 personas",
+    "description2": "8 habitaciones, 7 baños, cocina",
+    "image": "/images/accommodation/finca-la-caprichosa.jpg",
+    "url": "https://www.booking.com/hotel/es/finca-caprichosa.es.html"
+  },
+  {
+    "name": "Casa Maricolilla",
+    "description": "Casa completa para 7 personas",
+    "description2": "3 habitaciones, 3 baños, cocina",
+    "image": "/images/accommodation/casa-maricolilla.jpg",
+    "url": "https://www.casaruralcortelazor.com/"
+  },
+  {
+    "name": "El Pintaillo",
+    "description": "Casa completa para 10 personas",
+    "description2": "4 habitaciones, 2 baños, cocina",
+    "image": "/images/accommodation/el-pintaillo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014710"
+  },
+  {
+    "name": "Las casas de la Tía Sabina",
+    "description": "4 Apartamentos para 2 personas",
+    "description2": "1 habitación, 1 baño, cocina",
+    "image": "/images/accommodation/casas-tia-sabina.jpg",
+    "url": "https://www.booking.com/hotel/es/apartamentos-tia-sabina.es.html"
+  },
+  {
+    "name": "Casita del Chopo",
+    "description": "Casa completa para 2 personas",
+    "description2": "1 habitación, 2 baños, cocina",
+    "image": "/images/accommodation/casita-del-chopo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014688"
+  },
+  {
+    "name": "Casa Campo",
+    "description": "Casa completa para 4 personas",
+    "description2": "2 habitaciones, 1 baño, cocina",
+    "image": "/images/accommodation/casa-campo.jpg",
+    "url": "https://www.lasierraviva.com/listing/700039721"
+  },
+  {
+    "name": "La Solana",
+    "description": "Casa completa para 10 personas",
+    "description2": "4 habitaciones, 3 baño, cocina",
+    "image": "/images/accommodation/la-solana.jpg",
+    "url": "https://www.lasierraviva.com/listing/700014695"
+  },
+  {
+    "name": "Casa Fidela",
+    "description": "Apartamento para 4 personas",
+    "description2": "2 habitaciones, 1 baño, cocina",
+    "image": "/images/accommodation/casa-fidela.jpg",
+    "url": "https://www.lasierraviva.com/listing/700032739"
+  },
+  {
+    "name": "Casa Doval",
+    "description": "Habitaciones para 2 personas",
+    "description2": "2 habitaciones, 1 baño privado",
+    "image": "/images/accommodation/casa-doval.jpg",
+    "url": "https://www.booking.com/hotel/es/casa-doval.es.html"
+  },
+  {
+    "name": "Posada Matadero",
+    "description": "Habitaciones para 2 personas",
+    "description2": "2 habitaciones, 1 baño privado",
+    "image": "/images/accommodation/posada-matadero.jpg",
+    "url": "https://www.booking.com/hotel/es/la-posada-del-matadero.html"
+  },
+  {
+    "name": "Casa Annette",
+    "description": "Habitaciones para 2 personas",
+    "description2": "4 habitaciones, 1 baño compartido",
+    "image": "/images/accommodation/casa-annette.jpg",
+    "url": "https://www.booking.com/hotel/es/casa-annette.es.html"
+  }
+]
