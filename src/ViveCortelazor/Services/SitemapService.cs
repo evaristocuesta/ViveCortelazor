@@ -11,6 +11,7 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
     public XDocument GetSitemap()
     {
         var urls = AddHomeRoutes();
+        urls.AddRange(AddAccommodations());
         urls.AddRange(AddPages());
         urls.AddRange(AddBlog());
 
@@ -43,6 +44,15 @@ public class SitemapService(IContentService contentService, IOptions<WebSettings
         [
             new($"{_host}/en", DateTime.UtcNow, "monthly", 1.0),
             new($"{_host}/es", DateTime.UtcNow, "monthly", 1.0)
+        ];
+    }
+
+    private List<SitemapUrl> AddAccommodations()
+    {
+        return
+        [
+            new($"{_host}/en/where-to-sleep", DateTime.UtcNow, "monthly", 0.9),
+            new($"{_host}/es/donde-dormir", DateTime.UtcNow, "monthly", 0.9)
         ];
     }
 
