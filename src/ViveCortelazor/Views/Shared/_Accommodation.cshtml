@@ -5,7 +5,7 @@
 <div class="accommodation h-100 d-flex flex-column">
     <div class="row">
         <div class="col">
-            <a class="nav-link" href="@Model.Url">
+            <a class="nav-link" href="@Model.Url" target="_blank">
                 <img src="@Model.Image" class="img-fluid accommodation-image rounded" alt="@Model.Name">
             </a>
         </div>
@@ -13,7 +13,7 @@
     <div class="row flex-fill" style="flex:1 1 auto;">
         <div class="col accommodation-content d-flex flex-column h-100">
             <h5>
-                <a class="nav-link" href="@Model.Url">
+                <a class="nav-link" href="@Model.Url" target="_blank">
                     @Model.Name
                 </a>
             </h5>
@@ -24,7 +24,7 @@
                 @Model.Description2
             </p>
             <div class="availability-btn-container">
-                <a href="@Model.Url" class="availability-btn">@Localizer["Availability"]</a>
+                <a href="@Model.Url" target="_blank" class="availability-btn">@Localizer["Availability"]</a>
             </div>
         </div>
     </div>
