@@ -10,6 +10,11 @@ public class ViveCortelazorTests : PageTest
     private static readonly HashSet<string> CheckedLinks = new();
     private static readonly HashSet<string> CheckedImages = new();
     private static readonly HashSet<string> CheckedCssAndJs = new();
+    private static readonly Dictionary<string, int> LinksHttpErrors = new()
+    {
+        ["https://www.casaruralcortelazor.com/"] = 403,
+        ["https://www.valledelarroyo.com/"] = 417
+    };
 
     [Test]
     [TestCase("", "Vive Cortelazor - Sierra de Aracena")]
@@ -124,7 +129,10 @@ public class ViveCortelazorTests : PageTest
                 lock (CheckedImages)
                 {
                     if (CheckedImages.Contains(imageUrl))
+                    {
                         continue;
+                    }
+
                     CheckedImages.Add(imageUrl);
                 }
 
@@ -173,20 +181,31 @@ public class ViveCortelazorTests : PageTest
                 lock (CheckedLinks)
                 {
                     if (CheckedLinks.Contains(linkUrl))
+                    {
                         continue;
+                    }
+
                     CheckedLinks.Add(linkUrl);
+                }
+
+                var expectedStatusCodes = new List<int>
+                {
+                    200 // OK
+                };
+
+                if (LinksHttpErrors.TryGetValue(linkUrl, out int statusCode))
+                {
+                    expectedStatusCodes.Add(statusCode);
                 }
 
                 try
                 {
                     // Make the HTTP request and check if the link responds correctly
                     var response = await httpClient.GetAsync(linkUrl);
+
                     Assert.That(
-                        (int)response.StatusCode, 
-                        Is.EqualTo(200)
-                            .Or.EqualTo(403)
-                            .Or.EqualTo(417)
-                            .Or.EqualTo(429), 
+                        expectedStatusCodes,
+                        Does.Contain((int)response.StatusCode),
                         $"{linkUrl} is broken (Status code: {response.StatusCode}).");
                 }
                 catch (Exception ex)
@@ -230,7 +249,10 @@ public class ViveCortelazorTests : PageTest
                 lock (CheckedImages)
                 {
                     if (CheckedImages.Contains(imageUrl))
+                    {
                         continue;
+                    }
+
                     CheckedImages.Add(imageUrl);
                 }
 
@@ -281,7 +303,10 @@ public class ViveCortelazorTests : PageTest
                 lock (CheckedCssAndJs)
                 {
                     if (CheckedCssAndJs.Contains(fileUrl))
+                    {
                         continue;
+                    }
+
                     CheckedCssAndJs.Add(fileUrl);
                 }
 
