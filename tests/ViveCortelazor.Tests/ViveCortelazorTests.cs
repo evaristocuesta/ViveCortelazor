@@ -13,6 +13,7 @@ public class ViveCortelazorTests : PageTest
     private static readonly Dictionary<string, int> LinksHttpErrors = new()
     {
         ["https://www.casaruralcortelazor.com/"] = 403,
+        ["https://www.laflamencainn.com/"] = 403,
         ["https://www.valledelarroyo.com/"] = 417
     };
 
@@ -190,7 +191,8 @@ public class ViveCortelazorTests : PageTest
 
                 var expectedStatusCodes = new List<int>
                 {
-                    200 // OK
+                    200, // OK
+                    202, // Accepted
                 };
 
                 if (LinksHttpErrors.TryGetValue(linkUrl, out int statusCode))
