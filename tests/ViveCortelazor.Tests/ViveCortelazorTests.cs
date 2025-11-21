@@ -25,8 +25,8 @@ public class ViveCortelazorTests : PageTest
     [TestCase("en/privacy", "Privacy policy - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("es/cookies", "Política de Cookies - Vive Cortelazor - Sierra de Aracena")]
     [TestCase("en/cookies", "Cookies policy - Vive Cortelazor - Sierra de Aracena")]
-    [TestCase("es/donde-dormir", "Alojamiento en Cortelazor - Sierra de Aracena")]
-    [TestCase("en/where-to-sleep", "Accommodation in Cortelazor - Sierra de Aracena")]
+    [TestCase("es/donde-dormir", "Alojamiento rural en Cortelazor - Sierra de Aracena")]
+    [TestCase("en/where-to-sleep", "Rural accommodation in Cortelazor - Sierra de Aracena")]
     [TestCase("page-no-exists", "Página no encontrada - Vive Cortelazor - Sierra de Aracena")]
     [TestCaseSource(typeof(HasTitleAsyncTestCases))]
     public async Task HasTitle(string url, string title)
