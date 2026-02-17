@@ -27,7 +27,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "launchUrl": "es/donde-dormir"
+      "launchUrl": "es"
     },
     "ContinuousIntegration": {
       "commandName": "Project",

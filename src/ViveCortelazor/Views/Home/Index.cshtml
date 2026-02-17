@@ -1,6 +1,6 @@
 ﻿@using ViveCortelazor.Extensions
 @inject IViewLocalizer Localizer
-@model IReadOnlyList<ContentViewModel>
+@model ViveCortelazor.Models.IndexViewModel
 
 @{
     Layout = "~/Views/Shared/_LayoutIndex.cshtml";
@@ -120,7 +120,7 @@
 </div>
 
 <div class="container">
-    @if (Model.Count > 0)
+    @if (Model.Posts.Any())
     {
         <div class="posts">
             <div class="row">
@@ -128,7 +128,7 @@
                 <hr />
             </div>
             <div class="row">
-                @foreach (var post in Model)
+                @foreach (var post in Model.Posts)
                 {
                     <div class="col-lg post-home">
                         @await Html.PartialAsync("_Post", post)
@@ -144,20 +144,14 @@
         </div>
         <div class="row">
             <div class="col-lg">
-                <markdown content="@Html.Raw(Localizer["Introduction1"].Value)"></markdown>
+                <markdown content="@Html.Raw(Model.Introduction1)"></markdown>
                 <br />
-                <p>
-                    <img src="~/images/index/cortelazor-trees.jpg" class="img-fluid" alt="@Localizer["Cortelazor Trees"]" title="@Localizer["Cortelazor Trees"]" />
-                </p>
             </div>
             <div class="col-lg">
-                <markdown content="@Html.Raw(Localizer["Introduction2"].Value)"></markdown>
-                <p>
-                    <img src="~/images/index/cortelazor-streets.jpg" class="img-fluid" alt="@Localizer["Cortelazor Streets"]" title="@Localizer["Cortelazor Streets"]" />
-                </p>
+                <markdown content="@Html.Raw(Model.Introduction2)"></markdown>
             </div>
             <div class="col-lg">
-                <markdown content="@Html.Raw(Localizer["Introduction3"].Value)"></markdown>
+                <markdown content="@Html.Raw(Model.Introduction3)"></markdown>
             </div>
         </div>
     </div>
