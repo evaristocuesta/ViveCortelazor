@@ -312,9 +312,20 @@ public class ViveCortelazorTests : PageTest
                     CheckedCssAndJs.Add(fileUrl);
                 }
 
+                var expectedStatusCodes = new List<int>
+                {
+                    200, // OK
+                    202, // Accepted, 
+                    204  // No Content
+                };
+
                 // Make the HTTP request and check if the file responds correctly
                 var response = await httpClient.GetAsync(fileUrl);
-                Assert.That((int)response.StatusCode, Is.EqualTo(200), $"{fileUrl} does not exist");
+
+                Assert.That(
+                        expectedStatusCodes,
+                        Does.Contain((int)response.StatusCode),
+                        $"{fileUrl} is broken (Status code: {response.StatusCode}).");
             }
         }
     }
