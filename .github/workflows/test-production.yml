@@ -33,7 +33,7 @@ jobs:
       working-directory: ./tests/ViveCortelazor.Tests
 
     - name: Ensure browsers are installed
-      run: pwsh bin/Release/net9.0/playwright.ps1 install --with-deps
+      run: pwsh bin/Release/net10.0/playwright.ps1 install --with-deps
       working-directory: ./tests/ViveCortelazor.Tests
 
     - name: Tests
