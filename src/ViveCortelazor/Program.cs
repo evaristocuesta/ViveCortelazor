@@ -49,7 +49,7 @@ builder.Services.AddMvc(opts =>
 var outputPath = args.Length >= 2 ? $"{args[1]}" : string.Empty;
 var basePath = args.Length == 3 ? $"/{args[2]}" : string.Empty;
 
-if (args.HasExitWhenDoneArg())
+if (args.HasSsgArg())
 {
     builder.Services.AddSingleton<IStaticResourcesInfoProvider>(new StaticResourcesInfoProvider());
 }
@@ -87,7 +87,7 @@ app.UseAuthorization();
 
 app.AddControllerRoutes();
 
-if (args.HasExitWhenDoneArg())
+if (args.HasSsgArg())
 {
     app.ConfigureAspNetStatic(basePath, outputPath);
     app.GenerateStaticContent(outputPath);
