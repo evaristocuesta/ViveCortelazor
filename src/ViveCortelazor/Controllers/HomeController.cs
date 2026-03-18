@@ -43,6 +43,11 @@ public class HomeController(IContentService contentService) : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error(int statusCode)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         if (statusCode == 404)
         {
             return View("NotFound");
@@ -51,7 +56,7 @@ public class HomeController(IContentService contentService) : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    private string? ReadMarkdown(string directory, string name, string lang)
+    private static string? ReadMarkdown(string directory, string name, string lang)
     {
         string textFilePath = Path.Combine(directory, $"{name}.{lang}.md");
         return System.IO.File.Exists(textFilePath) ? System.IO.File.ReadAllText(textFilePath) : null;
