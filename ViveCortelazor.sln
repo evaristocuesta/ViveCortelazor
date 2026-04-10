@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveCortelazor", "src\ViveCortelazor\ViveCortelazor.csproj", "{5968C1AF-AF12-4059-9869-C492BDCB1057}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{750223FD-14FF-42EF-946F-7DF06A473526}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveCortelazor.Tests", "tests\ViveCortelazor.Tests\ViveCortelazor.Tests.csproj", "{A6F5359F-0DCB-4475-A47C-864744F93854}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{0B41F322-4ACE-4BB2-8E25-0B22979D4ABD}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\CreateBlogPost.ps1 = scripts\CreateBlogPost.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

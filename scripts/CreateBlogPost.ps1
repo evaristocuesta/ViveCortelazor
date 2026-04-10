@@ -73,8 +73,8 @@ $dataEnJson = @"
 $files = @(
     @{ Path = Join-Path $contentDir "data.es.json"; Content = $dataEsJson },
     @{ Path = Join-Path $contentDir "data.en.json"; Content = $dataEnJson },
-    @{ Path = Join-Path $contentDir "text.es.md"; Content = "---`n# Write the Spanish article content below (Markdown)`n---`n" },
-    @{ Path = Join-Path $contentDir "text.en.md"; Content = "---`n# Write the English article content below (Markdown)`n---`n" }
+    @{ Path = Join-Path $contentDir "text.es.md"; Content = "## Write the Spanish article content below (Markdown)" },
+    @{ Path = Join-Path $contentDir "text.en.md"; Content = "## Write the English article content below (Markdown)" }
 )
 
 foreach ($f in $files) {
