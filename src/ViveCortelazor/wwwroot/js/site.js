@@ -24,7 +24,6 @@ function readCookie(name) {
 }
 
 function setCookieConsent() {
-
     var consentValues = ['Necessary']; // Necessary cookies are always accepted.
 
     if (document.getElementById('preferencesCookie').checked) {
@@ -44,6 +43,9 @@ function setCookieConsent() {
     if (consentValue !== existingConsent) {
         setCookie('cookieConsent', consentValue, 365);
 
+        // Update Google Consent Mode v2
+        updateConsentMode(consentValues);
+
         window.dataLayer.push({
             'event': 'cookie_consent_update',
             'cookieConsent': consentValue
@@ -54,8 +56,32 @@ function setCookieConsent() {
     showMinimizedBanner();
 }
 
+function updateConsentMode(consentValues) {
+    // Helper function for gtag
+    function gtag() { dataLayer.push(arguments); }
+
+    // Mapping your categories to Google Consent Mode v2 categories
+    var consentUpdate = {
+        'ad_storage': consentValues.includes('Marketing') ? 'granted' : 'denied',
+        'ad_user_data': consentValues.includes('Marketing') ? 'granted' : 'denied',
+        'ad_personalization': consentValues.includes('Marketing') ? 'granted' : 'denied',
+        'analytics_storage': consentValues.includes('Statistical') ? 'granted' : 'denied',
+        'functionality_storage': consentValues.includes('Preferences') ? 'granted' : 'denied',
+        'personalization_storage': consentValues.includes('Preferences') ? 'granted' : 'denied',
+        'security_storage': 'granted'  // Siempre permitido
+    };
+
+    // Update the consent
+    gtag('consent', 'update', consentUpdate);
+}
+
 // Show or hide banners based on cookie consent
-window.onload =  function () {
+window.onload = function () {
+    cookiesSetup();
+    contactInfo();
+};
+
+function cookiesSetup() {
     var cookieValue = readCookie('cookieConsent');
 
     if (cookieValue) {
@@ -63,6 +89,11 @@ window.onload =  function () {
         document.getElementById('preferencesCookie').checked = cookieValue.includes('Preferences');
         document.getElementById('statisticalCookie').checked = cookieValue.includes('Statistical');
         document.getElementById('marketingCookie').checked = cookieValue.includes('Marketing');
+
+        // Restore consent in Google Consent Mode
+        var consentValues = cookieValue.split(',');
+        updateConsentMode(consentValues);
+
         showMinimizedBanner();
     } else {
         document.getElementById('cookieConsentBanner').style.display = 'block';
@@ -70,7 +101,7 @@ window.onload =  function () {
 
     document.getElementById('minimizedConsentBanner').onclick = openConsentBanner;
     document.getElementById('minimizedConsentBanner').onkeydown = openConsentBanner;
-};
+}
 
 function hideConsentBanner() {
     document.getElementById('cookieConsentBanner').style.display = 'none';
@@ -97,4 +128,12 @@ function rejectAll() {
 function openConsentBanner() {
     document.getElementById('cookieConsentBanner').style.display = 'block';
     document.getElementById('minimizedConsentBanner').style.display = 'none';
+}
+
+function contactInfo() {
+    const emailAddress = atob('aW5mb0B2aXZlY29ydGVsYXpvci5lcw==');
+    const emails = document.querySelectorAll('a.email-contact-info');
+    emails.forEach(email => {
+        email.setAttribute('href', 'mailto:' + emailAddress);
+    });
 }
