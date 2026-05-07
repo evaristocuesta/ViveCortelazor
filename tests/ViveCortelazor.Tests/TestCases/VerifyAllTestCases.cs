@@ -9,14 +9,14 @@ internal class VerifyAllTestCases : IEnumerable
 
     public IEnumerator GetEnumerator()
     {
-        var posts = _contentService.GetContentList("Content/Blog", "es");
+        var posts = _contentService.GetContentList("Content/Blog", "es", 10);
 
         foreach (var post in posts)
         {
             yield return new TestCaseData($"es/blog/{post.Slug}");
         }
 
-        posts = _contentService.GetContentList("Content/Blog", "en");
+        posts = _contentService.GetContentList("Content/Blog", "en", 10);
 
         foreach (var post in posts)
         {

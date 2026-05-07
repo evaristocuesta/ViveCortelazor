@@ -98,11 +98,11 @@ public class MetaTagsTestCases : IEnumerable
         );
 
         var esPosts = _contentService
-            .GetContentList("Content/Blog", "es")
+            .GetContentList("Content/Blog", "es", 10)
             .ToDictionary(k => k.Name, k => k);
 
         var enPosts = _contentService
-            .GetContentList("Content/Blog", "en")
+            .GetContentList("Content/Blog", "en", 10)
             .ToDictionary(k => k.Name, k => k);
 
         foreach (var post in esPosts.Values)

@@ -43,7 +43,7 @@ public class ContentService : IContentService
         return viewModel;
     }
 
-    public IReadOnlyList<ContentViewModel> GetContentList(string contentDirectory, string lang)
+    public IReadOnlyList<ContentViewModel> GetContentList(string contentDirectory, string lang, int latestCount = -1)
     {
         List<ContentViewModel> contentList = new();
 
@@ -56,8 +56,21 @@ public class ContentService : IContentService
             contentList.Add(content);
         }
 
-        return contentList
-            .OrderByDescending(c => c.Date)
+        var orderedList = contentList
+            .OrderByDescending(c => c.Date);
+
+        if (latestCount == -1)
+        {
+            return orderedList.ToList();
+        }
+
+        if (latestCount <= 0)
+        {
+            return [];
+        }
+
+        return orderedList
+            .Take(latestCount)
             .ToList();
     }
 
