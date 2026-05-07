@@ -1,4 +1,6 @@
-﻿## Saturday, May 9 · 9:00 PM · La Mano Verde · Cortelazor
+﻿**CANCELLED DUE TO RAIN. POSTPONED TO AUGUST 8, 2026**
+
+## Saturday, May 9 · 9:00 PM · La Mano Verde · Cortelazor
 
 **Admission: €10 / €8 for members**
 
