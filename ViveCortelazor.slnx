@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/scripts/">
+    <File Path="scripts/CreateBlogPost.ps1" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ViveCortelazor/ViveCortelazor.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ViveCortelazor.Tests/ViveCortelazor.Tests.csproj" />
+  </Folder>
+</Solution>

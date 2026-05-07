@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v5
       with:
         dotnet-version: 10.0.x
     
@@ -34,7 +34,7 @@ jobs:
       working-directory: ./src/ViveCortelazor
 
     - name: HTTP Server Action
-      uses: Eun/http-server-action@v1.0.12
+      uses: Eun/http-server-action@v1
       with:
         directory: "web"
         port: 8080
