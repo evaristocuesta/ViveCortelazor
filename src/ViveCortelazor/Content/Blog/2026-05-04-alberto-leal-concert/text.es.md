@@ -1,4 +1,6 @@
-﻿## Sábado 9 de mayo · 21:00 h · La Mano Verde · Cortelazor
+﻿**CANCELADO POR LLUVIAS. POSPUESTO PARA EL 8 DE AGOSTO DE 2026**
+
+## Sábado 9 de mayo · 21:00 h · La Mano Verde · Cortelazor
 
 **Entrada: €10 / €8 para socios**
 
